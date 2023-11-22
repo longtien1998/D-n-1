@@ -82,7 +82,7 @@ $user = '<a href="/index.php?action=login">Đăng nhập</a>';
                 <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
                 <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Trang</a>
                 <a href="/index.php?action=viewphong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
-                <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Nhà Hàng & Bar</a>
+                <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Nhà Hàng & Bar</a>
                 <a href="/index.php?action=home" class="text-black-50  text-uppercase lead m-4">Tiện nghi</a>
                 <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
                 <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
