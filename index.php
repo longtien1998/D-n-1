@@ -14,12 +14,18 @@
         case 'viewphong':
             include './pages/viewphong.php';
             break;
-        case 'phong':
-            include './pages/phong.php';
+        case 'contact':
+            include './pages/contact.php';
             break;
         case 'phong':
             include './pages/phong.php';
             break;
+        case 'phong':
+            include './pages/phong.php';
+            break;
+            case 'phong':
+                include './pages/phong.php';
+                break;
         case 'login':
             include './pages/login.php';
             break;
