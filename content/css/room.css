@@ -1,0 +1,1826 @@
+.tong {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu h5 a {
+    color: black;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.trangchu span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.se1 {
+    width: auto;
+    height: 400px;
+    background-image: url("../images/room.png");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    /* background-size: cover; */
+    /* background-color: aqua; */
+
+}
+
+.a-1 h3 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a-2 p {
+    color: white;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.sec1 {
+    /* background-color: rgb(243, 3, 3); */
+    height: 680px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.don {
+    /* position: absolute; */
+    /* bottom: -180px;
+    left: 70px; */
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+}
+
+.slideshow-left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập kiểu cho hình ảnh trong slideshow */
+.mySlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
+    padding: 10px 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Thiết lập kiểu cho điểm đánh dấu */
+.dotss {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.noidung {
+    /* background-color: antiquewhite; */
+    width: 700px;
+    height: 550px;
+    /* position: absolute;
+    left: 750px;
+    bottom: -225px; */
+} 
+
+.noidung1 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung2 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so {
+    font-size: 54px;
+}
+
+.danhsach {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach .num {
+    vertical-align: super;
+}
+
+.danhsach ul {
+    list-style-type: square;
+}
+
+
+
+.hop {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy1 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-1 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-1 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-1:before,
+.buy-1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-1:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-1:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-1:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-1:hover:before {
+    height: 100%;
+}
+
+.buy-1:hover:after {
+    width: 100%;
+}
+
+.buy-1 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-1 span:before,
+.buy-1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-1 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-1 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-1 span:hover:before {
+    height: 100%;
+}
+
+.buy-1 span:hover:after {
+    width: 100%;
+}
+
+.sec2 {
+    background-color: #efeded;
+    width: auto;
+    height: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.doi {
+    background-color: rgb(49, 49, 49);
+   
+   
+    height: 400px;
+    width: 600px;
+    border: 10px solid white;
+}
+
+.slideshow-left1 {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập kiểu cho hình ảnh trong slideshow */
+.mySlider1 img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
+.prev1,
+.next1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
+    padding: 10px 20px;
+}
+
+.prev1 {
+    left: 0;
+}
+
+.next1 {
+    right: 0;
+}
+
+/* Thiết lập kiểu cho điểm đánh dấu */
+.dotss1 {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot1 {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot1.active {
+    background-color: #717171;
+}
+
+.noidung3 {
+    width: 700px;
+    height: 550px;
+    /* position: absolute;
+    left: 30px;
+    bottom: -880px; */
+}
+
+.noidung4 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung5 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd1 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so1 {
+    font-size: 54px;
+}
+
+.danhsach1 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach1 .num {
+    vertical-align: super;
+}
+
+.danhsach1 ul {
+    list-style-type: square;
+}
+
+.hop1 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy2 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.buy-2 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-2:before,
+.buy-2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-2:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-2:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-2:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-2:hover:before {
+    height: 100%;
+}
+
+.buy-2:hover:after {
+    width: 100%;
+}
+
+.buy-2 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-2 span:before,
+.buy-2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-2 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-2 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-2 span:hover:before {
+    height: 100%;
+}
+
+.buy-2 span:hover:after {
+    width: 100%;
+}
+
+.sec3 {
+    /* background-color: rgb(243, 3, 3); */
+    height: 620px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.giadinh {
+    /* background-color: black; */
+
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+}
+
+
+.slideshow-left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+/* Thiết lập kiểu cho hình ảnh trong slideshow */
+.mySlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
+    padding: 10px 20px;
+
+}
+
+.prev {
+    left: 0;
+
+}
+
+.next {
+    right: 0;
+}
+
+/* Thiết lập kiểu cho điểm đánh dấu */
+.dotss {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.noidung6 {
+    /* background-color: antiquewhite; */
+    width: 700px;
+    height: 550px;
+    
+}
+
+.noidung7 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung8 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd2 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so2 {
+    font-size: 54px;
+}
+
+.danhsach2 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach2 .num {
+    vertical-align: super;
+}
+
+.danhsach2 ul {
+    list-style-type: square;
+}
+
+
+
+.hop2 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy3 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+.buy-3 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-3:before,
+.buy-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-3:hover:before {
+    height: 100%;
+}
+
+.buy-3:hover:after {
+    width: 100%;
+}
+
+.buy-3 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-3 span:before,
+.buy-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-3 span:hover:before {
+    height: 100%;
+}
+
+.buy-3 span:hover:after {
+    width: 100%;
+}
+
+.sec4 {
+    background-color: #efeded;
+    width: auto;
+    height: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sute {
+    background-color: rgb(49, 49, 49);
+    /* position: absolute;
+    bottom: -2040px;
+    right: 70px; */
+    height: 400px;
+    width: 600px;
+    border: 10px solid white;
+}
+
+.noidung9 {
+    width: 700px;
+    height: 550px;
+    /* position: absolute;
+    left: 30px;
+    bottom: -2115px; */
+}
+
+.noidung10 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung11 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd3 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so3 {
+    font-size: 54px;
+}
+
+.danhsach3 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach3 .num {
+    vertical-align: super;
+}
+
+.danhsach3 ul {
+    list-style-type: square;
+}
+
+.hop3 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy4 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+.buy-4 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-4:before,
+.buy-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-4:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-4:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-4:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-4:hover:before {
+    height: 100%;
+}
+
+.buy-4:hover:after {
+    width: 100%;
+}
+
+.buy-4 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-4 span:before,
+.buy-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-4 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-4 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-4 span:hover:before {
+    height: 100%;
+}
+
+.buy-4 span:hover:after {
+    width: 100%;
+}
+
+/* room2 */
+
+.tong1 {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu1 {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu1 h5 a {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.trangchu1 span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.se2 {
+    background-color: rgb(199, 198, 198);
+    width: 100%;
+    height: 380px;
+}
+
+.timkiem {
+    text-align: center;
+    padding: 80px;
+    line-height: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a2 h2 {
+    font-size: 50px;
+}
+
+.timkiem1 {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timkiem2 {
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.b,
+.b1,
+.b2,
+.b3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.i,
+.o,
+.s,
+.c {
+    font-weight: bold;
+}
+
+.ngayden,
+.ngaydi {
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.ss,
+.cc {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hop4 {
+    width: 90%;
+    margin: 34px auto;
+
+}
+
+
+.custom-buy5 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.buy-5 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-5 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-5:before,
+.buy-5:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-5:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-5:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-5:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-5:hover:before {
+    height: 100%;
+}
+
+.buy-5:hover:after {
+    width: 100%;
+}
+
+.buy-5 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-5 span:before,
+.buy-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-5 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-5 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-5 span:hover:before {
+    height: 100%;
+}
+
+.buy-5 span:hover:after {
+    width: 100%;
+}
+
+.stc1 {
+    background-color: rgb(255, 255, 255);
+    height: 720px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.don1 {
+    
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+}
+
+.slideshow-left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.mySlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dotss {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.noidungg {
+    width: 700px;
+    height: 550px;
+   
+}
+
+.noidung-1 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung-2 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd4 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so4 {
+    font-size: 54px;
+}
+
+.danhsach4 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach4 .num {
+    vertical-align: super;
+}
+
+.danhsach4 ul {
+    list-style-type: square;
+}
+
+
+
+.hop5 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy6 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-6 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-6:before,
+.buy-6:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-6:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-6:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-6:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-6:hover:before {
+    height: 100%;
+}
+
+.buy-6:hover:after {
+    width: 100%;
+}
+
+.buy-6 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-6 span:before,
+.buy-6 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-6 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-6 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-6 span:hover:before {
+    height: 100%;
+}
+
+.buy-6 span:hover:after {
+    width: 100%;
+}
+
+
+.stc2 {
+    background-color: rgb(255, 255, 255);
+    height: 720px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.doi2 {
+    /* position: absolute;
+    bottom: -920px;
+    left: 70px; */
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+}
+
+.slideshow-left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.mySlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dotss {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.noidung-3 {
+    width: 700px;
+    height: 550px;
+    /* position: absolute;
+    left: 750px;
+    bottom: -1000px; */
+}
+
+.noidung-4 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung-5 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd5 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so5 {
+    font-size: 54px;
+}
+
+.danhsach5 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach5 .num {
+    vertical-align: super;
+}
+
+.danhsach5 ul {
+    list-style-type: square;
+}
+
+
+
+.hop6 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy7 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-7 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-7:before,
+.buy-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-7:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-7:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-7:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-7:hover:before {
+    height: 100%;
+}
+
+.buy-7:hover:after {
+    width: 100%;
+}
+
+.buy-7 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-7 span:before,
+.buy-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-7 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-7 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-7 span:hover:before {
+    height: 100%;
+}
+
+.buy-7 span:hover:after {
+    width: 100%;
+}
+
+
+.stc3 {
+    background-color: rgb(255, 255, 255);
+    height: 720px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.giadinh1 {
+    /* position: absolute;
+    bottom: -1670px;
+    left: 70px; */
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+}
+
+.slideshow-left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.mySlider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dotss {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+.noidung-6 {
+    width: 700px;
+    height: 550px;
+   
+}
+
+.noidung-7 h4 {
+    line-height: 2;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung-8 p {
+    line-height: 1;
+    font-size: 18px;
+    color: rgb(113, 110, 110);
+}
+
+.vnd6 {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+.so6 {
+    font-size: 54px;
+}
+
+.danhsach6 {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danhsach6 .num {
+    vertical-align: super;
+}
+
+.danhsach6 ul {
+    list-style-type: square;
+}
+
+
+
+.hop7 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy8 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-8 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-8:before,
+.buy-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-8:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-8:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-8:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-8:hover:before {
+    height: 100%;
+}
+
+.buy-8:hover:after {
+    width: 100%;
+}
+
+.buy-8 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-8 span:before,
+.buy-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-8 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-8 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-8 span:hover:before {
+    height: 100%;
+}
+
+.buy-8 span:hover:after {
+    width: 100%;
+}
+
+
+.showlist {
+    height: 80px;
+    width: 100%;
+    
+}
+
+.s1 {
+    display: flex;
+    font-size: 18px;
+    margin: 0 40px;
+
+}
+
+.s1>span {
+    margin: 0 5px;
+}
+
+.s1 span a {
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
