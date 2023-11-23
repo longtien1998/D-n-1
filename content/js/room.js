@@ -1,41 +1,48 @@
-var slideIndex = 1;
-var timer;
+// view1
 
-showSlider(slideIndex);
-
-function plusSlider(n) {
-  clearTimeout(timer);
-  showSlider(slideIndex += n);
+function showimg(id) {
+  const  im =document.getElementById(0);
+  const  im1 =document.getElementById(id);
+  const previews = document.querySelectorAll(".room-preview img");
+ const im2= im1.getAttribute('src');
+  im.setAttribute('src',im2);
+  previews.forEach(preview => preview.classList.remove("room-active"));
+  im1.classList.add("room-active");
 }
 
-function currentSlider(n) {
-  clearTimeout(timer);
-  showSlider(slideIndex = n);
+
+ //view2
+
+ function showimg(id) {
+  const  im =document.getElementById(0);
+  const  im1 =document.getElementById(id);
+  const previews1 = document.querySelectorAll(".room1-preview1 img");
+ const im2= im1.getAttribute('src');
+  im.setAttribute('src',im2);
+  previews1.forEach(preview1 => preview1.classList.remove("room1-active1"));
+  im1.classList.add("room1-active1");
 }
 
-function showSlider(n) {
-  var i;
-  var slider = document.getElementsByClassName("mySlider");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slider.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slider.length}
-  for (i = 0; i < slider.length; i++) {
-      slider[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slider[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+//view3
 
-  timer = setTimeout(function() {
-    plusSlider(1);
-  }, 3000);
+function showimg(id) {
+  const  im =document.getElementById(0);
+  const  im1 =document.getElementById(id);
+  const previews2 = document.querySelectorAll(".room2-preview2 img");
+ const im2= im1.getAttribute('src');
+  im.setAttribute('src',im2);
+  previews2.forEach(preview2 => preview2.classList.remove("room2-active2"));
+  im1.classList.add("room2-active2");
 }
 
-timer = setTimeout(function() {
-  plusSlider(1);
-}, 3000);
+//view4
 
-
-// sl2
+function showimg(id) {
+  const  im =document.getElementById(0);
+  const  im1 =document.getElementById(id);
+  const previews3 = document.querySelectorAll(".room3-preview3 img");
+ const im2= im1.getAttribute('src');
+  im.setAttribute('src',im2);
+  previews3.forEach(preview3 => preview3.classList.remove("room3-active3"));
+  im1.classList.add("room3-active3");
+}
