@@ -35,6 +35,18 @@ switch ($_GET["action"]) {
     case 'logout':
         include './dao/logout.php';
         break;
+    case 'view1':
+        include './pages/view1.php';
+        break;
+    case 'view2':
+        include './pages/view2.php';
+        break;
+    case 'view3':
+        include './pages/view3.php';
+        break;
+    case 'view4':
+        include './pages/view4.php';
+        break;
     default:
         include './pages/home.php';
         break;

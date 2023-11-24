@@ -27,7 +27,7 @@
 <section class="ser8">
     <div class="sr1">
         <div class="slidesr">
-
+    <img src="../content/images/xedon.jpg" width="100%" height="381px" alt="">
         </div>
     </div>
     <div class="noidungsr1">
@@ -83,7 +83,7 @@
     </div>
     <div class="sr2">
         <div class="slidesr1">
-
+    <img src="../content/images/thuexe.jpg" width="100%" height="381px" alt="">
         </div>
     </div>
 
@@ -91,7 +91,7 @@
 <section class="ser10">
     <div class="sr3">
         <div class="slidesr2">
-
+    <img src="../content/images/spa.jpg" width="100%" height="381px" alt="">
         </div>
     </div>
     <div class="noidungsr3">
@@ -136,7 +136,7 @@
     </div>
     <div class="sr4">
         <div class="slidesr4">
-
+    <img src="../content/images/sukien.jpg" width="100%" height="381px" alt="">
         </div>
     </div>
 

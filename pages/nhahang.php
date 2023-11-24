@@ -1,4 +1,4 @@
-    <!-- <div class="tong3">
+    <div class="tong3">
         <div class="trangchu3">
             <h5><a href="#">Trang Chủ |</a></h5>
             <span>Nhà Hàng & Quầy Bar</span>
@@ -47,36 +47,37 @@
                 </div>
             </div>
             <div class="hinh">
-                <img src="../content/images/bar.png" alt="">
+                <img src="../content/images/bocobe.jpg" width="100%" height="381px" alt="">
             </div>
         </div>
     </section>
-
+    <div class="hidden1"></div>
     <section class="se5">
         <h2>Thực Đơn Món Tráng Miệng</h2>
         <div class="thucdon2">
             <div class="mon5">
-                <img src="../content/images/bar.png" alt="">
-                <h3>Kem Lạnh La Maison dùng kèm <br> Trái Cây Tươi</h3>
+                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
+                <h3>Kem Lạnh La Maison dùng kèm Trái Cây Tươi</h3>
                 <span>LA MAISON'S FRUIT SORBET</span>
             </div>
             <div class="mon6">
-                <img src="../content/images/bar.png" alt="">
-                <h3>Bánh nhà làm đặc biệt trong <br> ngày</h3>
+                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
+                <h3>Bánh nhà làm đặc biệt trong ngày</h3>
                 <span>HOMEMADE SPECIAL CAKE</span>
             </div>
             <div class="mon7">
-                <img src="../content/images/bar.png" alt="">
+                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
                 <h3>Kem cháy kiểu Pháp vị Vani</h3>
                 <span>VANILLA CREME BRULEE</span>
             </div>
         </div>
     </section>
+    <div class="hidden2"></div>
     <section class="se6">
         <h2>Thực Đơn Đồ Uống</h2>
         <div class="thucdon3">
             <div class="hinh1">
-                <img src="../content/images/bar.png" alt="">
+                <img src="../content/images/wine.jpg" width="100%" height="381px" alt="">
             </div>
             <div class="menu">
                 <div class="mon8">
@@ -98,10 +99,11 @@
                 </div>
             </div>
         </div>
+        <div class="hidden3"></div>
         <div class="dow">
             <h2>Tải Xuống Menu Đầy Đủ</h2>
             <div class="hop9">
                 <button type="submit" class="custom-buy10 buy-10"><span><a style="text-decoration: none;" href="../content/images/list-menu-BonCha.pdf"> Tải Xuống</a></span></button>
             </div>
         </div>
-    </section> -->
+    </section>

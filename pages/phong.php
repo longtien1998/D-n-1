@@ -53,7 +53,7 @@
          </ul>
        </div>
        <div class="hop-1">
-         <button class="custom-buys-1 buys-1"><span><a style="text-decoration: none; " href="view1.php">ĐẶT
+         <button class="custom-buys-1 buys-1"><span><a style="text-decoration: none; " href="/index.php?action=view1">ĐẶT
                NGAY</a></span></button>
        </div>
      </div>
@@ -87,7 +87,7 @@
          </ul>
        </div>
        <div class="hop1">
-         <button class="custom-buy2 buy-2"><span><a style="text-decoration: none; " href="view2.php">ĐẶT
+         <button class="custom-buy2 buy-2"><span><a style="text-decoration: none; " href="/index.php?action=view2">ĐẶT
                NGAY</a></span></button>
        </div>
      </div>
@@ -131,7 +131,7 @@
          </ul>
        </div>
        <div class="hop2">
-         <button class="custom-buy3 buy-3"><span><a style="text-decoration: none; " href="view3.php">ĐẶT
+         <button class="custom-buy3 buy-3"><span><a style="text-decoration: none; " href="/index.php?action=view3">ĐẶT
                NGAY</a></span></button>
        </div>
      </div>
@@ -167,7 +167,7 @@
          </ul>
        </div>
        <div class="hop-3">
-         <button class="custom-buy-4 buy-4"><span><a style="text-decoration: none; " href="view4.php">ĐẶT
+         <button class="custom-buy-4 buy-4"><span><a style="text-decoration: none; " href="/index.php?action=view4">ĐẶT
                NGAY</a></span></button>
        </div>
      </div>

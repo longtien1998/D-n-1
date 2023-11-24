@@ -1525,8 +1525,9 @@ body {
 .se3 {
     width: auto;
     height: 400px;
-    background-image: url(../images/bar.png);
-    background-size: cover;
+    background-image: url(/content/images/bar.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .a-3 h3 {
@@ -1581,12 +1582,16 @@ body {
     border: 10px solid #717171;
 }
 
+.hidden1 {
+    width: 100%;
+    height: 500px;
+}
+
 .se5 {
     background-color: rgba(243, 243, 243, 0.747);
     width: 100%;
-    height: 450px;
-    position: absolute;
-    bottom: -700px;
+    height: 550px;
+
 }
 
 .se5 h2 {
@@ -1604,22 +1609,26 @@ body {
 .mon5 img,
 .mon6 img,
 .mon7 img {
-    width: 250px;
-    height: 250px;
+    width: 420px;
+    height: 360px;
     border: 8px solid #717171;
 }
 
 .thucdon2 h3 {
+    color: black;
+    line-height: 2;
     font-weight: 700;
     font-size: 20px;
 }
 
-.se6 {
-    position: absolute;
-    bottom: -750px;
-    width: 100%;
-    height: 50px;
 
+.hidden2 {
+    width: 100%;
+    height: 20px;
+}
+
+.se6 {
+    width: 100%;
 }
 
 .se6 h2 {
@@ -1648,14 +1657,19 @@ body {
 }
 
 .se6 img {
-    height: 350px;
-    width: 400px;
+    height: 450px;
+    width: 550px;
     border: 10px solid #717171;
+}
+
+.hidden3 {
+    width: 100%;
+    height: 150px;
 }
 
 .dow {
     background-color: rgb(234, 225, 213);
-
+    width: 100%;
     height: 250px;
 
 }
@@ -1669,9 +1683,8 @@ body {
 .hop9 {
     width: 90%;
     margin: 40px auto;
-    padding-left: 438px;
-    position: absolute;
-    left: 80px;
+    padding-left: 510px;
+
 }
 
 
