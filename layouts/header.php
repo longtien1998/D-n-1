@@ -1,8 +1,7 @@
-
-<?php 
-    session_start() ;
-    include './config/connect.php';
-    include './thuvien/user.php';
+<?php
+session_start();
+include './config/connect.php';
+include './thuvien/user.php';
 ?>
 
 <?php
@@ -11,8 +10,8 @@
 // session_start();
 // kiểm tra xem sessionuser có tồn tại không ?
 $user = '<a href="/index.php?action=login">Đăng nhập</a>';
- if (isset($_SESSION["user"])) {
-    
+if (isset($_SESSION["user"])) {
+
 
     // Thực thi truy vấn
     $result = useradmin($_SESSION["user"]);
@@ -21,15 +20,16 @@ $user = '<a href="/index.php?action=login">Đăng nhập</a>';
     if (mysqli_num_rows($result) > 0) {
 
         // Lấy thông tin người dùng từ cơ sở dữ liệu
-        $user= 'Admin <a class="user" href="/admin/index.php">'.$_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        $user = 'Admin <a class="user" href="/admin/index.php">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
     } else {
-        $user='Nhân Viên <a class="user" href="/admin/index.php">'.$_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        $user = 'Nhân Viên <a class="user" href="/admin/index.php">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
     }
-} else  $user = '<a href="/index.php?action=login">Đăng nhập</a>'; 
+} else  $user = '<a href="/index.php?action=login">Đăng nhập</a>';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,49 +45,52 @@ $user = '<a href="/index.php?action=login">Đăng nhập</a>';
 
     <script src="https://kit.fontawesome.com/db4ae7b83e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- <div class="container-fluid"> -->
-        <div class="row border-bottom p-2 mr-0">
-            <div class="row col-lg-9">
-                <div class="mx-3">
-                    <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
-                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                        80 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng 550000, Việt Nam
-                    </a>
-                </div>
-                <div class="mx-3">
-                    <a href="">
-                        <i class="fa-solid fa-phone-volume" style="color: #000000;"></i>
-                        Liên hệ trực tiếp với chúng tôi tại (+84) 982 268 784
-                    </a>
-                </div>
+
+    <div class="row border-bottom p-2 mr-0">
+        <div class="row col-lg-9">
+            <div class="mx-3">
+                <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
+                    <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                    260 Võ Nguyên Giáp, Phường Mỹ An, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam
+                </a>
             </div>
-            <div class="col-lg-3">
+            <div class="mx-3">
+                <a href="">
+                    <i class="fa-solid fa-phone-volume" style="color: #000000;"></i>
+                    Liên hệ trực tiếp với chúng tôi tại (+84) 982 268 784
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3">
             <div class="mx-3 ml-4">
                 <span>Xin Chào</span>
                 <i class="fa-regular fa-circle-user fa-flip" style="color: #050505; font-size: 25px;"></i>
-                    <!-- <a href="/index.php?action=login">Đăng nhập</a> -->
-                    <?php echo $user; ?>
-                </div>
+                <!-- <a href="/index.php?action=login">Đăng nhập</a> -->
+                <?php echo $user; ?>
             </div>
         </div>
-        <header class="card-header row justify-content-around mr-0">
-            <div class=" logo mx-5 text-center">
-                <a href="">
-                    <h1>BONCHA</h1>
-                    <p>Best - Hotel</p>
-                </a>
-            </div>
-            <div class="navbar align-content-center">
-                <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
-                <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a> -->
-                <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
-                <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
-                <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>
-                <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4">Dịch Vụ</a>
-                <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
-            </div>
-            <div class="btn-outline-warning align-self-center ">
-                <button type="submit" class=" text-dark  border-warning bg-transparent text-black-50 text-uppercase lead p-3 px-5" name="search-on">Đặt phòng</button>
-            </div>
-        </header>
+
+    </div>
+    <header class="card-header row justify-content-around mr-0">
+        <div class=" logo mx-5 text-center">
+            <a href="">
+                <h1>BONCHA</h1>
+                <p>Best - Hotel</p>
+            </a>
+        </div>
+        <div class="navbar align-content-center">
+            <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
+            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
+            <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
+            <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
+            <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>
+            <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4">Dịch Vụ</a>
+            <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
+        </div>
+        <div class=" align-self-center  ">
+            <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        </div>
+    </header>

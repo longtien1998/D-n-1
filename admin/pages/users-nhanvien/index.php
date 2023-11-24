@@ -6,10 +6,10 @@
         <h3 class="bg-info p-3 text-center"><a href="/admin/index.php?controller=user-nhanvien&action=new-nhanvien">Thêm tài khoản Nhân Viên +</a></h3>
     </div>
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $getmanhanvien = $_POST['manhanvien'];
-        nhanvien_delete($getmanhanvien);
-    }
+    // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //     $getmanhanvien = $_POST['manhanvien'];
+    //     nhanvien_delete($getmanhanvien);
+    // }
     ?>
     <div class="container-fluid table-responsive-lg">
         <table class="table table-bordered table-striped table-hover">
@@ -25,17 +25,14 @@
                     <th scope="col">id_KhachSan</th>
                     <th scope="col">Tên Đăng Nhập</th>
                     <th scope="col">Delete</th>
-
                 </tr>
             </thead>
             <tbody>
                 <?php
                 $i = "1";
                 // hiển thị danh sách sản phẩm từ cơ sở dữ liệu
-                
-                $sql= "SELECT * FROM nhanvien";
+                $sql = "SELECT * FROM nhanvien";
                 $result = getData($sql);
-                
                 foreach ($result as $row) {
                     echo ' <tr>
                                 <td>' . $i . '</td>
@@ -49,17 +46,29 @@
                                 <td>' . $row['tenDangNhap'] . '</td>
                                 <td style="width: 100px;">
                                     <form action="" method="post">
-                                        <input type="hidden" name="manhanvien"  value="'.$row['maNhanVien'].' ">
-                                        <input type="submit" name="delete" value="Xóa" >
+                                        <input type="hidden" name="manhanvien"  value="' . $row['maNhanVien'] . ' ">
+                                        <input type="submit" name="delete" id="delete" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
                     $i++;
                 }
-
                 ?>
-
             </tbody>
         </table>
     </div>
 </div>
+<script>
+    let xoa = document.getElementById('delete');
+    xoa.addEventListener("click", function() {
+        let option = confirm("Bạn có muốn xóa Nhân viên không?");
+        if (option) {
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $getmanhanvien = $_POST['manhanvien'];
+                nhanvien_delete($getmanhanvien);
+            }
+            ?>
+        }
+    });
+</script>

@@ -16,45 +16,45 @@
                     <?php echo $message; ?>
                     <div class="form-group">
                         <label for="fullname" class="form-label">Họ và tên</label>
-                        <input id="fullname" name="fullname" type="text" placeholder="VD: Tôn Long Tiến" class="form-control1" required>
+                        <input id="fullname" name="fullname" type="text" placeholder="VD: Tôn Long Tiến" class="form-control1" value="<?php $fullname; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="username" class="form-label">Tên đăng nhập</label>
-                        <input id="username" name="username" type="text" placeholder="VD: longtien1998" class="form-control1" required>
+                        <input id="username" name="username" type="text" placeholder="VD: longtien1998" class="form-control1" value="<?php $username; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="phone" class="form-label">Công việc</label>
-                        <input id="phone" name="phone" type="number" placeholder="VD: 0982268784" class="form-control1" required>
+                        <input id="phone" name="phone" type="number" placeholder="VD: 0982268784" class="form-control1" value="<?php $phone; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Ngày làm việc</label>
-                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" required>
+                        <label for="ngaylamviec" class="form-label">Ngày làm việc</label>
+                        <input id="ngaylamviec" name="ngaylamviec" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $email; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Ca làm việc</label>
-                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" required>
+                        <label for="calamviec" class="form-label">Ca làm việc</label>
+                        <input id="calamviec" name="calamviec" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $fullname; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Mã Nhân Viên</label>
-                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" required>
+                        <label for="manhanvien" class="form-label">Mã Nhân Viên</label>
+                        <input id="manhanvien" name="manhanvien" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $fullname; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email" class="form-label">Id Khách sạn</label>
-                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" required>
+                        <label for="id_ks" class="form-label">Id Khách sạn</label>
+                        <input id="id_ks" name="id_ks" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $fullname; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
