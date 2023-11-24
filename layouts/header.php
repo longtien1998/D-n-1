@@ -83,7 +83,7 @@ if (isset($_SESSION["user"])) {
         </div>
         <div class="navbar align-content-center">
             <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
-            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
+            <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a> -->
             <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
             <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
             <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>

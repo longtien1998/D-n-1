@@ -95,7 +95,7 @@
         <div>
           <h1 class="m-4">Căn hộ</h1>
           <p>
-            <span class="name"><sup>$</sup>249</span>/mỗi đêm
+            <span class="name"><sup>VND</sup>699.000</span>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Chỉ còn 5 phòng</li>
@@ -103,7 +103,7 @@
             <li>Giá chưa bao gồm VAT & phí dịch vụ</li>
           </ul>
         </div>
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
       <div class="col-3">
         <div class="image">
@@ -112,7 +112,7 @@
         <div>
           <h1 class="m-4">Phòng đôi</h1>
           <p>
-            <span class="name"><sup>$</sup>114</span>/mỗi đêm
+            <span class="name"><sup>VND</sup>869.000</span>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hoàn hảo cho các cặp đôi đi du lịch</li>
@@ -120,7 +120,7 @@
             <li>Dịch vụ hướng dẫn khách</li>
           </ul>
         </div>
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view2"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
       <div class="col-3">
         <div class="image">
@@ -129,7 +129,7 @@
         <div>
           <h1 class="m-4">Phòng gia đình</h1>
           <p>
-            <span class="name "><sup>$</sup>195</span>/mỗi đêm
+            <span class="name "><sup>VND</sup>1.299.000</span>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hai giường đôi</li>
@@ -138,7 +138,7 @@
           </ul>
         </div>
 
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
 
       </div>
     </div>
