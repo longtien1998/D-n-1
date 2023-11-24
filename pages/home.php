@@ -69,9 +69,7 @@
         khách hoặc bất kỳ dịch vụ bổ sung nào những tiện nghi mà du khách có thể
         muốn...
       </p>
-      <button type="submit" class="text-dark btn-outline-warning border-warning text-black-50 text-uppercase p-3 px-5">
-        Xem thêm...
-      </button>
+      <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">Xem thêm...</span></a></span></button>
     </div>
     <div class="col-6 text-center py-5">
       <img src="../content/images/view.jpg" alt="" width="700" height="500" class="border-1" />
@@ -105,7 +103,7 @@
             <li>Giá chưa bao gồm VAT & phí dịch vụ</li>
           </ul>
         </div>
-        <button type="submit" class=" text-dark btn-outline-warning border-warning  text-black-50 text-uppercase  p-3 px-5" name="search-on">Đặt ngay</button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
       <div class="col-3">
         <div class="image">
@@ -122,7 +120,7 @@
             <li>Dịch vụ hướng dẫn khách</li>
           </ul>
         </div>
-        <button type="submit" class=" text-dark btn-outline-warning border-warning  text-black-50 text-uppercase  p-3 px-5" name="search-on">Đặt ngay</button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
       <div class="col-3">
         <div class="image">
@@ -140,7 +138,7 @@
           </ul>
         </div>
 
-        <button type="submit" class=" text-dark btn-outline-warning border-warning  text-black-50 text-uppercase  p-3 px-5" name="search-on">Đặt ngay</button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
 
       </div>
     </div>

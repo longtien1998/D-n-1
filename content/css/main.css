@@ -174,3 +174,16 @@ img {
   font-weight: 700;
   color: brown;
 }
+
+.nutmua{
+  width: 165px !important;
+  height: 55px !important;
+}
+.dat{
+  
+  position: relative;
+  top: 5px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -48,12 +48,12 @@ if (isset($_SESSION["user"])) {
 
 <body>
     <!-- <div class="container-fluid"> -->
-    <div class="row border-bottom p-2">
+    <div class="row border-bottom p-2 mr-0">
         <div class="row col-lg-9">
             <div class="mx-3">
                 <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                    80 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng 550000, Việt Nam
+                    260 Võ Nguyên Giáp, Phường Mỹ An, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam
                 </a>
             </div>
             <div class="mx-3">
@@ -88,7 +88,7 @@ if (isset($_SESSION["user"])) {
             <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4">Dịch Vụ</a>
             <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
         </div>
-        <div class="btn-outline-warning align-self-center ">
-            <button type="submit" class=" text-dark  border-warning bg-transparent text-black-50 text-uppercase lead p-3 px-5" name="search-on">Đặt phòng</button>
+        <div class=" align-self-center  ">
+            <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
     </header>
