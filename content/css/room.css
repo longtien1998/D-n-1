@@ -1,3 +1,8 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* room1 */
 .tong {
     width: auto;
     height: 60px;
@@ -25,12 +30,8 @@
 .se1 {
     width: auto;
     height: 400px;
-    background-image: url("../images/room.png");
-    background-repeat: no-repeat;
-    background-size: 100% 120%;
-    /* background-size: cover; */
-    /* background-color: aqua; */
-
+    background-image: url(../images/room.png);
+    background-size: cover;
 }
 
 .a-1 h3 {
@@ -49,90 +50,28 @@
 }
 
 .sec1 {
-    /* background-color: rgb(243, 3, 3); */
-    height: 680px;
+    height: 620px;
     width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .don {
-    /* position: absolute; */
-    /* bottom: -180px;
-    left: 70px; */
     height: 400px;
     width: 600px;
     border: 10px solid #dad9d9;
+    margin: auto;
+
 }
 
-.slideshow-left {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
 
-/* Thiết lập kiểu cho hình ảnh trong slideshow */
-.mySlider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    color: black;
-    padding: 10px 20px;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-/* Thiết lập kiểu cho điểm đánh dấu */
-.dotss {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
 
 
 .noidung {
-    /* background-color: antiquewhite; */
+    padding: 30px;
     width: 700px;
     height: 550px;
-    /* position: absolute;
-    left: 750px;
-    bottom: -225px; */
-} 
+}
 
 .noidung1 h4 {
     line-height: 2;
@@ -141,12 +80,12 @@
 }
 
 .noidung2 p {
-    line-height: 1;
+    line-height: 1, 5;
     font-size: 18px;
     color: rgb(113, 110, 110);
 }
 
-.vnd {
+.vnd-1 {
     font-size: 26px;
     vertical-align: top;
 }
@@ -170,14 +109,14 @@
 
 
 
-.hop {
+.hop-1 {
     width: 90%;
     margin: 40px auto;
 
 }
 
 
-.custom-buy1 {
+.custom-buys-1 {
     width: 130px;
     height: 40px;
     color: #fff;
@@ -199,7 +138,7 @@
 
 
 
-.buy-1 {
+.buys-1 {
     background: rgb(167, 99, 31);
     background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
     width: 130px;
@@ -210,15 +149,15 @@
 
 }
 
-.buy-1 span {
+.buys-1 span a {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.buy-1:before,
-.buy-1:after {
+.buys-1:before,
+.buys-1:after {
     position: absolute;
     content: "";
     right: 0;
@@ -227,35 +166,40 @@
     transition: all 0.3s ease;
 }
 
-.buy-1:before {
+.buys-1:before {
     height: 0%;
     width: 2px;
 }
 
-.buy-1:after {
+.buys-1:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-1:hover {
+.buys-1:hover {
     background: transparent;
     box-shadow: none;
 }
 
-.buy-1:hover:before {
+.buys-1:hover:before {
     height: 100%;
 }
 
-.buy-1:hover:after {
+.buys-1:hover:after {
     width: 100%;
 }
 
-.buy-1 span:hover {
+.buys-1 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-1 span:before,
-.buy-1 span:after {
+.buys-1 span a {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buys-1 span a:before,
+.buys-1 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -264,108 +208,44 @@
     transition: all 0.3s ease;
 }
 
-.buy-1 span:before {
+.buys-1 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-1 span:after {
+.buys-1 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-1 span:hover:before {
+.buys-1 span a:hover:before {
     height: 100%;
 }
 
-.buy-1 span:hover:after {
+.buys-1 span a:hover:after {
     width: 100%;
 }
 
 .sec2 {
-    background-color: #efeded;
-    width: auto;
+    background-color: #eef1f5;
     height: 620px;
+    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
-
 
 .doi {
-    background-color: rgb(49, 49, 49);
-   
-   
     height: 400px;
     width: 600px;
-    border: 10px solid white;
+    border: 10px solid #dad9d9;
+    margin: auto;
 }
 
-.slideshow-left1 {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
-
-/* Thiết lập kiểu cho hình ảnh trong slideshow */
-.mySlider1 img {
-
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
-.prev1,
-.next1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    color: black;
-    padding: 10px 20px;
-}
-
-.prev1 {
-    left: 0;
-}
-
-.next1 {
-    right: 0;
-}
-
-/* Thiết lập kiểu cho điểm đánh dấu */
-.dotss1 {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot1 {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot1.active {
-    background-color: #717171;
-}
 
 .noidung3 {
+    padding: 30px;
     width: 700px;
     height: 550px;
-    /* position: absolute;
-    left: 30px;
-    bottom: -880px; */
 }
 
 .noidung4 h4 {
@@ -375,7 +255,7 @@
 }
 
 .noidung5 p {
-    line-height: 1;
+    line-height: 1, 5;
     font-size: 18px;
     color: rgb(113, 110, 110);
 }
@@ -439,7 +319,7 @@
 
 }
 
-.buy-2 span {
+.buy-2 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -479,12 +359,12 @@
     width: 100%;
 }
 
-.buy-2 span:hover {
+.buy-2 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-2 span:before,
-.buy-2 span:after {
+.buy-2 span a:before,
+.buy-2 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -493,108 +373,51 @@
     transition: all 0.3s ease;
 }
 
-.buy-2 span:before {
+.buy-2 span a {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buy-2 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-2 span:after {
+.buy-2 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-2 span:hover:before {
+.buy-2 span a:hover:before {
     height: 100%;
 }
 
-.buy-2 span:hover:after {
+.buy-2 span a:hover:after {
     width: 100%;
 }
 
 .sec3 {
-    /* background-color: rgb(243, 3, 3); */
     height: 620px;
     width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .giadinh {
-    /* background-color: black; */
-
     height: 400px;
     width: 600px;
     border: 10px solid #dad9d9;
+    margin: auto;
 }
 
 
-.slideshow-left {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
 
-/* Thiết lập kiểu cho hình ảnh trong slideshow */
-.mySlider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Thiết lập kiểu cho nút điều hướng "Previous" và "Next" */
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    color: black;
-    padding: 10px 20px;
-
-}
-
-.prev {
-    left: 0;
-
-}
-
-.next {
-    right: 0;
-}
-
-/* Thiết lập kiểu cho điểm đánh dấu */
-.dotss {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
 
 
 .noidung6 {
-    /* background-color: antiquewhite; */
+    padding: 30px;
     width: 700px;
     height: 550px;
-    
 }
 
 .noidung7 h4 {
@@ -604,7 +427,7 @@
 }
 
 .noidung8 p {
-    line-height: 1;
+    line-height: 1, 5;
     font-size: 18px;
     color: rgb(113, 110, 110);
 }
@@ -630,7 +453,6 @@
 .danhsach2 ul {
     list-style-type: square;
 }
-
 
 
 .hop2 {
@@ -671,7 +493,12 @@
 
 }
 
-.buy-3 span {
+.buy-3 span a {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buy-3 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -711,12 +538,12 @@
     width: 100%;
 }
 
-.buy-3 span:hover {
+.buy-3 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-3 span:before,
-.buy-3 span:after {
+.buy-3 span a:before,
+.buy-3 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -725,50 +552,44 @@
     transition: all 0.3s ease;
 }
 
-.buy-3 span:before {
+.buy-3 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-3 span:after {
+.buy-3 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-3 span:hover:before {
+.buy-3 span a:hover:before {
     height: 100%;
 }
 
-.buy-3 span:hover:after {
+.buy-3 span a:hover:after {
     width: 100%;
 }
 
 .sec4 {
-    background-color: #efeded;
-    width: auto;
+    background-color: #eef1f5;
     height: 620px;
+    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .sute {
-    background-color: rgb(49, 49, 49);
-    /* position: absolute;
-    bottom: -2040px;
-    right: 70px; */
-    height: 400px;
+    height: 396px;
     width: 600px;
-    border: 10px solid white;
+    border: 10px solid #dad9d9;
+    margin: auto;
 }
 
+
 .noidung9 {
+    padding: 30px;
     width: 700px;
     height: 550px;
-    /* position: absolute;
-    left: 30px;
-    bottom: -2115px; */
 }
 
 .noidung10 h4 {
@@ -778,7 +599,7 @@
 }
 
 .noidung11 p {
-    line-height: 1;
+    line-height: 1, 5;
     font-size: 18px;
     color: rgb(113, 110, 110);
 }
@@ -805,14 +626,14 @@
     list-style-type: square;
 }
 
-.hop3 {
+.hop-3 {
     width: 90%;
     margin: 40px auto;
 
 }
 
 
-.custom-buy4 {
+.custom-buy-4 {
     width: 130px;
     height: 40px;
     color: #fff;
@@ -843,7 +664,12 @@
 
 }
 
-.buy-4 span {
+.buy-4 span a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.buy-4 span a a {
     position: relative;
     display: block;
     width: 100%;
@@ -883,12 +709,12 @@
     width: 100%;
 }
 
-.buy-4 span:hover {
+.buy-4 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-4 span:before,
-.buy-4 span:after {
+.buy-4 span a:before,
+.buy-4 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -897,25 +723,25 @@
     transition: all 0.3s ease;
 }
 
-.buy-4 span:before {
+.buy-4 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-4 span:after {
+.buy-4 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-4 span:hover:before {
+.buy-4 span a:hover:before {
     height: 100%;
 }
 
-.buy-4 span:hover:after {
+.buy-4 span a:hover:after {
     width: 100%;
 }
 
-/* room2 */
+/* viewphong */
 
 .tong1 {
     width: auto;
@@ -943,7 +769,7 @@
 }
 
 .se2 {
-    background-color: rgb(199, 198, 198);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 380px;
 }
@@ -957,6 +783,7 @@
 
 .a2 h2 {
     font-size: 50px;
+    color: white;
 }
 
 .timkiem1 {
@@ -970,7 +797,7 @@
 
 .timkiem2 {
     background-color: rgb(255, 255, 255);
-    width: 85%;
+    width: 90%;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -1046,7 +873,7 @@
 
 }
 
-.buy-5 span {
+.buy-5 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -1118,82 +945,31 @@
     width: 100%;
 }
 
+.hidden{
+    width: 100%;
+    height: 120px;
+}
+
 .stc1 {
     background-color: rgb(255, 255, 255);
     height: 720px;
-    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .don1 {
-    
+    margin: auto;
+    flex: 0 0 auto;
     height: 400px;
     width: 600px;
     border: 10px solid #dad9d9;
 }
 
-.slideshow-left {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
-
-.mySlider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    padding: 10px 20px;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.dotss {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-
 .noidungg {
     width: 700px;
     height: 550px;
-   
+    margin: auto;
 }
+
 
 .noidung-1 h4 {
     line-height: 2;
@@ -1271,7 +1047,11 @@
 
 }
 
-.buy-6 span {
+.buy-6 span a {
+    color: white;
+}
+
+.buy-6 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -1311,12 +1091,12 @@
     width: 100%;
 }
 
-.buy-6 span:hover {
+.buy-6 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-6 span:before,
-.buy-6 span:after {
+.buy-6 span a:before,
+.buy-6 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -1325,21 +1105,21 @@
     transition: all 0.3s ease;
 }
 
-.buy-6 span:before {
+.buy-6 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-6 span:after {
+.buy-6 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-6 span:hover:before {
+.buy-6 span a:hover:before {
     height: 100%;
 }
 
-.buy-6 span:hover:after {
+.buy-6 span a:hover:after {
     width: 100%;
 }
 
@@ -1347,82 +1127,22 @@
 .stc2 {
     background-color: rgb(255, 255, 255);
     height: 720px;
-    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .doi2 {
-    /* position: absolute;
-    bottom: -920px;
-    left: 70px; */
+    margin: auto;
+    flex: 0 0 auto;
     height: 400px;
     width: 600px;
     border: 10px solid #dad9d9;
-}
-
-.slideshow-left {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
-
-.mySlider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    padding: 10px 20px;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.dotss {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
 }
 
 
 .noidung-3 {
     width: 700px;
     height: 550px;
-    /* position: absolute;
-    left: 750px;
-    bottom: -1000px; */
+    margin: auto;
 }
 
 .noidung-4 h4 {
@@ -1501,7 +1221,11 @@
 
 }
 
-.buy-7 span {
+.buy-7 span a {
+    color: white;
+}
+
+.buy-7 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -1541,12 +1265,12 @@
     width: 100%;
 }
 
-.buy-7 span:hover {
+.buy-7 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-7 span:before,
-.buy-7 span:after {
+.buy-7 span a:before,
+.buy-7 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -1555,21 +1279,21 @@
     transition: all 0.3s ease;
 }
 
-.buy-7 span:before {
+.buy-7 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-7 span:after {
+.buy-7 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-7 span:hover:before {
+.buy-7 span a:hover:before {
     height: 100%;
 }
 
-.buy-7 span:hover:after {
+.buy-7 span a:hover:after {
     width: 100%;
 }
 
@@ -1577,80 +1301,23 @@
 .stc3 {
     background-color: rgb(255, 255, 255);
     height: 720px;
-    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .giadinh1 {
-    /* position: absolute;
-    bottom: -1670px;
-    left: 70px; */
+    margin: auto;
+    flex: 0 0 auto;
     height: 400px;
     width: 600px;
     border: 10px solid #dad9d9;
 }
 
-.slideshow-left {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
-
-.mySlider img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-    padding: 10px 20px;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.dotss {
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
 
 
 .noidung-6 {
     width: 700px;
     height: 550px;
-   
+    margin: auto;
 }
 
 .noidung-7 h4 {
@@ -1729,7 +1396,11 @@
 
 }
 
-.buy-8 span {
+.buy-8 span a {
+    color: white;
+}
+
+.buy-8 span a {
     position: relative;
     display: block;
     width: 100%;
@@ -1769,12 +1440,12 @@
     width: 100%;
 }
 
-.buy-8 span:hover {
+.buy-8 span a:hover {
     color: rgb(167, 99, 31);
 }
 
-.buy-8 span:before,
-.buy-8 span:after {
+.buy-8 span a:before,
+.buy-8 span a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -1783,21 +1454,21 @@
     transition: all 0.3s ease;
 }
 
-.buy-8 span:before {
+.buy-8 span a:before {
     width: 2px;
     height: 0%;
 }
 
-.buy-8 span:after {
+.buy-8 span a:after {
     width: 0%;
     height: 2px;
 }
 
-.buy-8 span:hover:before {
+.buy-8 span a:hover:before {
     height: 100%;
 }
 
-.buy-8 span:hover:after {
+.buy-8 span a:hover:after {
     width: 100%;
 }
 
@@ -1805,7 +1476,7 @@
 .showlist {
     height: 80px;
     width: 100%;
-    
+
 }
 
 .s1 {
@@ -1823,4 +1494,2086 @@
     text-decoration: none;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* bar */
+
+.tong3 {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu3 {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu3 h5 a {
+    color: black;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.trangchu3 span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.se3 {
+    width: auto;
+    height: 400px;
+    background-image: url(../images/bar.png);
+    background-size: cover;
+}
+
+.a-3 h3 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a-4 p {
+    color: white;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.se4 {
+    width: 100%;
+    height: 50px;
+
+}
+
+.se4 h2 {
+    padding: 45px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thucdon {
+
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thucdon h5 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.thucdon span {
+    color: #9ea5ab;
+    line-height: 3;
+
+}
+
+.se4 img {
+    height: 350px;
+    width: 400px;
+    border: 10px solid #717171;
+}
+
+.se5 {
+    background-color: rgba(243, 243, 243, 0.747);
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    bottom: -700px;
+}
+
+.se5 h2 {
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thucdon2 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mon5 img,
+.mon6 img,
+.mon7 img {
+    width: 250px;
+    height: 250px;
+    border: 8px solid #717171;
+}
+
+.thucdon2 h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.se6 {
+    position: absolute;
+    bottom: -750px;
+    width: 100%;
+    height: 50px;
+
+}
+
+.se6 h2 {
+    padding: 45px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thucdon3 {
+
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thucdon3 h5 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.thucdon3 span {
+    color: #9ea5ab;
+    line-height: 3;
+
+}
+
+.se6 img {
+    height: 350px;
+    width: 400px;
+    border: 10px solid #717171;
+}
+
+.dow {
+    background-color: rgb(234, 225, 213);
+
+    height: 250px;
+
+}
+
+.dow h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+}
+
+.hop9 {
+    width: 90%;
+    margin: 40px auto;
+    padding-left: 438px;
+    position: absolute;
+    left: 80px;
+}
+
+
+.custom-buy10 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.buy-10 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 430px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-10 span a {
+    color: white;
+}
+
+.buy-10 span a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-10:before,
+.buy-10:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-10:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-10:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-10:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-10:hover:before {
+    height: 100%;
+}
+
+.buy-10:hover:after {
+    width: 100%;
+}
+
+.buy-10 span a:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-10 span a:before,
+.buy-10 span a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-10 span a:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-10 span a:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-10 span a:hover:before {
+    height: 100%;
+}
+
+.buy-10 span a:hover:after {
+    width: 100%;
+}
+
+/* check-out */
+
+.tong2 {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu2 {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu2 h5 a {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.trangchu2 span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.az {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.hop8 {
+    width: 85%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy9 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-9 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 630px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-9 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-9:before,
+.buy-9:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-9:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-9:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-9:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-9:hover:before {
+    height: 100%;
+}
+
+.buy-9:hover:after {
+    width: 100%;
+}
+
+.buy-9 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-9 span:before,
+.buy-9 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-9 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-9 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-9 span:hover:before {
+    height: 100%;
+}
+
+.buy-9 span:hover:after {
+    width: 100%;
+}
+
+/* service */
+
+.tong5 {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu5 {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu5 h5 a {
+    color: black;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.trangchu5 span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.se7 {
+    width: auto;
+    height: 400px;
+    background-color: black;
+}
+
+.a-8 h3 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.a-9 p {
+    color: white;
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.ser8 {
+    background-color: #eef1f5;
+    height: 620px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr1 {
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+    margin: auto;
+}
+
+.noidungsr1 {
+    margin: auto;
+    padding: 60px;
+    width: 700px;
+    height: 550px;
+}
+
+.noidungsr1 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.noidung-9 {
+    font-size: 20px;
+    line-height: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung-10 p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.hop10 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy11 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-11 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-11 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-11:before,
+.buy-11:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-11:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-11:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-11:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-11:hover:before {
+    height: 100%;
+}
+
+.buy-11:hover:after {
+    width: 100%;
+}
+
+.buy-11 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-11 span:before,
+.buy-11 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-11 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-11 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-11 span:hover:before {
+    height: 100%;
+}
+
+.buy-11 span:hover:after {
+    width: 100%;
+}
+
+.ser9 {
+    background-color: #f4e1b1;
+    height: 620px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr2 {
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+    margin: auto;
+}
+
+.noidungsr2 {
+    margin: auto;
+    padding: 60px;
+    width: 700px;
+    height: 550px;
+}
+
+.noidungsr2 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.noidung-11 p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.hop11 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy12 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-12 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-12 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-12:before,
+.buy-12:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-12:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-12:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-12:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-12:hover:before {
+    height: 100%;
+}
+
+.buy-12:hover:after {
+    width: 100%;
+}
+
+.buy-12 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-12 span:before,
+.buy-12 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-12 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-12 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-12 span:hover:before {
+    height: 100%;
+}
+
+.buy-12 span:hover:after {
+    width: 100%;
+}
+
+.ser10 {
+    background-color: #eef1f5;
+    height: 620px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr3 {
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+    margin: auto;
+}
+
+.noidungsr3 {
+    margin: auto;
+    padding: 60px;
+    width: 700px;
+    height: 550px;
+}
+
+.noidungsr3 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.noidung-12 p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.hop13 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy13 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-13 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-13 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-13:before,
+.buy-13:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-13:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-13:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-13:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-13:hover:before {
+    height: 100%;
+}
+
+.buy-13:hover:after {
+    width: 100%;
+}
+
+.buy-13 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-13 span:before,
+.buy-13 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-13 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-13 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-13 span:hover:before {
+    height: 100%;
+}
+
+.buy-13 span:hover:after {
+    width: 100%;
+}
+
+.ser11 {
+    background-color: #f4e1b1;
+    height: 620px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr4 {
+    height: 400px;
+    width: 600px;
+    border: 10px solid #dad9d9;
+    margin: auto;
+}
+
+.noidungsr4 {
+    margin: auto;
+    padding: 60px;
+    width: 700px;
+    height: 550px;
+}
+
+.noidungsr4 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.noidung-13 p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.hop14 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy14 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-14 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-14 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-14:before,
+.buy-14:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-14:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-14:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-14:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-14:hover:before {
+    height: 100%;
+}
+
+.buy-14:hover:after {
+    width: 100%;
+}
+
+.buy-14 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-14 span:before,
+.buy-14 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-14 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-14 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-14 span:hover:before {
+    height: 100%;
+}
+
+.buy-14 span:hover:after {
+    width: 100%;
+}
+
+/* contact */
+
+.tong6 {
+    width: auto;
+    height: 60px;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.trangchu6 {
+    display: flex;
+    padding: 20px;
+    margin: 0 25px;
+}
+
+.trangchu6 h5 a {
+    color: black;
+    font-weight: 400;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.trangchu6 span {
+    font-weight: 400;
+    color: rgba(193, 155, 118, 1);
+}
+
+.se8 {
+    width: auto;
+    height: 200px;
+    background-color: black;
+}
+
+.a-10 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.a-10 h3 {
+    line-height: 200px;
+    color: white;
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ser12 {
+    width: 100%;
+}
+
+.contact_bodyleft,
+.contact_bodyright {
+    padding: 50px;
+}
+
+.contact_bodyleft h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2;
+}
+
+.diachi span,
+.dat span,
+.letan span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.contact_bodyright h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2;
+}
+
+.lienhe span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #717171;
+}
+
+.danhgia {
+    line-height: 2;
+    max-width: 200px;
+}
+
+.hop19 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy19 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-19 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 575px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-19 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-19:before,
+.buy-19:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-19:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-19:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-19:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-19:hover:before {
+    height: 100%;
+}
+
+.buy-19:hover:after {
+    width: 100%;
+}
+
+.buy-19 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-19 span:before,
+.buy-19 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-19 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-19 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-19 span:hover:before {
+    height: 100%;
+}
+
+.buy-19 span:hover:after {
+    width: 100%;
+}
+
+/* view1 */
+
+.vnd7 {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.so7 {
+    font-size: 30px;
+}
+
+
+.room-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-description {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.room-description h1 {
+
+    padding: 10px;
+    font-size: 40px;
+}
+
+.room-description p {
+    font-size: 20px;
+}
+
+.gallery-hightlight {
+    width: 80%;
+    height: 580px;
+}
+
+.room-preview {
+    display: flex;
+    width: 95%;
+    border: 2px solid #d3baa0;
+}
+
+.room-preview img {
+    flex-grow: 1;
+    height: 150px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+    border: 1px solid #ffb64d;
+}
+
+img.room-active {
+    opacity: 1;
+}
+
+.de1,
+.de2,
+.de3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 60px;
+    list-style: none;
+}
+
+.book1 {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.la {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.in,
+.sa {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hop15 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy15 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-15 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 530px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-15 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-15:before,
+.buy-15:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-15:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-15:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-15:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-15:hover:before {
+    height: 100%;
+}
+
+.buy-15:hover:after {
+    width: 100%;
+}
+
+.buy-15 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-15 span:before,
+.buy-15 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-15 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-15 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-15 span:hover:before {
+    height: 100%;
+}
+
+.buy-15 span:hover:after {
+    width: 100%;
+}
+
+
+/* view2 */
+
+.vnd8 {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.so8 {
+    font-size: 30px;
+}
+
+.room1-gallery1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room1-description1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.room1-description1 h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.room1-description1 p {
+    font-size: 20px;
+}
+
+.gallery1-hightlight1 {
+    width: 80%;
+    height: 580px;
+}
+
+.room1-preview1 {
+    display: flex;
+    width: 95%;
+    border: 2px solid #d3baa0;
+}
+
+.room1-preview1 img {
+    flex-grow: 1;
+    height: 150px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+    border: 1px solid #ffb64d;
+}
+
+img.room1-active1 {
+    opacity: 1;
+}
+
+
+.de4,
+.de5,
+.de6 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 60px;
+    list-style: none;
+}
+
+.book2 {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.la1 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.in1,
+.sa1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hop16 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy16 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-16 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 530px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-16 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-16:before,
+.buy-16:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-16:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-16:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-16:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-16:hover:before {
+    height: 100%;
+}
+
+.buy-16:hover:after {
+    width: 100%;
+}
+
+.buy-16 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-16 span:before,
+.buy-16 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-16 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-16 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-16 span:hover:before {
+    height: 100%;
+}
+
+.buy-16 span:hover:after {
+    width: 100%;
+}
+
+/* view3 */
+
+.vnd9 {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.so9 {
+    font-size: 30px;
+}
+
+.room2-gallery2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room2-description2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+}
+
+.room2-description2 h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.room2-description2 p {
+    font-size: 20px;
+}
+
+.gallery2-hightlight2 {
+    width: 80%;
+    height: 580px;
+}
+
+.room2-preview2 {
+    display: flex;
+    width: 95%;
+    border: 2px solid #d3baa0;
+}
+
+.room2-preview2 img {
+    flex-grow: 1;
+    height: 150px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+    border: 1px solid #ffb64d;
+}
+
+img.room2-active2 {
+    opacity: 1;
+}
+
+
+.de7,
+.de8,
+.de9 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 60px;
+    list-style: none;
+}
+
+.book3 {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.la2 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.in2,
+.sa2 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hop16 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy17 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-17 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 530px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-17 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-17:before,
+.buy-17:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-17:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-17:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-17:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-17:hover:before {
+    height: 100%;
+}
+
+.buy-17:hover:after {
+    width: 100%;
+}
+
+.buy-17 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-17 span:before,
+.buy-17 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-17 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-17 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-17 span:hover:before {
+    height: 100%;
+}
+
+.buy-17 span:hover:after {
+    width: 100%;
+}
+
+/* view4 */
+
+.vnd10 {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.so10 {
+    font-size: 30px;
+}
+
+.room3-gallery3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room3-description3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(41, 41, 41);
+}
+
+.room3-description3 h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.room3-description3 p {
+    font-size: 20px;
+}
+
+.gallery3-hightlight3 {
+    width: 80%;
+    height: 580px;
+}
+
+.room3-preview3 {
+    display: flex;
+    width: 95%;
+    border: 2px solid #d3baa0;
+}
+
+.room3-preview3 img {
+    flex-grow: 1;
+    height: 150px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+    border: 1px solid #ffb64d;
+}
+
+img.room3-active3 {
+    opacity: 1;
+}
+
+.de10,
+.de11,
+.de12 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 60px;
+    list-style: none;
+}
+
+.book4 {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.la3 {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.in3,
+.sa3 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hop18 {
+    width: 90%;
+    margin: 40px auto;
+
+}
+
+
+.custom-buy18 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+
+.buy-18 {
+    background: rgb(167, 99, 31);
+    background: linear-gradient(0deg, rgb(167, 99, 31) 0%, rgb(217, 161, 104) 100%);
+    width: 530px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.buy-18 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-18:before,
+.buy-18:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(167, 99, 31);
+    transition: all 0.3s ease;
+}
+
+.buy-18:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buy-18:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-18:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buy-18:hover:before {
+    height: 100%;
+}
+
+.buy-18:hover:after {
+    width: 100%;
+}
+
+.buy-18 span:hover {
+    color: rgb(167, 99, 31);
+}
+
+.buy-18 span:before,
+.buy-18 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(224, 158, 92);
+    transition: all 0.3s ease;
+}
+
+.buy-18 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buy-18 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buy-17 span:hover:before {
+    height: 100%;
+}
+
+.buy-17 span:hover:after {
+    width: 100%;
+}
+
+/* user profile */
+
+.tong7{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profile-picture {
+    position: relative;
+    border-radius: 50%;
 }
