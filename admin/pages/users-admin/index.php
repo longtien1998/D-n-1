@@ -6,10 +6,7 @@
         <h3 class="bg-info p-3 text-center"><a href="/admin/index.php?controller=user-admin&action=new-admin">Thêm tài khoản Admin +</a></h3>
     </div>
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $getid = $_POST['id'];
-        user_delete($getid);
-    }
+    
     ?>
     <div class="container-fluid table-responsive-lg">
         <table class="table table-bordered table-striped table-hover">
@@ -45,7 +42,7 @@
                                 <td style="width: 100px;">
                                     <form action="" method="post">
                                         <input type="hidden" name="id"  value="'.$row['id'].' ">
-                                        <input type="submit" name="delete" value="Xóa" >
+                                        <input type="submit" name="delete" id="delete" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
@@ -58,3 +55,17 @@
         </table>
     </div>
 </div>
+<script>
+    let xoa = document.getElementById('delete');
+    xoa.addEventListener("click", function() {
+        let option = confirm("Bạn có muốn xóa Nhân viên không?");
+        if (option) {
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $getid = $_POST['id'];
+                user_delete($getid);
+            }
+            ?>
+        }
+    });
+</script>
