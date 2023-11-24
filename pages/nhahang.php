@@ -1,10 +1,9 @@
-    <!-- <div class="tong3">
+    <div class="tong3">
         <div class="trangchu3">
             <h5><a href="#">Trang Chủ |</a></h5>
             <span>Nhà Hàng & Quầy Bar</span>
         </div>
     </div>
-
     <section class="se3">
         <div class="a-3">
             <h3>Nhà Hàng & Quầy Bar</h3>
@@ -104,4 +103,4 @@
                 <button type="submit" class="custom-buy10 buy-10"><span><a style="text-decoration: none;" href="../content/images/list-menu-BonCha.pdf"> Tải Xuống</a></span></button>
             </div>
         </div>
-    </section> -->
+    </section>

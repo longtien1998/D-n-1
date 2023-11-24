@@ -71,7 +71,6 @@ if (isset($_SESSION["user"])) {
                 <?php echo $user; ?>
             </div>
         </div>
-<<<<<<< HEAD
     </div>
     <header class="card-header row justify-content-around mr-0">
         <div class=" logo mx-5 text-center">
@@ -82,36 +81,14 @@ if (isset($_SESSION["user"])) {
         </div>
         <div class="navbar align-content-center">
             <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
-            <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Trang</a>
-            <a href="/index.php?action=viewphong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
-            <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Nhà Hàng & Bar</a>
-            <a href="/index.php?action=home" class="text-black-50  text-uppercase lead m-4">Tiện nghi</a>
-            <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
-            <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
+            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
+            <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
+            <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
+            <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>
+            <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4">Dịch Vụ</a>
+            <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
         </div>
         <div class="btn-outline-warning align-self-center ">
             <button type="submit" class=" text-dark  border-warning bg-transparent text-black-50 text-uppercase lead p-3 px-5" name="search-on">Đặt phòng</button>
         </div>
     </header>
-=======
-        <header class="card-header row justify-content-around mr-0">
-            <div class=" logo mx-5 text-center">
-                <a href="">
-                    <h1>BONCHA</h1>
-                    <p>Best - Hotel</p>
-                </a>
-            </div>
-            <div class="navbar align-content-center">
-                <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
-                <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
-                <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
-                <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
-                <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>
-                <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4">Dịch Vụ</a>
-                <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4">Liên lạc</a>
-            </div>
-            <div class="btn-outline-warning align-self-center ">
-                <button type="submit" class=" text-dark  border-warning bg-transparent text-black-50 text-uppercase lead p-3 px-5" name="search-on">Đặt phòng</button>
-            </div>
-        </header>
->>>>>>> 4ece2f99bdd2f78c13ab795b7b44f87827277fdd

@@ -97,7 +97,7 @@
         <div>
           <h1 class="m-4">Căn hộ</h1>
           <p>
-            <span  class="name"><sup>$</sup>249</span>/mỗi đêm
+            <span class="name"><sup>$</sup>249</span>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Chỉ còn 5 phòng</li>
@@ -109,7 +109,7 @@
       </div>
       <div class="col-3">
         <div class="image">
-          <img src="../content/images/doubleroom_.jpg" alt="" width="100%"  class="border-2"/>
+          <img src="../content/images/doubleroom_.jpg" alt="" width="100%" class="border-2" />
         </div>
         <div>
           <h1 class="m-4">Phòng đôi</h1>
@@ -126,12 +126,12 @@
       </div>
       <div class="col-3">
         <div class="image">
-          <img src="../content/images/family-room-design.jpg" alt="" width="100%" class="border-2"/>
+          <img src="../content/images/family-room-design.jpg" alt="" width="100%" class="border-2" />
         </div>
         <div>
           <h1 class="m-4">Phòng gia đình</h1>
           <p>
-            <span  class="name "><sup>$</sup>195</span>/mỗi đêm
+            <span class="name "><sup>$</sup>195</span>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hai giường đôi</li>
@@ -139,9 +139,9 @@
             <li>1 giường miễn phí theo yêu cầu</li>
           </ul>
         </div>
-        
-          <button type="submit" class=" text-dark btn-outline-warning border-warning  text-black-50 text-uppercase  p-3 px-5" name="search-on">Đặt ngay</button>
-        
+
+        <button type="submit" class=" text-dark btn-outline-warning border-warning  text-black-50 text-uppercase  p-3 px-5" name="search-on">Đặt ngay</button>
+
       </div>
     </div>
   </div>
