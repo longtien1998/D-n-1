@@ -48,6 +48,7 @@ if (isset($_SESSION["user"])) {
 
 <body>
     <!-- <div class="container-fluid"> -->
+
     <div class="row border-bottom p-2 mr-0">
         <div class="row col-lg-9">
             <div class="mx-3">
@@ -71,6 +72,7 @@ if (isset($_SESSION["user"])) {
                 <?php echo $user; ?>
             </div>
         </div>
+
     </div>
     <header class="card-header row justify-content-around mr-0">
         <div class=" logo mx-5 text-center">
