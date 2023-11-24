@@ -96,7 +96,7 @@
         <div>
           <h1 class="m-4">Căn hộ</h1>
           <p>
-            <span class="name"><sup>VND</sup>699.000</span>/mỗi đêm
+            <span class="name">699.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Chỉ còn 5 phòng</li>
@@ -113,7 +113,7 @@
         <div>
           <h1 class="m-4">Phòng đôi</h1>
           <p>
-            <span class="name"><sup>VND</sup>869.000</span>/mỗi đêm
+            <span class="name">869.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hoàn hảo cho các cặp đôi đi du lịch</li>
@@ -130,7 +130,7 @@
         <div>
           <h1 class="m-4">Phòng gia đình</h1>
           <p>
-            <span class="name "><sup>VND</sup>1.299.000</span>/mỗi đêm
+            <span class="name ">1.299.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hai giường đôi</li>
