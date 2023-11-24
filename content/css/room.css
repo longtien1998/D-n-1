@@ -945,7 +945,7 @@ body {
     width: 100%;
 }
 
-.hidden{
+.hidden {
     width: 100%;
     height: 120px;
 }
@@ -3572,17 +3572,17 @@ img.room3-active3 {
     height: 2px;
 }
 
-.buy-17 span:hover:before {
+.buy-18 span:hover:before {
     height: 100%;
 }
 
-.buy-17 span:hover:after {
+.buy-18 span:hover:after {
     width: 100%;
 }
 
 /* user profile */
 
-.tong7{
+.tong7 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -3590,3 +3590,6 @@ img.room3-active3 {
     position: relative;
     border-radius: 50%;
 }
+
+/* gioi thieu */
+

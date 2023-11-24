@@ -66,7 +66,7 @@
                 <span>HOMEMADE SPECIAL CAKE</span>
             </div>
             <div class="mon7">
-                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
+                <img src="../content/images/kem.jpg" width="100%" height="381px" alt="">
                 <h3>Kem cháy kiểu Pháp vị Vani</h3>
                 <span>VANILLA CREME BRULEE</span>
             </div>

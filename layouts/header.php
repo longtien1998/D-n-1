@@ -47,7 +47,7 @@ $user = '<a href="/index.php?action=login">Đăng nhập</a>';
 </head>
 <body>
     <!-- <div class="container-fluid"> -->
-        <div class="row border-bottom p-2">
+        <div class="row border-bottom p-2 mr-0">
             <div class="row col-lg-9">
                 <div class="mx-3">
                     <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
@@ -80,7 +80,7 @@ $user = '<a href="/index.php?action=login">Đăng nhập</a>';
             </div>
             <div class="navbar align-content-center">
                 <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4">Trang chủ</a>
-                <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a>
+                <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4">Giới thiệu</a> -->
                 <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4">Phòng</a>
                 <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4">Tìm phòng</a>
                 <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4">Nhà hàng & Bar</a>
