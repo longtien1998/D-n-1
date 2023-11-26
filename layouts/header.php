@@ -1,7 +1,9 @@
 <?php
 session_start();
 include './config/connect.php';
+include './dao/pdo.php';
 include './thuvien/user.php';
+include './dao/userDAO.php';
 ?>
 
 <?php
@@ -20,7 +22,7 @@ if (isset($_SESSION["user"])) {
     if (mysqli_num_rows($result) > 0) {
 
         // Lấy thông tin người dùng từ cơ sở dữ liệu
-        $user = 'Admin <a class="user" href="/admin/index.php">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        $user = 'Admin <a class="user" href="/index.php?action=user">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
     } else {
         $user = 'Nhân Viên <a class="user" href="/admin/index.php">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
     }
@@ -76,7 +78,7 @@ if (isset($_SESSION["user"])) {
     </div>
     <header class="card-header row justify-content-around mr-0">
         <div class=" logo mx-5 text-center">
-            <a href="">
+            <a href="/index.php">
                 <h1>BONCHA</h1>
                 <p>Best - Hotel</p>
             </a>

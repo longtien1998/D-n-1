@@ -29,7 +29,7 @@
                 $conn =  connect_pdo();
                 $stmt = $conn->prepare("SELECT * FROM useradmin");
                 $stmt->execute();
-                $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                // $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                 foreach ($stmt->fetchAll() as $row) {
                     echo ' <tr>
                                 <td>' . $i . '</td>
