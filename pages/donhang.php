@@ -40,33 +40,64 @@
 
             echo '</table>';
         }
-    }else{
+    } else {
         echo "Giỏ hàng rỗng. <a href='./pages/home.php'> Tiếp tục đặt hàng</a>";
     }
     ?>
 </div>
 
 <div>
-    <h3>thông tin đặt hàng</h3>
+    <?php
+    if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
+        $oderinfo = getoderinfo($_SESSION['iddh']);
+        if (count($oderinfo) > 0) {
 
-    <input type="hidden" name="tongdonhang" value="<?= $tong ?>">
-    <table class="dathang">
-        <tr>
-            <td><input type="text" name="hoten" placeholder="Nhập họ tên"></td>
-        </tr>
-        <tr>
-            <td><input type="text" name="email" placeholder="Nhập email"></td>
-        </tr>
-        <tr>
-            <td><input type="text" name="tel" placeholder="Nhập số điện thoại"></td>
-        </tr>
-        <tr>
-            <td><input type="date" name="checkin" placeholder="Nhập ngày đến"></td>
-        </tr>
-        <tr>
-            <td><input type="date" name="checkout" placeholder="Nhập ngày đi"></td>
-        </tr>
+    ?>
+            <h3>Mã Đơn Hàng: <?= $oderinfo[0]['madh']; ?></h3>
+            <table class="dathang">
+                <tr>
+                    <td>Tên Khách Hàng: <br> <?= $oderinfo[0]['hoten']; ?></td>
+                </tr>
+                <tr>
+                    <td>Email: <br> <?= $oderinfo[0]['email']; ?></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại: <br> <?= $oderinfo[0]['tel']; ?></td>
+                </tr>
+                <tr>
+                    <td>Ngày Đến: <br> <?= $oderinfo[0]['checkin']; ?></td>
+                </tr>
+                <tr>
+                    <td>Ngày Đi: <br> <?= $oderinfo[0]['checkout']; ?></td>
+                </tr>
+                <tr>
+                    <td>Phương thức thanh toán</td>
+                    <?
+                    switch ($oderinfo[0]['pttt']) {
+                        case '1':
+                            $mess = "Thanh toán trực tiếp tại khách sạn";
+                            break;
+                        case '2':
+                            $mess = "Thanh toán qua ví MoMo";
+                            break;
+                        case '3':
+                            $mess = "Thanh toán qua Zalo Pay";
+                            break;
+                        case '4':
+                            $mess = "Thanh toán qua ATM";
+                            break;
 
-    </table>
+                        default:
+                            $mess = "Quý Khách Chưa Chọn Phương Thức Thanh Toán!";
+                            break;
+                    }
+                    echo $mess;
+                    ?>
+                </tr>
+            </table>
+    <?php 
+            }
+        }
+?>
 
 </div>

@@ -24,5 +24,14 @@ function getshowcart($iddh){
     $kq = $stmt->fetchAll();
     return $kq;
 }
-?>
+
+
+function getoderinfo($iddh){
+    $conn = connect_pdo();
+    $stmt = $conn->prepare("SELECT * FROM donhang WHERE id=".$iddh);
+    $stmt -> execute();
+    $result = $stmt -> setFetchMode(PDO::FETCH_ASSOC);
+    $kq = $stmt->fetchAll();
+    return $kq;
+}
 ?>
