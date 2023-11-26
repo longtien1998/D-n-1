@@ -1,8 +1,10 @@
 <div>
-    <h1>ID ĐƠN HÀNG : <?=$iddh?></h1>
+    <h1>ID ĐƠN HÀNG : <?= $iddh ?></h1>
     <?php
-    if ((isset($_SESSION['giohang'])) && (count($_SESSION['giohang']) > 0)) {
-        echo '  <table>
+    if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
+        $getshowcart = getshowcart($_SESSION['iddh']);
+        if ((isset($getshowcart)) && (count($getshowcart) > 0)) {
+            echo '  <table>
                     <tr>
                         <th>STT</th>
                         <th>Tên Phòng</th>
@@ -12,31 +14,34 @@
                         <th>Số Lượng</th>
                         <th>Thành Tiền</th>
                     </tr>';
-        $i = 0;
-        $tong = 0;
-        foreach ($_SESSION['giohang'] as $item) {
-            $tt = $item[3] * $item[5];
-            $tong += $tt;
-            echo '  <tr>
+            $i = 0;
+            $tong = 0;
+            foreach ($getshowcart as $item) {
+                $tt = $item['soluong'] * $item['giaPhong'];
+                $tong += $tt;
+                echo '  <tr>
                             <td>' . ($i + 1) . '</td>
-                            <td>' . $item[1] . '</td>
-                            <td>' . $item[2] . '</td>
-                            <td>' . $item[3] . '.000 VND</td>
-                            <td>' . $item[4] . '</td>
-                            <td>' . $item[5] . '</td>
-                            <td>' . $tt . '.000 VND</td>
+                            <td>' . $item['tenPhong'] . '</td>
+                            <td><img src=" ../content/images/' . $item['hinhPhong'] . '"></td>
+                            <td>' . $item['giaPhong'] . '</td>
+                            <td>' . $item['soluong'] . '</td>
+                            <td>' . $item['roomtype'] . '</td>
+                            <td>' . $tt . '</td>
                     </tr>';
-            $i++;
-        }
-        echo '<tr>
+                $i++;
+            }
+            echo '<tr>
                 <td colspan="5">Tổng đơn hàng của bạn</td>
                 <td></td>
-                <td>' . $tong . '.000 VND</td>
+                <td>' . $tong . '</td>
                 <td></td>
                 <td></td>
             </tr>';
 
-        echo '</table>';
+            echo '</table>';
+        }
+    }else{
+        echo "Giỏ hàng rỗng. <a href='./pages/home.php'> Tiếp tục đặt hàng</a>";
     }
     ?>
 </div>

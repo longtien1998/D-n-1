@@ -15,11 +15,11 @@ while ($row = mysqli_fetch_assoc($result)) {
   
 <section>
   <div class="room-description">
-    <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
+    <h1>Phòng Đơn' . htmlspecialchars($row['tenPhong']) .'</h1>
     <div class="tien4">
       <p>
         <span class="vnd7">VND</span>
-        <span class="so7"> ' . htmlspecialchars($row['giaPhong']) . '</span>
+        <span class="so7">699.000 ' . htmlspecialchars($row['giaPhong']) . '</span>
         /1 đêm
       </p>
     </div>
@@ -61,6 +61,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
                 <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['hinhPhong']) . '">
                 <input type="hidden" name="roomtype" value="' . htmlspecialchars($row['roomtype']) . '">
+                
               
             </form>
         </div>

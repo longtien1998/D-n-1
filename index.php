@@ -59,7 +59,6 @@ switch ($_GET["action"]) {
                 $_SESSION['giohang'][] = $item;
             }
             header('location: index.php?action=addcart');
-            
         }
 
         //view giỏ hàng
@@ -92,11 +91,18 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh ="KHHHHK".rand(0,99999);
+            $madh = "KH" . rand(0, 99999);
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
-            $iddh = taodonhang($madh,$tongdonhang,$pttt,$hoten,$tel,$email,$checkin,$checkout);
-           
+            // $id, $tenPhong, $hinhPhong, $giaPhong, $roomtype, $sl
+            $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
+            $_SESSION['iddh'] = $iddh;
+            if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
+                foreach ($_SESSION['giohang'] as $item) {
+                    addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4], $item[5]);
+                }
+                unset($_SESSION['giohang']);
+            }
         }
         include './pages/donhang.php';
         break;
@@ -130,7 +136,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'view1':
-        
+
         include './pages/view1.php';
         break;
 
