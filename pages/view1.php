@@ -1,16 +1,32 @@
+<?php
+include '../config/connect.php';
+?>
+<?php
+
+$conn = connect_db();
+
+$query = "SELECT * FROM cart";
+$result = mysqli_query($conn, $query);
+?>
+
+
+
+<?php
+while ($row = mysqli_fetch_assoc($result)) {
+  echo '
 <section>
   <div class="room-description">
-    <h1>Phòng Đơn</h1>
+    <h1>' . htmlspecialchars($row['tenPhong']) . ' Phòng Đơn</h1>
     <div class="tien4">
       <p>
-        <span class="vnd7">VND</span>
-        <span class="so7">699.000</span>
+        <span class="vnd7">' . htmlspecialchars($row['giaPhong']) . ' VND</span>
+        <span class="so7"> ' . htmlspecialchars($row['giaPhong']) . '699.000</span>
         /1 đêm
       </p>
     </div>
   </div>
   <div class="room-gallery">
-    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" alt="room" />
+    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" ' . htmlspecialchars($row['hinhPhong']) . ' alt="room" />
     <div class="room-preview">
       <img id="1" src="../content/images/room1-small.jpeg" onclick="showimg(1)" alt="" />
       <img id="2" src="../content/images/room2-small.jpeg" onclick="showimg(2)" alt="" />
@@ -34,38 +50,17 @@
         phẳng HD, Điện thoại.</span></li>
     <li>Kích cỡ: 25m<span class="num">2</span></li>
     <li>Loại giường: 1 giường</li>
-    <li>Loại: Đôi ,Đơn</li>
+    <li> Loại: Đôi ,Đơn</li>
   </div>
   <hr>
-  <div class="de3">
-    <h3> Đặt phòng</h3>
-    <span>Vui lòng điền đầy đủ thông tin và chính xác!</span>
-  </div>
-  <form class="book1" action="booking.php" method="post">
-
-    <label class="la" for="name">Họ và tên:</label>
-    <input class="in" type="text" id="name" name="name" required>
-
-    <label class="la" for="email">Email:</label>
-    <input class="in" type="email" id="email" name="email" required>
-
-    <label class="la" for="phone">Số điện thoại:</label>
-    <input class="in" type="tel" id="phone" name="phone" required>
-
-    <label class="la" for="checkin">Ngày nhận phòng:</label>
-    <input class="in" type="date" id="checkin" name="checkin" required>
-
-    <label class="la" for="checkout">Ngày trả phòng:</label>
-    <input class="in" type="date" id="checkout" name="checkout" required>
-
-    <label class="la" for="room-type">Loại phòng:</label>
-    <select class="sa" id="room-type" name="room_type" required>
-      <option value="single">Phòng đơn</option>
-    </select>
-
-    <div class="hop15">
-      <button class="custom-buy15 buy-15"><span>ĐẶT NGAY</span></button>
-    </div>
-  </form>
-</section>
-<hr>
+  </section>
+            <form action="cart.php" method="post">
+                <input type="submit" name="addcart" value="Mua Hàng">
+                <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
+                <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
+                <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['hinhPhong']) . '">
+            </form>
+        </div>
+    </div>';
+}
+?>
