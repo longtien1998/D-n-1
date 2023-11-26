@@ -14,6 +14,15 @@ switch ($_GET["action"]) {
     case 'phong':
         include './pages/phong.php';
         break;
+    case 'booking':
+        include './pages/booking.php';
+        break;
+    case 'bill':
+        include './thuvien/bill.php';
+        break;
+    case 'xulybking':
+        include './thuvien/xulybking.php';
+        break;
     case 'timphong':
         include './pages/timphong.php';
         break;
