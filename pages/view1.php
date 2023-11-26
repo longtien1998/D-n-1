@@ -1,6 +1,4 @@
-<?php
-include '../config/connect.php';
-?>
+
 <?php
 
 $conn = connect_db();
@@ -14,13 +12,14 @@ $result = mysqli_query($conn, $query);
 <?php
 while ($row = mysqli_fetch_assoc($result)) {
   echo '
+  
 <section>
   <div class="room-description">
-    <h1>' . htmlspecialchars($row['tenPhong']) . ' Phòng Đơn</h1>
+    <h1>Phòng Đơn' . htmlspecialchars($row['tenPhong']) .'</h1>
     <div class="tien4">
       <p>
-        <span class="vnd7">' . htmlspecialchars($row['giaPhong']) . ' VND</span>
-        <span class="so7"> ' . htmlspecialchars($row['giaPhong']) . '699.000</span>
+        <span class="vnd7">VND</span>
+        <span class="so7">699.000 ' . htmlspecialchars($row['giaPhong']) . '</span>
         /1 đêm
       </p>
     </div>
@@ -50,15 +49,20 @@ while ($row = mysqli_fetch_assoc($result)) {
         phẳng HD, Điện thoại.</span></li>
     <li>Kích cỡ: 25m<span class="num">2</span></li>
     <li>Loại giường: 1 giường</li>
-    <li> Loại: Đôi ,Đơn</li>
+    <li>Loại: ' . htmlspecialchars($row['roomtype']) . '</li>
+    
   </div>
   <hr>
   </section>
-            <form action="cart.php" method="post">
-                <input type="submit" name="addcart" value="Mua Hàng">
+              <form action="/index.php?action=addcart" method="post">
+                <input type="submit" name="addtocart" value="Mua Hàng">
+                <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
                 <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
                 <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
                 <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['hinhPhong']) . '">
+                <input type="hidden" name="roomtype" value="' . htmlspecialchars($row['roomtype']) . '">
+                
+              
             </form>
         </div>
     </div>';
