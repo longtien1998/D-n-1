@@ -4,7 +4,7 @@ if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
 include './layouts/header.php';
 include './thuvien/xulydonhang.php';
 ?>
-
+<?php ?>
 <?php
 
 
