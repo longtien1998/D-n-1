@@ -80,7 +80,7 @@ switch ($_GET["action"]) {
         break;
 
         //thanh toán
-
+//thanh toán
     case 'thanhtoan':
         if ((isset($_POST['thanhtoan'])) && ($_POST['thanhtoan'])) {
             //lấy dữ liệu
