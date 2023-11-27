@@ -9,7 +9,7 @@
 
 $conn = connect_db();
 
-$query = "SELECT * FROM cart";
+$query = "SELECT * FROM  room WHERE LoaiPhong = 'Single' ";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -55,22 +55,23 @@ while ($row = mysqli_fetch_assoc($result)) {
         phẳng HD, Điện thoại.</span></li>
     <li>Kích cỡ: 25m<span class="num">2</span></li>
     <li>Loại giường: 1 giường</li>
-    <li>Loại: ' . htmlspecialchars($row['roomtype']) . '</li>
+    <li>Loại: ' . htmlspecialchars($row['LoaiPhong']) . '</li>
     
   </div>
   <hr>
   </section>
               <form action="/index.php?action=addcart" method="post">
-                
-                <input type="hidden" name="id" value="'. htmlspecialchars($row['id']) . '">
+              <input type="submit" name="addtocart" value="Mua Hàng">
+                <input type="hidden" name="id" value="'. htmlspecialchars($row['maPhong']) . '">
                 <input type="hidden" name="tenPhong" value="'. htmlspecialchars($row['tenPhong']) . '">
                 <input type="hidden" name="giaPhong" value="'. htmlspecialchars($row['giaPhong']) . '">
                 <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['hinhPhong']) . '">
-                <input type="hidden" name="roomtype" value="'. htmlspecialchars($row['roomtype']) . '">
+                <input type="hidden" name="roomtype" value="'. htmlspecialchars($row['LoaiPhong']) . '">
                 
-                <input type="submit" name="addtocart" value="Mua Hàng">
+               
             </form>
         </div>
     </div>';
+    break;
 }
 ?>

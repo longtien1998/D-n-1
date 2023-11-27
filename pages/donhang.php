@@ -1,6 +1,7 @@
 <div>
     <h1>ID ĐƠN HÀNG : <?= $iddh ?></h1>
     <?php
+    
     if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
         $getshowcart = getshowcart($_SESSION['iddh']);
         if ((isset($getshowcart)) && (count($getshowcart) > 0)) {
