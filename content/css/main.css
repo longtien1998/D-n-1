@@ -145,6 +145,10 @@ img {
 .name{
   font-size: 90px;
 }
+.namephong{
+  font-size: 40px;
+
+}
 .order-1{
  
   margin-top: -80px;
@@ -221,6 +225,10 @@ img {
   z-index: 2;
   position: relative;
 }
-.file{
-  display: none;
+/* .file{
+   display: none; 
+   height: 0px; 
+} */
+.rounded-full{
+  border-radius: 50%;
 }

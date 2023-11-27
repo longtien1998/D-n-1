@@ -64,8 +64,10 @@
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $getid = $_POST['id'];
                 user_delete($getid);
+                header("refresh:1;");
             }
             ?>
         }
+    
     });
 </script>
