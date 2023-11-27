@@ -8,6 +8,7 @@
         $password = $_POST["password"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
+        $img = '/upload/user.png';
 
         // kiểm tra người dùng đã tồn tại hay chưa
         $conn = connect_db();
@@ -18,7 +19,7 @@
         } else {
             // thêm tài khoản vào cơ sở dữ liệu
             
-            $insert_query = "INSERT INTO useradmin (fullname,username,phone, password, email) VALUES ('$fullname', '$username','$phone', '$password', '$email')";
+            $insert_query = "INSERT INTO useradmin (fullname,username,phone, password, email,urlimage) VALUES ('$fullname', '$username','$phone', '$password', '$email','$img')";
             if ($conn->query($insert_query) == TRUE) {
                 $message = '<h2 class="section-title text-center px-5" style="color: green;"><span class="px-2">Đăng ký thành công</span></h2>';
             } else {
