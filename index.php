@@ -91,7 +91,7 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh = "KH" . rand(0, 99999);
+            $madh = "KH" . rand(10000,99999 );
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
             // $id, $tenPhong, $hinhPhong, $giaPhong, $roomtype, $sl

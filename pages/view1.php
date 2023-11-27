@@ -15,17 +15,17 @@ while ($row = mysqli_fetch_assoc($result)) {
   
 <section>
   <div class="room-description">
-    <h1>Phòng Đơn' . htmlspecialchars($row['tenPhong']) .'</h1>
+    <h1>' . htmlspecialchars($row['tenPhong']) .'</h1>
     <div class="tien4">
       <p>
         <span class="vnd7">VND</span>
-        <span class="so7">699.000 ' . htmlspecialchars($row['giaPhong']) . '</span>
+        <span class="so7">'. htmlspecialchars($row['giaPhong']). '</span>
         /1 đêm
       </p>
     </div>
   </div>
   <div class="room-gallery">
-    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" ' . htmlspecialchars($row['hinhPhong']) . ' alt="room" />
+    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" '. htmlspecialchars($row['hinhPhong']) .' alt="room" />
     <div class="room-preview">
       <img id="1" src="../content/images/room1-small.jpeg" onclick="showimg(1)" alt="" />
       <img id="2" src="../content/images/room2-small.jpeg" onclick="showimg(2)" alt="" />
@@ -55,14 +55,14 @@ while ($row = mysqli_fetch_assoc($result)) {
   <hr>
   </section>
               <form action="/index.php?action=addcart" method="post">
-                <input type="submit" name="addtocart" value="Mua Hàng">
-                <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
-                <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
-                <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
-                <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['hinhPhong']) . '">
-                <input type="hidden" name="roomtype" value="' . htmlspecialchars($row['roomtype']) . '">
                 
-              
+                <input type="hidden" name="id" value="'. htmlspecialchars($row['id']) . '">
+                <input type="hidden" name="tenPhong" value="'. htmlspecialchars($row['tenPhong']) . '">
+                <input type="hidden" name="giaPhong" value="'. htmlspecialchars($row['giaPhong']) . '">
+                <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['hinhPhong']) . '">
+                <input type="hidden" name="roomtype" value="'. htmlspecialchars($row['roomtype']) . '">
+                
+                <input type="submit" name="addtocart" value="Mua Hàng">
             </form>
         </div>
     </div>';
