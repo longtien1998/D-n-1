@@ -13,31 +13,30 @@
                     <div class="form-header">
                         <h3 class="form-heading">ĐĂNG KÝ</h3>
                     </div>
-                   
                     <?php echo $message; ?>
                     <div class="form-group">
                         <label for="fullname" class="form-label">Họ và tên</label>
-                        <input id="fullname" name="fullname" type="text" placeholder="VD: Tôn Long Tiến" class="form-control1" required>
+                        <input id="fullname" name="fullname" type="text" placeholder="VD: Tôn Long Tiến" class="form-control1" value="<?php echo $fullname;?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="username" class="form-label">Tên đăng nhập</label>
-                        <input id="username" name="username" type="text" placeholder="VD: longtien1998" class="form-control1" required>
+                        <input id="username" name="username" type="text" placeholder="VD: longtien1998" class="form-control1"  value="<?php echo $username;?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="phone" class="form-label">Số điện thoại</label>
-                        <input id="phone" name="phone" type="number" placeholder="VD: 0982268784" class="form-control1" required>
+                        <input id="phone" name="phone" type="number" placeholder="VD: 0982268784" class="form-control1" value="<?php echo $phone;?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" required>
+                        <input id="email" name="email" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php echo $email;?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>

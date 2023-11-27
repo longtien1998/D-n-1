@@ -57,9 +57,9 @@
 </section>
 <section class="stc1">
     <div class="don1">
-        <div class="slide">
-            <img src="../content/images/room1-big.jpeg" width="100%" height="381px" alt="">
-        </div>
+        <!-- <div class="slide"> -->
+            <img src="../content/images/room1-big.jpeg" width="100%" height="100%" alt="">
+        <!-- </div> -->
     </div>
     <div class="noidungg">
         <div class="noidung-1">
@@ -97,9 +97,9 @@
 <hr style="border: 1px solid gray;">
 <section class="stc2">
     <div class="doi2">
-        <div class="slide1">
-            <img src="../content/images/phongdoi1-big.png" height="381px" width="100%" alt="">
-        </div>
+        <!-- <div class="slide1"> -->
+            <img src="../content/images/phongdoi1-big.png" height="100%" width="100%" alt="">
+        <!-- </div> -->
     </div>
     <div class="noidung-3">
         <div class="noidung-4">
@@ -134,9 +134,9 @@
 <hr style="border: 1px solid gray;">
 <section class="stc3">
     <div class="giadinh1">
-        <div class="slide1">
-            <img src="../content/images/phonggiadinh1-big.jpg" width="100%" height="381px" alt="">
-        </div>
+        <!-- <div class="slide1"> -->
+            <img src="../content/images/phonggiadinh1-big.jpg" width="100%" height="100%" alt="">
+        <!-- </div> -->
     </div>
     <div class="noidung-6">
         <div class="noidung-7">
