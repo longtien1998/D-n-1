@@ -15,6 +15,7 @@ function getDataWidthParams($sql, $params)
     $conn = connect_pdo();
     $stmt = $conn->prepare($sql);
     $stmt->execute($params);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $result = $stmt->fetchAll();
     return $result;
 }
@@ -49,7 +50,7 @@ function pdo_query($sql)
         $stmt = $conn->prepare($sql);
         $stmt->execute($sql_args);
         $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $rows = $stmt->fetchAll();
+        $rows = $stmt->fetchAll($result);
         return $rows;
     } catch (PDOException $e) {
         throw $e;

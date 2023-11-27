@@ -1,6 +1,12 @@
 
 <?php
 
+?>
+
+
+
+<?php
+
 $conn = connect_db();
 
 $query = "SELECT * FROM cart";

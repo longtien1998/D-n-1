@@ -151,7 +151,9 @@ switch ($_GET["action"]) {
     case 'view4':
         include './pages/view4.php';
         break;
-
+    case 'user':
+        include './pages/user.php';
+        break;
     default:
         include './pages/home.php';
         break;

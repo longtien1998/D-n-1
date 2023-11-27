@@ -48,7 +48,8 @@
         <span class="form-message"></span>
       </div>
       <div class="align-self-center">
-        <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required />
+        <!-- <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required /> -->
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
         <span class="form-message"></span>
       </div>
     </form>
@@ -95,7 +96,7 @@
         <div>
           <h1 class="m-4">Căn hộ</h1>
           <p>
-            <span class="name"><sup>VND</sup>699.000</span>/mỗi đêm
+            <span class="name">699.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Chỉ còn 5 phòng</li>
@@ -112,7 +113,7 @@
         <div>
           <h1 class="m-4">Phòng đôi</h1>
           <p>
-            <span class="name"><sup>VND</sup>869.000</span>/mỗi đêm
+            <span class="name">869.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hoàn hảo cho các cặp đôi đi du lịch</li>
@@ -129,7 +130,7 @@
         <div>
           <h1 class="m-4">Phòng gia đình</h1>
           <p>
-            <span class="name "><sup>VND</sup>1.299.000</span>/mỗi đêm
+            <span class="name ">1.299.000</span><sup>VND</sup>/mỗi đêm
           </p>
           <ul class="text-black-50">
             <li>Hai giường đôi</li>

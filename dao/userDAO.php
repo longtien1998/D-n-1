@@ -16,6 +16,11 @@ function getUserByName($username) {
     $data = getDataWidthParams($sql, ["username"=>$username]);
     return $data;
 }
+function getUseradimByName($username) {
+    $sql = "SELECT * FROM useradmin WHERE username=:username";
+    $data =  pdo_query_one($sql, ["username"=>$username]);
+    return $data;
+}
 
 function deleteUser($id) {
     $sql = "DELETE FROM useradmin WHERE id=:id";
