@@ -1,5 +1,6 @@
 <?php
-$result = getUserByName($_SESSION["user"]);
+$resultuser = getUserByName($_SESSION["user"]);
+$user=$_SESSION["user"];
 $messagetong = '';
 $message1 = '';
 $message2 = '';
@@ -8,11 +9,12 @@ $message4 = '';
 $message5 = '';
 $message6 = '';
 $message7 = '';
-if (isset($_POST['submit'])) {
+if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
-    $target_dir = "uploads/";
+    $target_dir = "./uploads/";
     // đường dẫn đến thư mục file
-    $target_file = $target_dir . basename($_FILES["filetoUpload"]["name"]);
+    $target_file = $target_dir.basename($_FILES['filetoUpload']["name"]);
+    
     //gán trạng thái upload file = 1 ( thành công)
     $uploadok = 1;
     // lấy định dạn ảnh
@@ -38,18 +40,21 @@ if (isset($_POST['submit'])) {
         $message4 = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Tập tin không được tải lên</span></h2><br>';
     } else {
         // di chuyển file từ thư mục tạm lên thư mụ đích
-        if (move_uploaded_file($_FILES["filetoUpload"]["tmp_name"], $target_file)) {
+        if (move_uploaded_file($_FILES["filetoUpload"]["tmp_name"],$target_file)) {
             // lấy địa chỉ ảnh sau khi đã upload thành công
             $path = $target_dir . basename($_FILES["filetoUpload"]["name"]);
             //chèn vào bảng product trong cơ sowe dữ liệu test
-            $query = "INSERT INTO useradmin (urlimage) VALUE ('$path')";
+            $conn = connect_db();
+            $query = "UPDATE useradmin SET urlimage ='$path' WHERE username ='$user'";
+            
             $result = mysqli_query($conn, $query);
+            echo $result;
             // kiểm tra kết quả try vấn
             if ($result) {
 
                 $message5 = '<h2 class="section-title px-5"><span class="px-2" style="color: green;">Thêm sản phẩm thành công</span></h2>';
             } else {
-                $message6 = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Có lỗi xảy ra</span></h2><br>' . mysqli_error($connection);
+                $message6 = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Có lỗi xảy ra</span></h2><br>';
             }
         } else {
             $message7 = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">có lỗi xãy ra khi tải lên file</span></h2>';
@@ -65,17 +70,17 @@ if (isset($_POST['submit'])) {
 <div class="container my-5">
     <div class="row justify-content-center align-items-center min-vh-100 ">
         <div class="col-lg-8 ">
-            <?php foreach ($result as $row)
+            <?php foreach ($resultuser as $row)
                 echo ' 
                     <div class="bg-white p-4 rounded-lg shadow-lg border-success">
                         <div class="text-center">
                             <div class="profile-picture">
-                                <img class="rounded-full border border-gray-100 shadow-sm" src="../content/images/face.png" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
+                                <img class="rounded-full border border-gray-100 shadow-sm" src="'.$row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
                             </div>
                             <button  type="button" class="upload btn btn-orange mx-2" onclick="show()" ><i class="fa-solid fa-pen-to-square"></i></button> 
                             <div class="file row py-4">
                                 <div class="col-lg-8 mx-auto">
-                                    <form action="" method="POST">
+                                    <form action="" method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="name" class="form-label">Chọn file hình ảnh</label>
                                             <input id="filetoUpload" name="filetoUpload" type="file" class="form-control1" style="line-height: 17px;">
