@@ -70,7 +70,7 @@
         khách hoặc bất kỳ dịch vụ bổ sung nào những tiện nghi mà du khách có thể
         muốn...
       </p>
-      <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">Xem thêm...</span></a></span></button>
+      <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=gioithieu"><span class="dat">Xem thêm...</span></a></span></button>
     </div>
     <div class="col-6 text-center py-5">
       <img src="../content/images/view.jpg" alt="" width="700" height="500" class="border-1" />
@@ -89,58 +89,68 @@
       </p>
     </div>
     <div class="row justify-content-around">
-      <div class="col-3">
+      <div class="col-4">
         <div class="image">
           <img src="../content/images/suite1.jpg" alt="" width="100%" class="border-2" />
         </div>
-        <div>
+        <div class="text-center">
           <h1 class="m-4">Căn hộ</h1>
           <p>
-            <span class="name">699.000</span><sup>VND</sup>/mỗi đêm
+            <span class="namephong">699.000 </span><sup>VND</sup>/mỗi đêm
           </p>
+        </div>
+        <div>
           <ul class="text-black-50">
             <li>Chỉ còn 5 phòng</li>
             <li>Bao gồm bữa sáng</li>
             <li>Giá chưa bao gồm VAT & phí dịch vụ</li>
           </ul>
         </div>
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <div class="text-center mt-5">
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        </div>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div class="image">
           <img src="../content/images/doubleroom_.jpg" alt="" width="100%" class="border-2" />
         </div>
-        <div>
-          <h1 class="m-4">Phòng đôi</h1>
+        <div class="text-center">
+          <h1 class="m-4">Phòng đơn</h1>
           <p>
-            <span class="name">869.000</span><sup>VND</sup>/mỗi đêm
+            <span class="namephong">269.000 </span><sup>VND</sup>/mỗi đêm
           </p>
+        </div>
+        <div>
           <ul class="text-black-50">
             <li>Hoàn hảo cho các cặp đôi đi du lịch</li>
             <li>Không bao gồm bữa sáng</li>
             <li>Dịch vụ hướng dẫn khách</li>
           </ul>
         </div>
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view2"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <div class="text-center mt-5">
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view2"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        </div>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div class="image">
           <img src="../content/images/family-room-design.jpg" alt="" width="100%" class="border-2" />
         </div>
-        <div>
+        <div class="text-center">
           <h1 class="m-4">Phòng gia đình</h1>
           <p>
-            <span class="name ">1.299.000</span><sup>VND</sup>/mỗi đêm
+            <span class="namephong ">1.299.000 </span><sup>VND</sup>/mỗi đêm
           </p>
+        </div>
+        <div>
           <ul class="text-black-50">
             <li>Hai giường đôi</li>
             <li>Cơ sở giữ trẻ</li>
             <li>1 giường miễn phí theo yêu cầu</li>
           </ul>
         </div>
-
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
-
+        <div class="text-center mt-5">
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        </div>
       </div>
     </div>
   </div>

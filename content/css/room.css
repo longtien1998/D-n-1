@@ -790,7 +790,7 @@ body {
 .timkiem1 {
     width: 80%;
     height: 200px;
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -803,7 +803,7 @@ body {
     text-align: center;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -953,15 +953,16 @@ body {
 
 .stc1 {
     background-color: rgb(255, 255, 255);
-    height: 720px;
+    height: 830px;
     display: flex;
+    padding-top: 100px;
 }
 
 .don1 {
     margin: auto;
     flex: 0 0 auto;
-    height: 400px;
-    width: 600px;
+    height: 573px;
+    width: 850px;
     border: 10px solid #dad9d9;
 }
 
@@ -1134,8 +1135,8 @@ body {
 .doi2 {
     margin: auto;
     flex: 0 0 auto;
-    height: 400px;
-    width: 600px;
+    height: 573px;
+    width: 850px;
     border: 10px solid #dad9d9;
 }
 
@@ -1308,8 +1309,8 @@ body {
 .giadinh1 {
     margin: auto;
     flex: 0 0 auto;
-    height: 400px;
-    width: 600px;
+    height: 573px;
+    width: 850px;
     border: 10px solid #dad9d9;
 }
 
