@@ -22,7 +22,7 @@
                             <td>' . ($i + 1) . '</td>
                             <td>' . $item[1] . '</td>
                             <td>' . $item[2] . '</td>
-                            <td>' . $item[3] . '.000 VND</td>
+                            <td>'. $item[3] . 'VND</td>
                             <td>' . $item[4] . '</td>
                             <td>' . $item[5] . '</td>
                             <td>' . $tt . '.000 VND</td>
