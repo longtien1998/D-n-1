@@ -9,7 +9,7 @@
 
 $conn = connect_db();
 
-$query = "SELECT * FROM  room WHERE LoaiPhong = 'Single' ";
+$query = "SELECT * FROM  room ";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -31,7 +31,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     </div>
   </div>
   <div class="room-gallery">
-    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" '. htmlspecialchars($row['hinhPhong']) .' alt="room" />
+    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" '. htmlspecialchars($row['img']) .' alt="room" />
     <div class="room-preview">
       <img id="1" src="../content/images/room1-small.jpeg" onclick="showimg(1)" alt="" />
       <img id="2" src="../content/images/room2-small.jpeg" onclick="showimg(2)" alt="" />
@@ -55,20 +55,19 @@ while ($row = mysqli_fetch_assoc($result)) {
         phẳng HD, Điện thoại.</span></li>
     <li>Kích cỡ: 25m<span class="num">2</span></li>
     <li>Loại giường: 1 giường</li>
-    <li>Loại: ' . htmlspecialchars($row['LoaiPhong']) . '</li>
+    <li>Loại: ' . htmlspecialchars($row['loaiPhong']) . '</li>
     
   </div>
   <hr>
   </section>
               <form action="/index.php?action=addcart" method="post">
               <input type="submit" name="addtocart" value="Mua Hàng">
-                <input type="hidden" name="id" value="'. htmlspecialchars($row['maPhong']) . '">
+                <input type="hidden" name="id" value="'. htmlspecialchars($row['id']) . '">
                 <input type="hidden" name="tenPhong" value="'. htmlspecialchars($row['tenPhong']) . '">
+                <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['img']) . '">
+                <input type="hidden" name="loaiPhong" value="'. htmlspecialchars($row['loaiPhong']) . '">
                 <input type="hidden" name="giaPhong" value="'. htmlspecialchars($row['giaPhong']) . '">
-                <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['hinhPhong']) . '">
-                <input type="hidden" name="roomtype" value="'. htmlspecialchars($row['LoaiPhong']) . '">
-                
-               
+                <input type="number" name="sl" value="1">
             </form>
         </div>
     </div>';
