@@ -49,7 +49,7 @@
       </div>
       <div class="align-self-center">
         <!-- <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required /> -->
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="view3.php"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
         <span class="form-message"></span>
       </div>
     </form>
