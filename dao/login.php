@@ -1,14 +1,14 @@
 <?php 
 
-include '../config/connect.php';
-include '../thuvien/user.php';
+// include '../config/connect.php';
+// include '../thuvien/user.php';
 
 ?>
 
 <?php
 
-session_start();
-
+// session_start();
+$message='';
 // Kiểm tra nút Đăng nhập đã được nhấn hay chưa
 if (isset($_POST["dangnhap"])) {
 
@@ -29,8 +29,8 @@ if (isset($_POST["dangnhap"])) {
             header("Location: /index.php?action=home");
         } else {
             // sai mk
-            
-             echo ' <script> alert("Sai mật khẩu. Vui lòng thử lại"); </script>';
+            $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Sai mật khẩu. Vui lòng thử lại</span></h2>';
+            //  echo ' <script> alert("Sai mật khẩu. Vui lòng thử lại"); </script>';
         }
     } else {
         // Kiểm tra kết quả trả về
@@ -46,21 +46,20 @@ if (isset($_POST["dangnhap"])) {
                 header("Location: ../index.php?action=index&controller=users");
             } else {
                 // sai mk
-                
-                $message = ' <script> alert("Sai mật khẩu. Vui lòng thử lại"); </script>';
+                $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Sai mật khẩu. Vui lòng thử lại</span></h2>';
             }
         } else {
 
             // Người dùng không tồn tại
+            $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Người dùng không tồn tại!</span></h2>';
             
-            $message = ' <script> alert("Người dùng không tồn tại!"); </script>';
         }
     }
 }
 
 
 // Đóng kết nối
-$_SESSION["message"] = "$message";
+// $_SESSION["message"] = "$message";
 // mysqli_close($conn);
 
 ?>

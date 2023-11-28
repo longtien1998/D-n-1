@@ -1,12 +1,13 @@
+<?php include './dao/login.php'; ?>
 <div class="container-fluid pt-5">
     <div class="text-center mb-4">
         <h2 class="section-title px-5"><span class="px-2">ĐĂNG NHẬP</span></h2>
     </div>
     <div class="text-center mb-4 ">
-
+        <?php echo $message; ?>
     </div>
     <div class="main_container">
-        <form action="../dao/login.php" method="POST" class="form-login" id="form-1">
+        <form action="" method="POST" class="form-login" id="form-1">
             <div class="form-header">
                 <h3 class="form-heading">ĐĂNG NHẬP</h3>
             </div>
@@ -14,7 +15,7 @@
                 <label for="username" class="form-label">Tên đăng nhập</label>
                 <input id="username" name="username" type="text" placeholder="VD: longtien1998" class="form-control1" required>
                 <i class="fa-solid fa-user form-user"></i>
-                <!-- <span class="form-message"><?php echo $_SESSION['message']; ?></span> -->
+                
             </div>
 
             <div class="form-group">

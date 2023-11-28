@@ -9,7 +9,7 @@ $message4 = '';
 $message5 = '';
 $message6 = '';
 $message7 = '';
-
+$row['urlimage']='./';
 if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
     $target_dir = "./uploads/";

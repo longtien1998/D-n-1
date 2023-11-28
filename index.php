@@ -126,6 +126,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'login':
+        
         include './pages/login.php';
         break;
     case 'register':

@@ -36,7 +36,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ngaylamviec" class="form-label">Ngày làm việc</label>
-                        <input id="ngaylamviec" name="ngaylamviec" type="text" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $email; ?>" required>
+                        <input id="ngaylamviec" name="ngaylamviec" type="date" placeholder="VD: longtien1998@gmail.com" class="form-control1" value="<?php $email; ?>" required>
                         <i class="fa-solid fa-user form-user"></i>
                         <span class="form-message"></span>
                     </div>
