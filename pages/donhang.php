@@ -1,5 +1,5 @@
 <div>
-    <h1>ID ĐƠN HÀNG : <?= $iddh; ?></h1>
+    <h1>ID ĐƠN HÀNG : <?php echo $_SESSION['iddh'];?></h1>
     <?php
 
     if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {

@@ -92,12 +92,12 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh = "KH" . rand(0, 99999);
+            $madh = "KH" . rand(10000, 99999);
+            // Siddh = "DH".rand(100,999);
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
-           
             $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
-            $_SESSION['iddh'] = $iddh;
+            $_SESSION['iddh'] = $iddh; // ????? hộ poly chỉ 
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
                 foreach ($_SESSION['giohang'] as $item) {
                     addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4], $item[5]);
