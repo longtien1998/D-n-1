@@ -25,6 +25,11 @@ function nhanvien_select_all()//truy vấn và trả về all kh từ csdl
     $sql = "SELECT * FROM nhanvien";
     return pdo_query($sql);
 }
+function getUsernhanvienByName($username) {
+    $sql = "SELECT * FROM nhanvien WHERE tenDangNhap=:username";
+    $data = getDataWidthParams($sql, ["username"=>$username]);
+    return $data;
+}
 function nhanvien_select_by_id($maNhanVien) //truy vấn và trả về thông tin của 1 kh dựa trên maNhanVien
 {
     $sql = "SELECT * FROM nhanvien WHERE maNhanVien=?";

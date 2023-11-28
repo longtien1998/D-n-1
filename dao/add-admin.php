@@ -13,7 +13,7 @@
         $password = $_POST["password"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
-        $img = '/upload/user.png';
+        $img = './uploads/user.png';
 
         // kiểm tra người dùng đã tồn tại hay chưa
         $conn = connect_db();

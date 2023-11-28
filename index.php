@@ -154,7 +154,10 @@ switch ($_GET["action"]) {
         include './pages/view4.php';
         break;
     case 'user':
-        include './pages/user.php';
+        include './pages/useradmin.php';
+        break;
+    case 'usernv':
+        include './pages/usernhanvien.php';
         break;
     default:
         include './pages/home.php';

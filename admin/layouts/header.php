@@ -78,6 +78,7 @@
             class="app-menu__label">Lịch công tác </span></a></li> -->
       <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label">Cài
             đặt hệ thống</span></a></li>
+      <li><a class="app-menu__item" href="/index.php"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label">Xem trang Chính</span></a></li>
     </ul>
   </aside>
   <main class="app-content">
