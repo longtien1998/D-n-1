@@ -2,7 +2,8 @@
 //kiểm tra giỏ hàng xem có có tồn tại hay kh, nếu kh thì tạo giỏ hàng rỗng trc
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
 include './layouts/header.php';
-include './thuvien/xulydonhang.php';
+include './dao/xulydonhang.php';
+
 ?>
 
 <?php
@@ -29,10 +30,9 @@ switch ($_GET["action"]) {
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
             $id = $_POST['id'];
             $tenPhong = $_POST['tenPhong'];
-            $hinhPhong = $_POST['hinhPhong'];
+            $hinhPhong = $_POST['img'];
+            $loaiPhong = $_POST['loaiPhong'];
             $giaPhong = $_POST['giaPhong'];
-            $roomtype = $_POST['roomtype'];
-
             if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
                 $sl = $_POST['sl'];
             } else {
@@ -55,7 +55,7 @@ switch ($_GET["action"]) {
             //còn kh thì add mới lại sp vào giỏ hàng
             //khởi tạo mảng con trc khi đưa vào giỏ hàng
             if ($fg == 0) {
-                $item = array($id, $tenPhong, $hinhPhong, $giaPhong, $roomtype, $sl);
+                $item = array($id, $tenPhong, $img, $loaiPhong, $giaPhong, $sl);
                 $_SESSION['giohang'][] = $item;
             }
             header('location: index.php?action=addcart');
@@ -82,8 +82,9 @@ switch ($_GET["action"]) {
         //thanh toán
 
     case 'thanhtoan':
+        //nếu kiểm tra cái post ['thanh toan] và được click 
         if ((isset($_POST['thanhtoan'])) && ($_POST['thanhtoan'])) {
-            //lấy dữ liệu
+            //thì lấy dữ liệu
             $tongdonhang = $_POST['tongdonhang'];
             $hoten = $_POST['hoten'];
             $tel = $_POST['tel'];
@@ -91,10 +92,10 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh = "KH" . rand(10000,99999 );
+            $madh = "KH" . rand(0, 99999);
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
-            // $id, $tenPhong, $hinhPhong, $giaPhong, $roomtype, $sl
+           
             $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
             $_SESSION['iddh'] = $iddh;
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {

@@ -1,6 +1,7 @@
 <div>
-    <h1>ID ĐƠN HÀNG : <?= $iddh ?></h1>
+    <h1>ID ĐƠN HÀNG : <?= $iddh; ?></h1>
     <?php
+
     if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
         $getshowcart = getshowcart($_SESSION['iddh']);
         if ((isset($getshowcart)) && (count($getshowcart) > 0)) {
@@ -9,23 +10,23 @@
                         <th>STT</th>
                         <th>Tên Phòng</th>
                         <th>Hình</th>
-                        <th>Giá Phòng</th>
                         <th>Loại Phòng</th>
+                        <th>Giá Phòng</th>
                         <th>Số Lượng</th>
                         <th>Thành Tiền</th>
                     </tr>';
             $i = 0;
             $tong = 0;
             foreach ($getshowcart as $item) {
-                $tt = $item['soluong'] * $item['giaPhong'];
+                $tt = $item['giaPhong'] * $item['soluong'];
                 $tong += $tt;
                 echo '  <tr>
                             <td>' . ($i + 1) . '</td>
                             <td>' . $item['tenPhong'] . '</td>
-                            <td><img src=" ../content/images/' . $item['hinhPhong'] . '"></td>
+                            <td><img src=" ../content/images/' . $item['img'] . '"></td>
+                            <td>' . $item['loaiPhong'] . '</td>
                             <td>' . $item['giaPhong'] . '</td>
                             <td>' . $item['soluong'] . '</td>
-                            <td>' . $item['roomtype'] . '</td>
                             <td>' . $tt . '</td>
                     </tr>';
                 $i++;
@@ -41,7 +42,7 @@
             echo '</table>';
         }
     } else {
-        echo "Giỏ hàng rỗng. <a href='./pages/home.php'> Tiếp tục đặt hàng</a>";
+        echo "Giỏ hàng rỗng. <a href='/index.php?action=home'> Tiếp tục đặt hàng</a>";
     }
     ?>
 </div>
@@ -59,10 +60,10 @@
                     <td>Tên Khách Hàng: <br> <?= $oderinfo[0]['hoten']; ?></td>
                 </tr>
                 <tr>
-                    <td>Email: <br> <?= $oderinfo[0]['email']; ?></td>
+                    <td>Số điện thoại: <br> <?= $oderinfo[0]['tel']; ?></td>
                 </tr>
                 <tr>
-                    <td>Số điện thoại: <br> <?= $oderinfo[0]['tel']; ?></td>
+                    <td>Email: <br> <?= $oderinfo[0]['email']; ?></td>
                 </tr>
                 <tr>
                     <td>Ngày Đến: <br> <?= $oderinfo[0]['checkin']; ?></td>
@@ -95,9 +96,9 @@
                     ?>
                 </tr>
             </table>
-    <?php 
-            }
+    <?php
         }
-?>
+    }
+    ?>
 
 </div>
