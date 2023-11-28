@@ -7,7 +7,9 @@ function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, 
     $last_id = $conn->lastInsertId();
     return $last_id;
 }
+// ủa , k biết à quê hay quên a oi
 
+// hàm trên nó trả về giá trụ gì ???
 
 function addtocart($iddh,$idpro,$tenPhong,$img,$soluong,$dongia){
     $conn = connect_pdo();
@@ -18,7 +20,7 @@ function addtocart($iddh,$idpro,$tenPhong,$img,$soluong,$dongia){
 
 function getshowcart($iddh){
     $conn = connect_pdo();
-    $stmt = $conn->prepare("SELECT * FROM room WHERE iddh=".$iddh);
+    $stmt = $conn->prepare("SELECT * FROM cart WHERE iddh=".$iddh);
     $stmt -> execute();
     $result = $stmt -> setFetchMode(PDO::FETCH_ASSOC);
     $kq = $stmt->fetchAll();
