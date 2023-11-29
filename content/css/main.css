@@ -1,6 +1,7 @@
 .active {
   color: black !important;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid black;
+  font-size: 25px;
 }
 
 .slide1 {
@@ -91,10 +92,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
+
 
 .fader {
   -webkit-animation-name: fade;
