@@ -1,6 +1,5 @@
 <?php
-function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout)
-{
+function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout){
     $conn = connect_pdo();
     $sql = "INSERT INTO donhang (madh,tongdonhang,pttt,hoten,tel,email,checkin,checkout)
             VALUE ('" . $madh . "','" . $tongdonhang . "','" . $pttt . "','" . $hoten . "','" . $tel . "','" . $email . "','" . $checkin . "','" . $checkout . "')";
@@ -8,11 +7,14 @@ function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, 
     $last_id = $conn->lastInsertId();
     return $last_id;
 }
-function addtocart($iddh, $tenPhong, $hinhPhong, $giaPhong, $soluong, $roomtype, $idpro)
-{
+// ủa , k biết à quê hay quên a oi
+
+// hàm trên nó trả về giá trụ gì ???
+
+function addtocart($iddh,$idpro,$tenPhong,$img,$soluong,$dongia){
     $conn = connect_pdo();
-    $sql = "INSERT INTO cart (iddh,tenPhong,hinhPhong,giaPhong,soluong,roomtype,idpro)
-    VALUE ('" . $iddh . "','" . $tenPhong . "','" . $hinhPhong . "','" . $giaPhong . "','" . $soluong . "','" . $roomtype . "','" . $idpro . "')";
+    $sql = "INSERT INTO cart (iddh,idpro,tenPhong,img,soluong,dongia)
+    VALUE ('" . $iddh . "','" . $idpro . "','" . $tenPhong . "','" . $img . "','" . $soluong . "','" . $dongia . "')";
     $conn->exec($sql);
 }
 

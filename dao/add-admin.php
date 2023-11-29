@@ -1,5 +1,10 @@
 <?php
     // xử lý yêu cầu đăng kí khi đẩy form
+    $fullname = '';
+    $username = '';
+    
+    $email = '';
+    
     $message = "";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // LẤY THÔNG TIN TỪ FORM
@@ -8,14 +13,14 @@
         $password = $_POST["password"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
-        $img = '/upload/user.png';
+        $img = './uploads/user.png';
 
         // kiểm tra người dùng đã tồn tại hay chưa
         $conn = connect_db();
         $check_query = "SELECT *FROM useradmin WHERE username = '$username'";
         $result = $conn->query($check_query);
         if ( $result->num_rows >0 ) {
-            echo' <h3 class="section-title text-center px-4"><span class="px-2">tài khoản đã đăng kí</span></h3>';
+            echo' <h3 class="section-title text-center px-4"><span class="px-2 ">tài khoản đã đăng kí</span></h3>';
         } else {
             // thêm tài khoản vào cơ sở dữ liệu
             

@@ -9,6 +9,7 @@ $message4 = '';
 $message5 = '';
 $message6 = '';
 $message7 = '';
+$messageuser = '';
 
 if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
@@ -49,7 +50,6 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
             $query = "UPDATE useradmin SET urlimage ='$path' WHERE username ='$user'";
 
             $result = mysqli_query($conn, $query);
-            echo $result;
             // kiểm tra kết quả try vấn
             if ($result) {
 
@@ -67,7 +67,27 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
 
 ?>
 
+<?php
+    if (isset($_POST['save']) && ($_POST['save'])){
+        $fullname = $_POST["fullname"];
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+        $phone = $_POST["phone"];
+        $diachi = $_POST["location"];
+        $macode = $_POST["postal-code"];
 
+        $conn = connect_db();
+        $query = "UPDATE useradmin SET fullname='$fullname',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
+
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            $messageuser = '<h2 class="section-title px-5"><span class="px-2" style="color: green;">Cập nhập thông tin thành công</span></h2>';
+            header('refresh:2;index.php?action=user');
+        } else {
+            $messageuser = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Có lỗi xảy ra</span></h2><br>';
+        }
+    }
+?>
 
 <div class="container my-5">
     <div class="row justify-content-center align-items-center min-vh-100 ">
@@ -77,7 +97,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                     <div class="bg-white p-4 rounded-lg shadow-lg border-success">
                         <div class="text-center">
                             <div class="profile-picture">
-                                <img class="rounded-full border border-gray-100 shadow-sm" src="' . $row['urlimage'] . '" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
+                                <img class="rounded-full border border-gray-100 shadow-sm" src="'. $row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
                             </div>
                             <button  type="button" class="upload btn btn-orange mx-2" ><i class="fa-solid fa-pen-to-square"></i></button> 
                             <div class="file row py-4">
@@ -100,11 +120,11 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                             
                         </div>
                         <div class="mt-4">
-                            <form>
+                            <form action="" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="name">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" name="name" id="name" value="' . $row['username'] . '" readonly>
+                                        <label for="username">Tên đăng nhập</label>
+                                        <input type="text" class="form-control" name="username" id="username" value="' . $row['username'] . '" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="full-name">Họ Và Tên</label>
@@ -127,10 +147,12 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                                         <input type="text" class="form-control" id="postal-code" name="postal-code" value="' . $row['macode'] . '" readonly>
                                     </div>
                                 </div>
+                                <div>'.$messageuser.'</div>
+                                
                                 <div class="text-center mt-4">
                                     <button type="button" class="btn btn-orange border-primary mx-2"><a href="/admin/index.php">Vào Quản Trị </a></button>
                                     <button type="button" class="btn btn-orange border-primary mx-2">Thoát</button>
-                                    <button type="button" class="btn btn-orange border-success mx-2 " id="luu">Lưu</button>
+                                    <input type="submit" class="btn btn-orange border-success mx-2 " name="save" id="luu" value="lưu">
                                     <button type="button" class="btn btn-orange border-success mx-2" id="sua">Sửa</button>
                                     
                                 </div>
@@ -156,7 +178,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
 
         let sua = document.querySelector('#sua');
         let save = document.querySelector('#luu');
-        let name= document.getElementsByName('name')[0];
+        // let name= document.getElementsByName('username')[0];
         let fullname= document.getElementsByName('fullname')[0];
         let email= document.getElementsByName('email')[0];
         let phone= document.getElementsByName('phone')[0];
@@ -167,7 +189,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
         sua.onclick = function(){
             if(save.style.display ==="none") {
                 save.style.display = "";
-                name.removeAttribute('readonly');
+                // name.removeAttribute('readonly');
                 fullname.removeAttribute('readonly');
                 email.removeAttribute('readonly');
                 phone.removeAttribute('readonly');

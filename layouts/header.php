@@ -4,6 +4,8 @@ include './config/connect.php';
 include './dao/pdo.php';
 include './thuvien/user.php';
 include './dao/userDAO.php';
+include './dao/nhanvien.php';
+
 ?>
 
 <?php
@@ -22,11 +24,14 @@ if (isset($_SESSION["user"])) {
     if (mysqli_num_rows($result) > 0) {
 
         // Lấy thông tin người dùng từ cơ sở dữ liệu
-        $user = 'Admin <a class="user" href="/index.php?action=user">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        $user = '<span>Xin Chào </span>Admin <a class="user" href="/index.php?action=user">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
     } else {
-        $user = 'Nhân Viên <a class="user" href="/admin/index.php">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        $result = usernhanvien($_SESSION["user"]);
+        if (mysqli_num_rows($result) > 0) {
+            $user = '<span>Xin Chào </span>Nhân Viên <a class="user" href="/index.php?action=usernv">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+        } else $user = '<a href="/index.php?action=login">Đăng nhập</a>';
     }
-} else  $user = '<a href="/index.php?action=login">Đăng nhập</a>';
+} else  $user = '<i class="fa-regular fa-circle-user fa-flip" style="color: #050505; font-size: 25px;"></i><a href="/index.php?action=login">Đăng nhập</a>';
 ?>
 
 <!DOCTYPE html>
@@ -68,9 +73,6 @@ if (isset($_SESSION["user"])) {
         </div>
         <div class="col-lg-3">
             <div class="mx-3 ml-4">
-                <span>Xin Chào</span>
-                <i class="fa-regular fa-circle-user fa-flip" style="color: #050505; font-size: 25px;"></i>
-                <!-- <a href="/index.php?action=login">Đăng nhập</a> -->
                 <?php echo $user; ?>
             </div>
         </div>
