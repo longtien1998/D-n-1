@@ -33,12 +33,9 @@ switch ($_GET["action"]) {
             $hinhPhong = $_POST['img'];
             $loaiPhong = $_POST['loaiPhong'];
             $giaPhong = $_POST['giaPhong'];
-            if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
-                $sl = $_POST['sl'];
-            } else {
-                $sl = 1;
-            }
+            $sl = 1;
             $fg = 0;
+            
             //kiểm tra sp có tồn tại trong giỏ hàng hay kh
             // nếu có chỉ cập nhật lại sl
             $i = 0;
@@ -93,7 +90,7 @@ switch ($_GET["action"]) {
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
             $madh = "KH" . rand(10000, 99999);
-            // Siddh = "DH".rand(100,999);
+
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
             $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
@@ -126,7 +123,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'login':
-        
+
         include './pages/login.php';
         break;
     case 'register':
