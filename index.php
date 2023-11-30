@@ -26,8 +26,9 @@ switch ($_GET["action"]) {
         break;
 
     case 'addcart':
-        //lấy dữ liệu từ form để lưu vào giỏ
+       //kiểm tra $post [addtocart] và nếu được click
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+             //lấy dữ liệu từ form để lưu vào giỏ
             $id = $_POST['id'];
             $tenPhong = $_POST['tenPhong'];
             $hinhPhong = $_POST['img'];
@@ -35,7 +36,7 @@ switch ($_GET["action"]) {
             $giaPhong = $_POST['giaPhong'];
             $sl = 1;
             $fg = 0;
-            
+
             //kiểm tra sp có tồn tại trong giỏ hàng hay kh
             // nếu có chỉ cập nhật lại sl
             $i = 0;
@@ -94,7 +95,7 @@ switch ($_GET["action"]) {
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
             $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
-            $_SESSION['iddh'] = $iddh; // ????? hộ poly chỉ 
+            $_SESSION['iddh'] = $iddh;
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
                 foreach ($_SESSION['giohang'] as $item) {
                     addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4], $item[5]);

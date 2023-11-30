@@ -1,12 +1,6 @@
 
 <?php
 
-?>
-
-
-
-<?php
-
 $conn = connect_db();
 
 $query = "SELECT * FROM  room ";
@@ -21,17 +15,17 @@ while ($row = mysqli_fetch_assoc($result)) {
   
 <section>
   <div class="room-description">
-    <h1>' . htmlspecialchars($row['tenPhong']) .'</h1>
+    <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
     <div class="tien4">
       <p>
         <span class="vnd7">VND</span>
-        <span class="so7">'. htmlspecialchars($row['giaPhong']). '</span>
+        <span class="so7">' . htmlspecialchars($row['giaPhong']) . '</span>
         /1 đêm
       </p>
     </div>
   </div>
   <div class="room-gallery">
-    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" '. htmlspecialchars($row['img']) .' alt="room" />
+    <img class="gallery-hightlight" id="0" src="../content/images/room1-big.jpeg" ' . htmlspecialchars($row['img']) . ' alt="room" />
     <div class="room-preview">
       <img id="1" src="../content/images/room1-small.jpeg" onclick="showimg(1)" alt="" />
       <img id="2" src="../content/images/room2-small.jpeg" onclick="showimg(2)" alt="" />
@@ -58,18 +52,26 @@ while ($row = mysqli_fetch_assoc($result)) {
     <li>Loại: ' . htmlspecialchars($row['loaiPhong']) . '</li>
     
   </div>
-  <hr>
-  </section>
-              <form action="/index.php?action=addcart" method="post">
-              <input type="submit" name="addtocart" value="Đặt Phòng">
-                <input type="hidden" name="id" value="'. htmlspecialchars($row['id']) . '">
-                <input type="hidden" name="tenPhong" value="'. htmlspecialchars($row['tenPhong']) . '">
-                <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['img']) . '">
-                <input type="hidden" name="loaiPhong" value="'. htmlspecialchars($row['loaiPhong']) . '">
-                <input type="hidden" name="giaPhong" value="'. htmlspecialchars($row['giaPhong']) . '">
-            </form>
-        </div>
+          <form class="book1" action="/index.php?action=addcart" method="post">
+
+          
+
+          <div class="hop15">
+              <input type="submit" name="addtocart" value="Đặt Phòng" class="custom-buy15 buy-15">
+          </div>
+                <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
+                <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
+                <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['img']) . '">
+                <input type="hidden" name="loaiPhong" value="' . htmlspecialchars($row['loaiPhong']) . '">
+                <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
+        </form>
+  </section> <br>
+
+
+      </div>
     </div>';
-    break;
+
+  break;
 }
+
 ?>
