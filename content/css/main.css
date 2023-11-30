@@ -290,3 +290,13 @@ img {
 .tich:hover{
   color: #d08e24 !important;
 }
+.box4{
+  color: white !important;
+  background-color: #e6b86f;
+  border-top:2px solid #d08e24;
+}
+.box5{
+  /* color: white !important; */
+  /* background-color: #e6b86f; */
+  border-top:2px solid #d08e24;
+}

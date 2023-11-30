@@ -55,7 +55,7 @@
     </form>
   </div>
 </section>
-<section class="box1 col pt-5">
+<section class="box1 container-fluid col pt-5">
   <div class="row p-3 py-5">
     <div class="col-6 p-5 py-5">
       <P>Chào mừng tới</P>
@@ -77,7 +77,7 @@
     </div>
   </div>
 </section>
-<section class="box2 col">
+<section class="box2 container-fluid col">
   <div class="py-5 m-5">
     <div class="text-center ">
       <p class="text-black-50 m-4">Rất nhiều phòng...</p>
@@ -155,7 +155,7 @@
     </div>
   </div>
 </section>
-<section class="box3 col ">
+<section class="box3 container-fluid col ">
   <div class="pt-5 mt-5">
     <div class="text-center ">
       <!-- <p class="text-black-50 m-4">Rất nhiều phòng...</p> -->
@@ -306,6 +306,51 @@
     <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=nhahang"><span class="dat">ĐẶT NGAY</span></a></span></button>
   </div>
 </section>
-<section class="box4 col ">
+<section class="box4 container-fluid p-1">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <p class="text-black-50 m-4">Phần thưởng nhỏ nhoi...</p>
+      <h1 class="m-4">Dịch vụ</h1>
+      <p class=" p-5 text-black-50">
+        Bên cạnh các dịch vụ chính, chúng tôi luôn có rất nhiều tiện ích bổ sung để cung cấp. Bắt đầu từ bãi đậu xe và WiFi miễn phí, <br>
+        đến trung tâm Nhà hàng và Phòng Tiệc, chúng tôi có thể biến mọi mong muốn của bạn thành hiện thực!
+      </p>
+    </div>
+  </div>
+  <div class="row p-3 m-0">
+    <div class="col-7 text-center py-5">
+      <img src="../content/images/plane.jpg" alt="" width="700" height="500" class="border-2" />
+    </div>
+    <div class="col-5 p-5">
+      <h1 class="p-3">Đặt phòng VIP ngay NHẬN xe đưa đón sân bay MIỄN PHÍ</h1>
+      <p class="p-3">Đúng vậy! Chúng tôi quyết tâm biến trải nghiệm của bạn tại khách sạn của chúng tôi trở nên thú vị,
+        đến mức chúng tôi muốn cung cấp cho bạn dịch vụ đưa đón sân bay miễn phí nếu bạn đặt phòng với chúng tôi!</p>
+      <h2 class="px-3">Giá bắt đầu từ</h2>
+      <p class="px-3">
+        <span class="namephong"> 2.149.000</span><sup>VND</sup>/mỗi đêm
+      </p>
+      <div class="px-3">
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
+      </div>
+    </div>
+  </div>
 
+</section>
+<section class="box5 container-fluid p-1">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <p class="text-black-50 m-4">Đọc các nhận xét, viết về ...</p>
+      <h1 class="m-4">Khách sạn của chúng tôi</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <div>
+        <img src="" alt="">
+        
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+  </div>
 </section>
