@@ -37,8 +37,8 @@ switch ($_GET["controller"]) {
                 break;
         }
         break;
-    case 'products':
-        include './pages/products/index.php';
+    case 'quanlyroom':
+        include './pages/quanlyroom/index.php';
         break;
 
     default:
