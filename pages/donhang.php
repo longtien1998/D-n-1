@@ -11,6 +11,7 @@
 
 
     ?>
+    
                 <h3>Mã Đơn Hàng: <?= $value['madh']; ?></h3>
                 <table class="dathang table" >
                     <tr>
@@ -36,8 +37,6 @@
                     <tr>
                         <td>Phương thức thanh toán</td>
                         
-
-                 
                     <?php $tttt = $value['pttt'];
                         switch ($value['pttt']) {
                             case 1:
@@ -67,5 +66,6 @@
         }
     }
     ?>
+    
 
 </div>
