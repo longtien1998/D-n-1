@@ -298,7 +298,7 @@
         </div>
       </div>
       <div class="col-5 text-center py-5">
-        <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
+        <img src="../content/images/wine.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
   </div>
@@ -343,7 +343,7 @@
       <h1 class="m-4">Khách sạn của chúng tôi</h1>
     </div>
   </div>
-  <div class="row justify-content-around text-center">
+  <div class="row justify-content-around text-center m-0">
     <div class="col-3 p-4">
       <div class="imguser">
         <img src="" alt="">
@@ -364,7 +364,7 @@
       </div>
       <div>
         <p class="text-black-50">Việc lựa chọn một khách sạn luôn là một thách thức,
-          đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này. 
+          đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này.
           Đó là lý do tại sao tôi rất vui vì dự đoán của tôi về khách sạn này chắc chắn là một điều may mắn.</p>
         <h3 class="p-3">-Phạm Hữu Nhất-</h3>
       </div>
@@ -382,10 +382,49 @@
   </div>
 </section>
 <section class="box6 container-fluid p-1">
-  <div class="">
-    <div></div>
-    <div class="map">
+  <div class="row p-5 m-0">
+    <div class="col-4 p-4">
+      <div class="pt-5 mt-5">
+        <div class="text-center ">
+          <p class="text-black-50 m-4">Vị trí & Bản đồ khách sạn</p>
+          <h1 class="m-4">Hướng dẫn lái xe</h1>
+          <p class=" p-5 text-black-50">
+            Đi theo đường Bạch Đằng rồi nhìn về phía tay trái.
+          </p>
+        </div>
+      </div>
+      <div class=" row justify-content-center pt-5 text-center">
+        <div class="p-3 col-6">
+          <h1>5.2 km</h1>
+          <p>Cách xa tòa nhà trung tâm hành chính</p>
+        </div>
+        <div class="p-3 col-6">
+          <h1>8.4 km</h1>
+          <p>Cách xa sân bay</p>
+        </div>
+      </div>
+    </div>
+    <div class="map col-8 d-flex justify-content-center ">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.63470957226258!2d108.24671958113845!3d16.0574261728479!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1701358971681!5m2!1svi!2s" width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+<section class="box7 container-fluid p-1">
+  <div class="row m-0 guithongtin">
+    <div class="guithongtin1 col-6">
+      <h1>Đăng ký nhận bản tin...</h1>
+      <p class="text-light-50">...và không bao giờ bỏ lỡ các ưu đãi và tin tức đặc biệt CỦA CHÚNG TÔI!</p>
+    </div>
+    <div class="guithongtin1 col-6">
+      <form action="" class="row">
+        <div class="col-9">
+          <input type="text" name="" id="" class="form-control guithongtin3">
+        </div>
+        <div class="col-2">
+          <button class="custom-buy3 buy-3 nutmua "><span><a style="text-decoration: none; " href=""><span class="dat">Đăng ký ngay</span></a></span></button>
 
+        </div>
+      </form>
     </div>
   </div>
 </section>
