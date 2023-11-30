@@ -163,9 +163,9 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
         </div>
     </div>
 </div>
-<form action="">
+<!-- <form action="">
     <input type="file" name="" id="" value="chọn ảnh">
-</form>
+</form> -->
 <script>
     window.onload = function() {
         let upload = document.querySelector('.upload');
