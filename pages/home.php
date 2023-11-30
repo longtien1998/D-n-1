@@ -155,6 +155,67 @@
     </div>
   </div>
 </section>
-<section class="box2 col">
-
+<section class="box3 col ">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <!-- <p class="text-black-50 m-4">Rất nhiều phòng...</p> -->
+      <h1 class="m-4">Nhà hàng & BAR</h1>
+      <p class=" p-5 text-black-50">
+        Hãy nếm thử những loại cocktail đặc trưng của chúng tôi và tận hưởng trải nghiệm ẩm thực thực sự độc đáo... <br>
+        Khi mặt trời lặn và bầu trời chuyển sang màu tím, chúng tôi kỷ niệm giờ màu tím và ngày kết thúc trước khi chào đón màn đêm bắt đầu.
+      </p>
+    </div>
+    <div class="text-center row justify-content-center">
+      <div class="tich text-black-50 text-uppercase lead showmenu px-2 m-2">Món Chính</div>
+      <div class="tich text-black-50 text-uppercase lead px-2 m-2">Món Tráng Miệng</div>
+      <div class="tich text-black-50 text-uppercase lead px-2 m-2">Đồ Uống</div>
+    </div>
+  </div>
+  <div class="row p-3">
+    <div class="monchinh row p-2 m-3">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-8 p-2">
+            <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
+            <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
+          </div>
+          <div class="col-4 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-8 p-2">
+            <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
+            <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
+          </div>
+          <div class=" col-4 text-center p-2">
+            <p  class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-8 p-2">
+            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
+            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+          </div>
+          <div class=" col-4 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-8 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-4 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
+    <div class="montrangmieng"></div>
+    <div class="douong"></div>
+  </div>
 </section>

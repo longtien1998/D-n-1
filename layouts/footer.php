@@ -86,6 +86,7 @@
                     </div>
                     <!-- Grid row -->
                 </div>
+
             </section>
             <!-- Section: Links  -->
             <!-- Copyright -->
@@ -93,7 +94,13 @@
                 © BONCHA Best - hotel 2023 . All Right Reserved.
             </div>
             <!-- Copyright -->
+
         </footer>
+        
+        <a class="lendau p-2" title="Back to Top" href="javascript:void(0)"><i class="fa-solid fa-arrow-up"></i></a>
+        
+        <script src="../content/js/app.js"></script>
+        <script src="../content/js/room.js"></script>
         </body>
 
         </html>

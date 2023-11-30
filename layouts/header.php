@@ -46,8 +46,7 @@ if (isset($_SESSION["user"])) {
 
     <link rel="stylesheet" href="../public/bootstrap.min.css">
     <!-- <script src="../public/bootstrap.js"></script> -->
-    <script src="../content/js/app.js"></script>
-    <script src="../content/js/room.js"></script>
+    
     <link rel="stylesheet" href="../content/css/main.css">
     <link rel="stylesheet" href="../content/css/room.css">
     <link rel="stylesheet" href="../content/css/login_re.css">

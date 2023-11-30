@@ -230,3 +230,45 @@ img {
 .rounded-full{
   border-radius: 50%;
 }
+.box3{
+  background-color: #d5d5d5;
+  padding: 10px;
+}
+.showmenu{
+  border-bottom: 3px solid #d08e24;
+  color: #d08e24;
+  cursor: pointer;
+}
+.lendau{
+  position:fixed;
+  bottom:100px;
+  right:50px;
+  z-index: 1000;
+  display: none;
+  border-radius: 20px;
+  border: 5px solid #d08e24;
+  background-color: antiquewhite;
+}
+.lendau > i{
+  font-size: 25px;
+}
+.monchinh{
+  width: 100%;
+}
+.montrangmieng{
+  display: none;
+}
+.douong{
+  display: none;
+}
+.gia{
+  font-size: 30px;
+  color: #d08e24;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gia> span{
+  font-size: 15px;
+}
+.tich:hover{
+  
+}
