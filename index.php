@@ -8,25 +8,25 @@ include './dao/xulydonhang.php';
 
 <?php
 
-
-
-if (!isset($_GET["action"])) $_GET["action"] = "home";
-
 switch ($_GET["action"]) {
     case 'home':
+        
         include './pages/home.php';
         break;
 
     case 'gioithieu':
+        
         include './pages/gioithieu.php';
         break;
 
     case 'phong':
+        
         include './pages/phong.php';
         break;
 
     case 'addcart':
        //kiểm tra $post [addtocart] và nếu được click
+        //lấy dữ liệu từ form để lưu vào giỏ
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
              //lấy dữ liệu từ form để lưu vào giỏ
             $id = $_POST['id'];
@@ -77,9 +77,11 @@ switch ($_GET["action"]) {
         }
         break;
 
-        //thanh toán
+        //thanh toán còn cái ! trên index bị sao thế a
+        
 
     case 'thanhtoan':
+        
         //nếu kiểm tra cái post ['thanh toan] và được click 
         if ((isset($_POST['thanhtoan'])) && ($_POST['thanhtoan'])) {
             //thì lấy dữ liệu
@@ -108,10 +110,12 @@ switch ($_GET["action"]) {
 
 
     case 'timphong':
+        
         include './pages/timphong.php';
         break;
 
     case 'nhahang':
+        
         include './pages/nhahang.php';
         break;
 
@@ -120,6 +124,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'contact':
+        
         include './pages/contact.php';
         break;
 

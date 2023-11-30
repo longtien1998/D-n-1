@@ -55,7 +55,7 @@
     </form>
   </div>
 </section>
-<section class="box1 col">
+<section class="box1 container-fluid col pt-5">
   <div class="row p-3 py-5">
     <div class="col-6 p-5 py-5">
       <P>Chào mừng tới</P>
@@ -77,7 +77,7 @@
     </div>
   </div>
 </section>
-<section class="box2 col">
+<section class="box2 container-fluid col">
   <div class="py-5 m-5">
     <div class="text-center ">
       <p class="text-black-50 m-4">Rất nhiều phòng...</p>
@@ -155,6 +155,237 @@
     </div>
   </div>
 </section>
-<section class="box2 col">
+<section class="box3 container-fluid col ">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <!-- <p class="text-black-50 m-4">Rất nhiều phòng...</p> -->
+      <h1 class="m-4">Nhà hàng & BAR</h1>
+      <p class=" p-5 text-black-50">
+        Hãy nếm thử những loại cocktail đặc trưng của chúng tôi và tận hưởng trải nghiệm ẩm thực thực sự độc đáo... <br>
+        Khi mặt trời lặn và bầu trời chuyển sang màu tím, chúng tôi kỷ niệm giờ màu tím và ngày kết thúc trước khi chào đón màn đêm bắt đầu.
+      </p>
+    </div>
+    <div class="text-center row justify-content-center">
+      <div id="monchinh" class="tich text-black-50 text-uppercase lead showmenu px-2 m-2">Món Chính</div>
+      <div id="montrangmieng" class="tich text-black-50 text-uppercase lead px-2 m-2">Món Tráng Miệng</div>
+      <div id="douong" class="tich text-black-50 text-uppercase lead px-2 m-2">Đồ Uống</div>
+    </div>
+  </div>
+  <div class="row p-3 m-0">
+    <div class="monchinh row p-2">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
+            <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
+          </div>
+          <div class="col-3 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
+            <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-9 p-2">
+            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
+            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
+    <div class="montrangmieng row p-2">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Kem Lạnh La Maison dùng kèm Trái Cây Tươi</h3>
+            <p class="text-black-50">LA MAISON'S FRUIT SORBET</p>
+          </div>
+          <div class="col-3 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Bánh nhà làm đặc biệt trong ngày</h3>
+            <p class="text-black-50">HOMEMADE SPECIAL CAKE</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-9 p-2">
+            <h3>Kem cháy kiểu Pháp vị Vani</h3>
+            <p class="text-black-50">VANILLA CREME BRULEE</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <!-- <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/kem.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
+    <div class="douong row p-2">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
+            <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
+          </div>
+          <div class="col-3 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
+            <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-9 p-2">
+            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
+            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center text-center">
+    <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=nhahang"><span class="dat">ĐẶT NGAY</span></a></span></button>
+  </div>
+</section>
+<section class="box4 container-fluid p-1">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <p class="text-black-50 m-4">Phần thưởng nhỏ nhoi...</p>
+      <h1 class="m-4">Dịch vụ</h1>
+      <p class=" p-5 text-black-50">
+        Bên cạnh các dịch vụ chính, chúng tôi luôn có rất nhiều tiện ích bổ sung để cung cấp. Bắt đầu từ bãi đậu xe và WiFi miễn phí, <br>
+        đến trung tâm Nhà hàng và Phòng Tiệc, chúng tôi có thể biến mọi mong muốn của bạn thành hiện thực!
+      </p>
+    </div>
+  </div>
+  <div class="row p-3 m-0">
+    <div class="col-7 text-center py-5">
+      <img src="../content/images/plane.jpg" alt="" width="700" height="500" class="border-2" />
+    </div>
+    <div class="col-5 p-5">
+      <h1 class="p-3">Đặt phòng VIP ngay NHẬN xe đưa đón sân bay MIỄN PHÍ</h1>
+      <p class="p-3">Đúng vậy! Chúng tôi quyết tâm biến trải nghiệm của bạn tại khách sạn của chúng tôi trở nên thú vị,
+        đến mức chúng tôi muốn cung cấp cho bạn dịch vụ đưa đón sân bay miễn phí nếu bạn đặt phòng với chúng tôi!</p>
+      <h2 class="px-3">Giá bắt đầu từ</h2>
+      <p class="px-3">
+        <span class="namephong"> 2.149.000</span><sup>VND</sup>/mỗi đêm
+      </p>
+      <div class="px-3">
+        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
+      </div>
+    </div>
+  </div>
 
+</section>
+<section class="box5 container-fluid p-1">
+  <div class="pt-5 mt-5">
+    <div class="text-center ">
+      <p class="text-black-50 m-4">Đọc các nhận xét, viết về ...</p>
+      <h1 class="m-4">Khách sạn của chúng tôi</h1>
+    </div>
+  </div>
+  <div class="row justify-content-around text-center">
+    <div class="col-3 p-4">
+      <div class="imguser">
+        <img src="" alt="">
+        <h2 class="py-3">longtien!</h2>
+      </div>
+      <div>
+        <p class="text-black-50">Khi ở Đà Nẵng vì công việc kinh doanh của mình, tôi luôn ở lại nơi này.
+          Tỷ lệ giá/chất lượng ở đây rất vượt trội,
+          cho phép tôi tiết kiệm nhiều tiền hơn cho các chi tiêu khác…
+          Xếp hạng của tôi là 5 trên 5!</p>
+        <h3 class="p-3">-Tôn Long Tiến-</h3>
+      </div>
+    </div>
+    <div class="col-3 p-4">
+      <div class="imguser">
+        <img src="" alt="">
+        <h2 class="py-3">Akitonhat!</h2>
+      </div>
+      <div>
+        <p class="text-black-50">Việc lựa chọn một khách sạn luôn là một thách thức,
+          đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này. 
+          Đó là lý do tại sao tôi rất vui vì dự đoán của tôi về khách sạn này chắc chắn là một điều may mắn.</p>
+        <h3 class="p-3">-Phạm Hữu Nhất-</h3>
+      </div>
+    </div>
+    <div class="col-3 p-4">
+      <div class="imguser">
+        <img src="" alt="">
+        <h2 class="py-3">Alexnguyen!</h2>
+      </div>
+      <div>
+        <p class="text-black-50">Tôi đã đến thăm Đà Nẵng năm ngoái khi đi du lịch khắp vùng Trung Tây cùng gia đình. Phòng Gia đình rất tuyệt, nhà hàng (và quầy bar) của khách sạn nhìn chung đều đẹp và giá cả rất hợp lý…</p>
+        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="box6 container-fluid p-1">
+  <div class="">
+    <div></div>
+    <div class="map">
+
+    </div>
+  </div>
 </section>

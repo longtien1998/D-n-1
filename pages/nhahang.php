@@ -102,7 +102,7 @@
         <div class="dow">
             <h2>Tải Xuống Menu Đầy Đủ</h2>
             <div class="hop9">
-                <button type="submit" class="custom-buy10 buy-10"><span><a style="text-decoration: none;" href="../content/images/list-menu-BonCha.pdf"> Tải Xuống</a></span></button>
+                <button type="submit" class="custom-buy10 buy-10"><span><a style="text-decoration: none;" href="../content/images/list-menu-BonCha.pdf" target="_blank"> Tải Xuống</a></span></button>
             </div>
         </div>
     </section>
