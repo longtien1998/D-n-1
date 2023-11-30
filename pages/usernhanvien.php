@@ -47,14 +47,14 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
             $path = $target_dir . basename($_FILES["filetoUpload"]["name"]);
             //chèn vào bảng product trong cơ sowe dữ liệu test
             $conn = connect_db();
-            $query = "UPDATE nhanvien SET urlimage ='$path' WHERE username ='$user'";
-
+            $query = "UPDATE nhanvien SET urlimage ='$path' WHERE tenDangNhap ='$user'";
+            
             $result = mysqli_query($conn, $query);
             // kiểm tra kết quả try vấn
             if ($result) {
 
                 $message5 = '<h2 class="section-title px-5"><span class="px-2" style="color: green;">Thêm ảnh thành công</span></h2>';
-                header('refresh:2;index.php?action=user');
+                header('refresh:2;index.php?action=usernv');
             } else {
                 $message6 = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Có lỗi xảy ra</span></h2><br>';
             }
@@ -77,12 +77,13 @@ if (isset($_POST['save']) && ($_POST['save'])) {
     $macode = $_POST["postal-code"];
 
     $conn = connect_db();
-    $query = "UPDATE useradmin SET fullname='$fullname',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
+    $query = "UPDATE nhanvien SET tenNhanVien='$fullname',tenDangNhap='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE tenDangNhap ='$user'";
 
     $result = mysqli_query($conn, $query);
     if ($result) {
+        $_SESSION["user"]=$username;
         $messageuser = '<h2 class="section-title px-5"><span class="px-2" style="color: green;">Cập nhập thông tin thành công</span></h2>';
-        header('refresh:2;index.php?action=user');
+        header('refresh:2;index.php?action=usernv');
     } else {
         $messageuser = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Có lỗi xảy ra</span></h2><br>';
     }
@@ -168,7 +169,7 @@ if (isset($_POST['save']) && ($_POST['save'])) {
                                 
                                 <div class="text-center mt-4">
                                     <button type="button" class="btn btn-orange border-primary mx-2"><a href="/admin/index.php">Vào Quản Trị </a></button>
-                                    <button type="button" class="btn btn-orange border-primary mx-2">Thoát</button>
+                                    <a type="button" class="btn btn-orange border-primary mx-2" class = "thoat" href="/index.php">Thoát</a>
                                     <input type="submit" class="btn btn-orange border-success mx-2 " name="save" id="luu" value="lưu">
                                     <button type="button" class="btn btn-orange border-success mx-2" id="sua">Sửa</button>
                                     
@@ -181,9 +182,9 @@ if (isset($_POST['save']) && ($_POST['save'])) {
         </div>
     </div>
 </div>
-<form action="">
+<!-- <form action="">
     <input type="file" name="" id="" value="chọn ảnh">
-</form>
+</form> -->
 <script>
     window.onload = function() {
         let upload = document.querySelector('.upload');
@@ -216,6 +217,7 @@ if (isset($_POST['save']) && ($_POST['save'])) {
 
             } else save.style.display = "none";
         };
+
 
     }
 </script>

@@ -61,13 +61,12 @@ while ($row = mysqli_fetch_assoc($result)) {
   <hr>
   </section>
               <form action="/index.php?action=addcart" method="post">
-              <input type="submit" name="addtocart" value="Mua Hàng">
+              <input type="submit" name="addtocart" value="Đặt Phòng">
                 <input type="hidden" name="id" value="'. htmlspecialchars($row['id']) . '">
                 <input type="hidden" name="tenPhong" value="'. htmlspecialchars($row['tenPhong']) . '">
                 <input type="hidden" name="hinhPhong" value="'. htmlspecialchars($row['img']) . '">
                 <input type="hidden" name="loaiPhong" value="'. htmlspecialchars($row['loaiPhong']) . '">
                 <input type="hidden" name="giaPhong" value="'. htmlspecialchars($row['giaPhong']) . '">
-                <input type="number" name="sl" value="1">
             </form>
         </div>
     </div>';

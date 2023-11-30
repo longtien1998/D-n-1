@@ -8,24 +8,24 @@ include './dao/xulydonhang.php';
 <?php ?>
 <?php
 
-
-
-if (!isset($_GET["action"])) $_GET["action"] = "home";
-
 switch ($_GET["action"]) {
     case 'home':
+        
         include './pages/home.php';
         break;
 
     case 'gioithieu':
+        
         include './pages/gioithieu.php';
         break;
 
     case 'phong':
+        
         include './pages/phong.php';
         break;
 
     case 'addcart':
+        
         //lấy dữ liệu từ form để lưu vào giỏ
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
             $id = $_POST['id'];
@@ -33,12 +33,9 @@ switch ($_GET["action"]) {
             $hinhPhong = $_POST['img'];
             $loaiPhong = $_POST['loaiPhong'];
             $giaPhong = $_POST['giaPhong'];
-            if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
-                $sl = $_POST['sl'];
-            } else {
-                $sl = 1;
-            }
+            $sl = 1;
             $fg = 0;
+            
             //kiểm tra sp có tồn tại trong giỏ hàng hay kh
             // nếu có chỉ cập nhật lại sl
             $i = 0;
@@ -82,6 +79,7 @@ switch ($_GET["action"]) {
         //thanh toán
 //thanh toán
     case 'thanhtoan':
+        
         //nếu kiểm tra cái post ['thanh toan] và được click 
         if ((isset($_POST['thanhtoan'])) && ($_POST['thanhtoan'])) {
             //thì lấy dữ liệu
@@ -93,7 +91,7 @@ switch ($_GET["action"]) {
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
             $madh = "KH" . rand(10000, 99999);
-            // Siddh = "DH".rand(100,999);
+
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
             $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
@@ -110,10 +108,12 @@ switch ($_GET["action"]) {
 
 
     case 'timphong':
+        
         include './pages/timphong.php';
         break;
 
     case 'nhahang':
+        
         include './pages/nhahang.php';
         break;
 
@@ -122,11 +122,12 @@ switch ($_GET["action"]) {
         break;
 
     case 'contact':
+        
         include './pages/contact.php';
         break;
 
     case 'login':
-        
+
         include './pages/login.php';
         break;
     case 'register':

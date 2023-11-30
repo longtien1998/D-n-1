@@ -1,50 +1,5 @@
 <div>
-    <h1>ID ĐƠN HÀNG : <?php echo $_SESSION['iddh'];?></h1>
-    <?php
-
-    if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
-        $getshowcart = getshowcart($_SESSION['iddh']);
-        if ((isset($getshowcart)) && (count($getshowcart) > 0)) {
-            echo '  <table>
-                    <tr>
-                        <th>STT</th>
-                        <th>Tên Phòng</th>
-                        <th>Hình</th>
-                        <th>Loại Phòng</th>
-                        <th>Giá Phòng</th>
-                        <th>Số Lượng</th>
-                        <th>Thành Tiền</th>
-                    </tr>';
-            $i = 0;
-            $tong = 0;
-            foreach ($getshowcart as $item) {
-                $tt = $item['giaPhong'] * $item['soluong'];
-                $tong += $tt;
-                echo '  <tr>
-                            <td>' . ($i + 1) . '</td>
-                            <td>' . $item['tenPhong'] . '</td>
-                            <td><img src=" ../content/images/' . $item['img'] . '"></td>
-                            <td>' . $item['loaiPhong'] . '</td>
-                            <td>' . $item['giaPhong'] . '</td>
-                            <td>' . $item['soluong'] . '</td>
-                            <td>' . $tt . '</td>
-                    </tr>';
-                $i++;
-            }
-            echo '<tr>
-                <td colspan="5">Tổng đơn hàng của bạn</td>
-                <td></td>
-                <td>' . $tong . '</td>
-                <td></td>
-                <td></td>
-            </tr>';
-
-            echo '</table>';
-        }
-    } else {
-        echo "Giỏ hàng rỗng. <a href='/index.php?action=home'> Tiếp tục đặt hàng</a>";
-    }
-    ?>
+    <h1>ID ĐƠN HÀNG : <?php echo $_SESSION['iddh']; ?></h1>
 </div>
 
 <div>
@@ -52,51 +7,63 @@
     if (isset($_SESSION['iddh']) && ($_SESSION['iddh']) > 0) {
         $oderinfo = getoderinfo($_SESSION['iddh']);
         if (count($oderinfo) > 0) {
+            foreach ($oderinfo as $value) {
+
 
     ?>
-            <h3>Mã Đơn Hàng: <?= $oderinfo[0]['madh']; ?></h3>
-            <table class="dathang">
-                <tr>
-                    <td>Tên Khách Hàng: <br> <?= $oderinfo[0]['hoten']; ?></td>
-                </tr>
-                <tr>
-                    <td>Số điện thoại: <br> <?= $oderinfo[0]['tel']; ?></td>
-                </tr>
-                <tr>
-                    <td>Email: <br> <?= $oderinfo[0]['email']; ?></td>
-                </tr>
-                <tr>
-                    <td>Ngày Đến: <br> <?= $oderinfo[0]['checkin']; ?></td>
-                </tr>
-                <tr>
-                    <td>Ngày Đi: <br> <?= $oderinfo[0]['checkout']; ?></td>
-                </tr>
-                <tr>
-                    <td>Phương thức thanh toán</td>
-                    <?
-                    switch ($oderinfo[0]['pttt']) {
-                        case '1':
-                            $mess = "Thanh toán trực tiếp tại khách sạn";
-                            break;
-                        case '2':
-                            $mess = "Thanh toán qua ví MoMo";
-                            break;
-                        case '3':
-                            $mess = "Thanh toán qua Zalo Pay";
-                            break;
-                        case '4':
-                            $mess = "Thanh toán qua ATM";
-                            break;
+                <h3>Mã Đơn Hàng: <?= $value['madh']; ?></h3>
+                <table class="dathang table" >
+                    <tr>
+                        <td>Tên Khách Hàng: </td>
+                        <td><?= $value['hoten']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại:</td>
+                        <td><?= $value['tel']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><?= $value['email']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày Đến:</td>
+                        <td><?= $value['checkin']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày Đi:</td>
+                        <td><?= $value['checkout']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Phương thức thanh toán</td>
+                        
 
-                        default:
-                            $mess = "Quý Khách Chưa Chọn Phương Thức Thanh Toán!";
-                            break;
-                    }
-                    echo $mess;
-                    ?>
-                </tr>
-            </table>
+                 
+                    <?php $tttt = $value['pttt'];
+                        switch ($value['pttt']) {
+                            case 1:
+                                $mess = "Thanh toán trực tiếp tại khách sạn";
+                                break;
+                            case 2:
+                                $mess = "Thanh toán qua ví MoMo";
+                                break;
+                            case 3:
+                                $mess = "Thanh toán qua Zalo Pay";
+                                break;
+                            case 4:
+                                $mess = "Thanh toán qua ATM";
+                                break;
+
+                            default:
+                                $mess = "Quý Khách Chưa Chọn Phương Thức Thanh Toán!";
+                                break;
+                        }
+                        
+                        ?>
+                        <td><?php echo $mess; ?></td>
+                    </tr>
+                </table>
     <?php
+            }
         }
     }
     ?>
