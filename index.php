@@ -8,10 +8,6 @@ include './dao/xulydonhang.php';
 
 <?php
 
-
-
-
-
 switch ($_GET["action"]) {
     case 'home':
         

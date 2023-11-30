@@ -81,7 +81,7 @@ if (isset($_SESSION["user"])) {
     </div>
     <header class="card-header row justify-content-around mr-0">
         <div class=" logo mx-5 text-center">
-            <a href="/index.php">
+            <a href="/index.php" style="text-decoration: none;">
                 <h1>BONCHA</h1>
                 <p>Best - Hotel</p>
             </a>

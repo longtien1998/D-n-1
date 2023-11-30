@@ -55,7 +55,7 @@
     </form>
   </div>
 </section>
-<section class="box1 col">
+<section class="box1 col pt-5">
   <div class="row p-3 py-5">
     <div class="col-6 p-5 py-5">
       <P>Chào mừng tới</P>
@@ -166,47 +166,47 @@
       </p>
     </div>
     <div class="text-center row justify-content-center">
-      <div class="tich text-black-50 text-uppercase lead showmenu px-2 m-2">Món Chính</div>
-      <div class="tich text-black-50 text-uppercase lead px-2 m-2">Món Tráng Miệng</div>
-      <div class="tich text-black-50 text-uppercase lead px-2 m-2">Đồ Uống</div>
+      <div id="monchinh" class="tich text-black-50 text-uppercase lead showmenu px-2 m-2">Món Chính</div>
+      <div id="montrangmieng" class="tich text-black-50 text-uppercase lead px-2 m-2">Món Tráng Miệng</div>
+      <div id="douong" class="tich text-black-50 text-uppercase lead px-2 m-2">Đồ Uống</div>
     </div>
   </div>
-  <div class="row p-3">
-    <div class="monchinh row p-2 m-3">
+  <div class="row p-3 m-0">
+    <div class="monchinh row p-2">
       <div class="col-7 p-5">
         <div class="row p-2 px-5">
-          <div class="col-8 p-2">
+          <div class="col-9 p-2">
             <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
             <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
           </div>
-          <div class="col-4 p-2 text-center">
+          <div class="col-3 p-2 text-center">
             <p class="gia">135000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-2 px-5">
-          <div class="col-8 p-2">
+          <div class="col-9 p-2">
             <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
             <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
           </div>
-          <div class=" col-4 text-center p-2">
-            <p  class="gia">135000 <span>VND</span></p>
-          </div>
-        </div>
-        <div class="row p-2 px-5">
-          <div class=" col-8 p-2">
-            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
-            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
-          </div>
-          <div class=" col-4 text-center p-2">
+          <div class=" col-3 text-center p-2">
             <p class="gia">135000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-2 px-5">
-          <div class="col-8 p-2">
+          <div class=" col-9 p-2">
+            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
+            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
             <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
             <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
           </div>
-          <div class="col-4 text-center p-2">
+          <div class="col-3 text-center p-2">
             <p class="gia">135000 <span>VND</span></p>
           </div>
         </div>
@@ -215,7 +215,97 @@
         <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
-    <div class="montrangmieng"></div>
-    <div class="douong"></div>
+    <div class="montrangmieng row p-2">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Kem Lạnh La Maison dùng kèm Trái Cây Tươi</h3>
+            <p class="text-black-50">LA MAISON'S FRUIT SORBET</p>
+          </div>
+          <div class="col-3 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Bánh nhà làm đặc biệt trong ngày</h3>
+            <p class="text-black-50">HOMEMADE SPECIAL CAKE</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-9 p-2">
+            <h3>Kem cháy kiểu Pháp vị Vani</h3>
+            <p class="text-black-50">VANILLA CREME BRULEE</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <!-- <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/kem.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
+    <div class="douong row p-2">
+      <div class="col-7 p-5">
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
+            <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
+          </div>
+          <div class="col-3 p-2 text-center">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
+            <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class=" col-9 p-2">
+            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
+            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+          </div>
+          <div class=" col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+        <div class="row p-2 px-5">
+          <div class="col-9 p-2">
+            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
+            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+          </div>
+          <div class="col-3 text-center p-2">
+            <p class="gia">135000 <span>VND</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 text-center py-5">
+        <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
+      </div>
+    </div>
   </div>
+  <div class="d-flex justify-content-center text-center">
+    <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=nhahang"><span class="dat">ĐẶT NGAY</span></a></span></button>
+  </div>
+</section>
+<section class="box4 col ">
+
 </section>
