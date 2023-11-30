@@ -1,9 +1,17 @@
 .active {
-  color: black !important;
-  border-bottom: 5px solid black;
+  color: #d08e24 !important;
+  border-bottom: 5px solid #d08e24;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   font-size: 25px;
 }
-
+.card-header{
+  border-bottom:2px solid #d08e24 ;
+  border-top: 2px solid #d08e24;
+}
+footer{
+  background-color: rgb(167, 99, 31);
+}
 .slide1 {
   background-image: url('/front-end/image/Section.png');
   background-repeat: no-repeat;
@@ -160,7 +168,7 @@ img {
   box-shadow: 0px 0px 50px black;
 }
 .box1{
-  background-color: #d5d5d5;
+  background-color: #f3f3f3;
   margin-top: -66px;
 }
 .border-1{
@@ -230,13 +238,20 @@ img {
 .rounded-full{
   border-radius: 50%;
 }
+.box2{
+  border-top: 2px solid #d08e24;
+}
 .box3{
-  background-color: #d5d5d5;
-  padding: 10px;
+  background-color: #f2f1f1;
+  border-top: 2px solid #d08e24;
+  padding-bottom: 80px;
 }
 .showmenu{
   border-bottom: 3px solid #d08e24;
-  color: #d08e24;
+  color: #d08e24 !important;
+  
+}
+.tich{
   cursor: pointer;
 }
 .lendau{
@@ -254,12 +269,15 @@ img {
 }
 .monchinh{
   width: 100%;
+  
 }
 .montrangmieng{
+  width: 100%;
   display: none;
 }
 .douong{
   display: none;
+  width: 100%;
 }
 .gia{
   font-size: 30px;
@@ -270,5 +288,5 @@ img {
   font-size: 15px;
 }
 .tich:hover{
-  
+  color: #d08e24 !important;
 }

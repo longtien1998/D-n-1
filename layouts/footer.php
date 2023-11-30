@@ -1,4 +1,4 @@
-        <footer class="text-center text-lg-start bg-dark text-light">
+        <footer class="text-center text-lg-start text-light">
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
                 <div class="me-5 d-none d-lg-block">
@@ -90,7 +90,7 @@
             </section>
             <!-- Section: Links  -->
             <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.5)">
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.5)" translate="no">
                 © BONCHA Best - hotel 2023 . All Right Reserved.
             </div>
             <!-- Copyright -->
