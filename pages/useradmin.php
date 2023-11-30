@@ -150,7 +150,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                                 <div>'.$messageuser.'</div>
                                 
                                 <div class="text-center mt-4">
-                                    <a type="button" class="btn btn-orange border-primary mx-2" href="/admin/index.php">Vào Quản Trị </a>
+                                    <a type="button" class="btn btn-orange border-primary mx-2" href="/admin/index.php" target="_blank">Vào Quản Trị </a>
                                     <a type="button" class="btn btn-orange border-primary mx-2" href="/index.php">Thoát</a>
                                     <input type="submit" class="btn btn-orange border-success mx-2 " name="save" id="luu" value="lưu">
                                     <button type="button" class="btn btn-orange border-success mx-2" id="sua">Sửa</button>

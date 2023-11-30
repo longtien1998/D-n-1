@@ -147,9 +147,14 @@ img {
 }
 .fa-star{
   font-size: 100px;
+  color: rgb(255, 255, 72);
 }
 .name{
   font-size: 90px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.comment{
+  font-size: 25px;
 }
 .namephong{
   font-size: 40px;

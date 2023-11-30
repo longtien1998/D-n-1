@@ -3,22 +3,22 @@
     <div class="s">
       <ul class="row list-unstyled">
         <li class="m-4">
-          <i class="fa-solid fa-star" style="color: #ffffff"></i>
+          <i class="fa-solid fa-star" ></i>
         </li>
         <li class="m-4">
-          <i class="fa-solid fa-star" style="color: #ffffff"></i>
+          <i class="fa-solid fa-star" ></i>
         </li>
         <li class="m-4">
-          <i class="fa-solid fa-star" style="color: #ffffff"></i>
+          <i class="fa-solid fa-star" ></i>
         </li>
         <li class="m-4">
-          <i class="fa-solid fa-star" style="color: #ffffff"></i>
+          <i class="fa-solid fa-star" ></i>
         </li>
       </ul>
     </div>
     <span class="text-uppercase lead m-3">Tận hưởng với chúng tôi</span>
-    <h1 class="name m-3 font-weight-bold">Cảnh quan tuyệt đẹp</h1>
-    <p>
+    <h1 class="name m-3 font-weight-bold ">Cảnh quan tuyệt đẹp</h1>
+    <p class="comment my-3">
       Mỗi phòng tại khách sạn của chúng tôi không chỉ mang lại sự thoải mái cao
       mà còn có tầm nhìn tuyệt vời ra khung cảnh biển.
     </p>

@@ -42,7 +42,7 @@
                                 <td style="width: 100px;">
                                     <form action="" method="post">
                                         <input type="hidden" name="id"  value="'.$row['id'].' ">
-                                        <input type="submit" name="delete" id="delete" value="Xóa" >
+                                        <input type="submit" name="delete" id="deleteadmin" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
@@ -56,15 +56,15 @@
     </div>
 </div>
 <script>
-    let xoa = document.getElementById('delete');
-    xoa.addEventListener("click", function() {
-        let option = confirm("Bạn có muốn xóa Nhân viên không?");
-        if (option) {
+    let xoaadmin = document.getElementById('deleteadmin');
+    xoaadmin.addEventListener('click', function() {
+        let option1 = confirm("Bạn có muốn xóa admin không?");
+        if (option1) {
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $getid = $_POST['id'];
                 user_delete($getid);
-                header("refresh:1;");
+                // header("refresh:1;");
             }
             ?>
         }
