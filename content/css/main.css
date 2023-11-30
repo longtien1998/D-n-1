@@ -300,3 +300,14 @@ img {
   /* background-color: #e6b86f; */
   border-top:2px solid #d08e24;
 }
+.box5 img{
+  background-color: #e6b86f;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+}
+.box6{
+  background-color: #f0efee;
+  border-top:2px solid #d08e24;
+}
