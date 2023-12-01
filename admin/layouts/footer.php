@@ -28,11 +28,11 @@
       }
       ]
     };
-    let ctxl = $("#lineChartDemo").get(0).getContext("2d");
-    let lineChart = new Chart(ctxl).Line(data);
+    // let ctxl = $("#lineChartDemo").get(0).getContext("2d");
+    // let lineChart = new Chart(ctxl).Line(data);
 
-    let ctxb = $("#barChartDemo").get(0).getContext("2d");
-    let barChart = new Chart(ctxb).Bar(data);
+    // let ctxb = $("#barChartDemo").get(0).getContext("2d");
+    // let barChart = new Chart(ctxb).Bar(data);
   </script>
     <script type="text/javascript">
     //Thời Gian

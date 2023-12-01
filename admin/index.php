@@ -3,7 +3,11 @@ include "../config/connect.php";
 include "../dao/pdo.php";
 include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
+
+include "../dao/room.php";
+
 include "../dao/tintuc.php";
+
 
 include '../admin/layouts/header.php' ?>
 <?php
@@ -38,7 +42,16 @@ switch ($_GET["controller"]) {
                 break;
         }
     case 'quanlyroom':
-        include './pages/quanlyroom/index.php';
+        switch ($_GET["action"]) {
+            case 'index':
+                include './pages/quanlyroom/index.php';
+                break;
+
+            default:
+                include './pages/quanlyroom/index.php';
+                break;
+        }
+
         break;
 
     default:
