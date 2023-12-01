@@ -19,6 +19,7 @@
                     <th scope="col">Password</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -39,10 +40,11 @@
                                 <td>' . $row['password'] . '</td>
                                 <td>' . $row['email'] . '</td>
                                 <td>' . $row['phone'] . '</td>
+                                <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=user-admin&action=updateAdmin&id='.$row['id'].'">sửa</a></td>
                                 <td style="width: 100px;">
                                     <form onSubmit="return xoaad()" action="" method="post">
                                         <input type="hidden" name="id"  value="'.$row['id'].' ">
-                                        <input type="submit" name="deleteadmin" value="Xóa" >
+                                        <input type="submit" name="deleteadmin"  class="xoa border-0" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
