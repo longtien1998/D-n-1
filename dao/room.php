@@ -24,12 +24,7 @@ function room_delete($maPhong)
 function room2_delete($getmaphong)
 {
     $sql = "DELETE FROM room WHERE maPhong=?";
-    
-        $data = pdo_execute($sql, $getmaphong);
-        if($data>0){
-            var_dump($data);
-        }
-    
+    pdo_execute($sql, $getmaphong);
 }
 
 //Mặc định sắp xếp ngược/ truyền ASC vào thì xuôi
@@ -39,12 +34,12 @@ function room_select_all($order = 'DESC')
     $sql = "SELECT * FROM room ORDER BY maPhong $order";
     return pdo_query($sql);
 }
-function room_select_by_id($maPhong)//truy vấn và trả về thông tin của 1 loại hh dựa trên maPhong
+function room_select_by_id($maPhong) //truy vấn và trả về thông tin của 1 loại hh dựa trên maPhong
 {
     $sql = "SELECT * FROM room WHERE maPhong=?";
     return pdo_query_one($sql, $maPhong);
 }
-function room_exist($maPhong)//kt loại hh có tồn tại trong csdl hay k
+function room_exist($maPhong) //kt loại hh có tồn tại trong csdl hay k
 {
     $sql = "SELECT count(*) FROM room WHERE maPhong=?";
     return pdo_query_value($sql, $maPhong) > 0;
@@ -62,4 +57,3 @@ function room_exist_LoaiPhong_update($maPhong, $LoaiPhong)
 }
 
 //vidu
-
