@@ -366,7 +366,7 @@
         <p class="text-black-50">Việc lựa chọn một khách sạn luôn là một thách thức,
           đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này.
           Đó là lý do tại sao tôi rất vui vì dự đoán của tôi về khách sạn này chắc chắn là một điều may mắn.</p>
-        <h3 class="p-3">-Phạm Hữu Nhất-</h3>
+        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
       </div>
     </div>
     <div class="col-3 p-4">
@@ -376,7 +376,7 @@
       </div>
       <div>
         <p class="text-black-50">Tôi đã đến thăm Đà Nẵng năm ngoái khi đi du lịch khắp vùng Trung Tây cùng gia đình. Phòng Gia đình rất tuyệt, nhà hàng (và quầy bar) của khách sạn nhìn chung đều đẹp và giá cả rất hợp lý…</p>
-        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
+        <h3 class="p-3">-Phạm Hữu Nhất-</h3>
       </div>
     </div>
   </div>
