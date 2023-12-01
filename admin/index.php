@@ -3,6 +3,7 @@ include "../config/connect.php";
 include "../dao/pdo.php";
 include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
+include "../dao/tintuc.php";
 
 include '../admin/layouts/header.php' ?>
 <?php
@@ -37,6 +38,20 @@ switch ($_GET["controller"]) {
                 break;
         }
         break;
+        // case 'user-new-hotte':
+        //     switch ($_GET["action"]) {
+        //         case 'index':
+        //             include './pages/users-nhanvien/index.php';
+        //             break;
+        //         case 'new-nhanvien':
+        //             include './pages/users-nhanvien/add-nhanvien.php';
+        //             break;
+    
+        //         default:
+        //             include './pages/users-nhanvien/index.php';
+        //             break;
+        //     }
+        //     break;
     case 'products':
         include './pages/products/index.php';
         break;

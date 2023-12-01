@@ -49,50 +49,7 @@
                 <img src="../content/images/bocobe.jpg" width="100%" height="381px" alt="">
             </div>
         </div>
-        <section class="setd">
-        <h2>Thực Đơn Món Tráng Miệng</h2>
-        <div class="thucdon2">
-            <div class="mon5">
-                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
-                <h3>Kem Lạnh La Maison dùng kèm Trái Cây Tươi</h3>
-                <span>LA MAISON'S FRUIT SORBET</span>
-            </div>
-            <div class="mon6">
-                <img src="../content/images/kem1.jpg" width="100%" height="381px" alt="">
-                <h3>Bánh nhà làm đặc biệt trong ngày</h3>
-                <span>HOMEMADE SPECIAL CAKE</span>
-            </div>
-            <div class="mon7">
-                <img src="../content/images/kem.jpg" width="100%" height="381px" alt="">
-                <h3>Kem cháy kiểu Pháp vị Vani</h3>
-                <span>VANILLA CREME BRULEE</span>
-            </div>
-        </div>
-            <!-- <table>
-        <tr>
-                <th>ID</th>
-                <th>Tên sản phẩm</th>
-                <th>Hình ảnh</th>
-                <th>Sửa sản phẩm</th>
-                <th>Xóa sản phẩm</th>
-            </tr> -->
-      <!-- <?php 
-       while($row = mysqli_fetch_assoc($result)) {
-                echo "<tr>";
-                echo "<td>" .$row['id'] . "</td>";
-                echo "<td>" .$row['tenSp'] . "</td>";
-                echo "<td><img src=".$row['anhSp']."></td>";
-                echo "<td>";
-                echo " <a class='edit' href='update.php?id=" . $row['id'] ."'>Sửa</a> ";
-                echo "</td>";
-                echo "<td>";
-                echo " <a href='delete.php?id=" . $row['id'] ."'>Xóa</a> ";
-                echo "</td>";
-                echo "</tr>";
-            }
-            ?>
-            </table> -->
-        </section>
+       
     </section>
     <div class="hidden1"></div>
     <section class="se5">
