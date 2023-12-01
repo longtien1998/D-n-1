@@ -18,7 +18,7 @@
         $check_query = "SELECT *FROM useradmin WHERE username = '$username'";
         $result = $conn->query($check_query);
         if ( $result->num_rows >0 ) {
-            echo' <h3 class="section-title text-center px-4"><span class="px-2 ">tài khoản đã đăng kí</span></h3>';
+            $message ='<h2 class="section-title text-center px-4"><span class="px-2 ">tài khoản đã đăng kí</span></h2>';
         } else {
             // thêm tài khoản vào cơ sở dữ liệu
             

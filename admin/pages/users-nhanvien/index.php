@@ -24,6 +24,7 @@
                     <th scope="col">Ca Làm Việc</th>
                     <th scope="col">id_KhachSan</th>
                     <th scope="col">Tên Đăng Nhập</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -44,10 +45,11 @@
                                 <td>' . $row['caLamViec'] . '</td>
                                 <td>' . $row['Id_KhachSan'] . '</td>
                                 <td>' . $row['tenDangNhap'] . '</td>
+                                <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=user-nhanvien&action=updatenhanvien&manhanvien='.$row['maNhanVien'].'">sửa</a></td>
                                 <td style="width: 100px;">
                                     <form onSubmit="return xoanv()" action="" method="post">
                                         <input type="hidden" name="manhanvien"  value="' . $row['maNhanVien'] . '">
-                                        <input type="submit" name="deletenv" id="deletenv" value="Xóa" >
+                                        <input type="submit" name="deletenv" id="deletenv" class="xoa border-0" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';

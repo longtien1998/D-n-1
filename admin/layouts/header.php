@@ -14,6 +14,7 @@
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="/public/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/admin/content-admin/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/admin/content-admin/css/style.css">
   <link rel="stylesheet" href="/content/css/login_re.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -76,9 +77,9 @@
       </li>
       <li><a class="app-menu__item" href="page-calendar.html"><i class='app-menu__icon bx bx-calendar-check'></i><span
             class="app-menu__label">Lịch công tác </span></a></li> -->
-      <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label">Cài
+      <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label ">Cài
             đặt hệ thống</span></a></li>
-      <li><a class="app-menu__item" href="/index.php"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label">Xem trang Chính</span></a></li>
+      <li><a class="app-menu__item" href="/index.php"><i class="app-menu__icon bx bx-log-in-circle"></i><span class="app-menu__label">Xem trang Chính</span></a></li>
     </ul>
   </aside>
   <main class="app-content">

@@ -22,7 +22,9 @@ switch ($_GET["controller"]) {
             case 'new-admin':
                 include './pages/users-admin/new.php';
                 break;
-
+            case 'updateAdmin':
+                include './pages/users-admin/updateAdmin.php';
+                break;
             default:
                 include './pages/users-admin/index.php';
                 break;
@@ -36,7 +38,9 @@ switch ($_GET["controller"]) {
             case 'new-nhanvien':
                 include './pages/users-nhanvien/add-nhanvien.php';
                 break;
-
+            case 'updatenhanvien':
+                include './pages/users-nhanvien/updatenhanvien.php';
+                break;
             default:
                 include './pages/users-nhanvien/index.php';
                 break;
