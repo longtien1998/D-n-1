@@ -31,10 +31,7 @@ function user_delete($id)
 {
     $sql = "DELETE FROM useradmin WHERE id=?";
     
-        $data = pdo_execute($sql, $id);
-        if($data>0){
-            var_dump($data);
-        }
+    pdo_execute($sql, $id);
     
 }
 function adduseradmin($fullname, $username, $phone, $email, $password)
