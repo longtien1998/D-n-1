@@ -21,7 +21,16 @@ function room_delete($maPhong)
         pdo_execute($sql, $maPhong);
     }
 }
-
+function room2_delete($getmaphong)
+{
+    $sql = "DELETE FROM room WHERE maPhong=?";
+    
+        $data = pdo_execute($sql, $getmaphong);
+        if($data>0){
+            var_dump($data);
+        }
+    
+}
 
 //Mặc định sắp xếp ngược/ truyền ASC vào thì xuôi
 

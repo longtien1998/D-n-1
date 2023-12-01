@@ -1,8 +1,9 @@
+
 <?php
 
-include "../config/connect.php";
+
     $sql = "SELECT * FROM baiViet ORDER BY idBaiViet DESC";
-    $result = executeResult($sql);
+    
 ?>
 <div class="container">
     <h2 class="py-2 text-center h4">QUẢN LÝ BÀI VIẾT</h2>
@@ -18,7 +19,7 @@ include "../config/connect.php";
         </thead>
         <tbody>
             <?php
-            foreach ($result as $item) {
+            foreach ($_SESSION['tintuc'] as $item) {
                 echo
                 "<tr>
                     <td> 

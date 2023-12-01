@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="./main.css">
    
    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/super-build/ckeditor.js"></script>
-   <title>Quản trị web tổng hợp</title>
+   <title>Đăng Bài viết</title>
    <style>
       .error-msg {
          width: 100%;
@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
 <body>
    <!-- Nav tabs -->
    <div class="container">
-   <?php require_once "dao/room.php";?>
+   <?php   ('location: index.php?action=gioithieu');?>
    <!-- Tab panes -->
    <div class="tab-content">
       <div class="tab-pane active" id="">

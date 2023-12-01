@@ -10,7 +10,7 @@
   border-top: 2px solid #d08e24;
 }
 footer{
-  background-color: rgb(167, 99, 31);
+  background-color: rgb(36, 35, 34);
 }
 .slide1 {
   background-image: url('/front-end/image/Section.png');
@@ -147,9 +147,14 @@ img {
 }
 .fa-star{
   font-size: 100px;
+  color: rgb(255, 255, 72);
 }
 .name{
   font-size: 90px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.comment{
+  font-size: 25px;
 }
 .namephong{
   font-size: 40px;
@@ -299,4 +304,41 @@ img {
   /* color: white !important; */
   /* background-color: #e6b86f; */
   border-top:2px solid #d08e24;
+}
+.box5 img{
+  background-color: #e6b86f;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+}
+.box6{
+  background-color: #f0efee;
+  border-top:2px solid #d08e24;
+}
+iframe{
+  /* width: 800px;
+  height: 800px; */
+  /* background-color: #d08e24; */
+  border-radius: 50px;
+  width: 100%;
+  border: 5px solid #d08e24;
+}
+.box7{
+  background-color: rgb(167, 99, 31);
+  border-top:2px solid #d08e24;
+  color: white !important;
+}
+.guithongtin{
+  height: 180px;
+}
+.guithongtin1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.guithongtin3{
+  height: 100%;
 }

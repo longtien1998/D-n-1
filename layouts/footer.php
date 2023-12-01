@@ -1,5 +1,5 @@
         <footer class="text-center text-lg-start text-light">
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-top">
                 <!-- Left -->
                 <div class="me-5 d-none d-lg-block">
                     <span>Hãy kết nối với chúng tôi trên các mạng xã hội:</span>

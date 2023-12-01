@@ -1,6 +1,7 @@
 <?php
 //kiểm tra giỏ hàng xem có có tồn tại hay kh, nếu kh thì tạo giỏ hàng rỗng trc
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
+if (!isset($_SESSION['tintuc'])) $_SESSION['tintuc'] = [];
 include './layouts/header.php';
 include './dao/xulydonhang.php';
 
@@ -120,7 +121,8 @@ switch ($_GET["action"]) {
     case 'service':
         include './pages/service.php';
         break;
-
+    
+    
     case 'contact':
         
         include './pages/contact.php';
