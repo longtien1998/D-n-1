@@ -5,7 +5,7 @@ include './layouts/header.php';
 include './dao/xulydonhang.php';
 
 ?>
-
+<?php ?>
 <?php
 
 switch ($_GET["action"]) {
@@ -76,9 +76,7 @@ switch ($_GET["action"]) {
             header('location: index.php?action=view1');
         }
         break;
-
-        //thanh toán còn cái ! trên index bị sao thế a
-        
+        //thanh toán
 
     case 'thanhtoan':
         

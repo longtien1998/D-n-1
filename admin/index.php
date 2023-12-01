@@ -3,6 +3,7 @@ include "../config/connect.php";
 include "../dao/pdo.php";
 include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
+include "../dao/tintuc.php";
 
 include '../admin/layouts/header.php' ?>
 <?php
@@ -36,7 +37,6 @@ switch ($_GET["controller"]) {
                 include './pages/users-nhanvien/index.php';
                 break;
         }
-        break;
     case 'quanlyroom':
         include './pages/quanlyroom/index.php';
         break;
