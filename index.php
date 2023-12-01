@@ -76,9 +76,14 @@ switch ($_GET["action"]) {
             header('location: index.php?action=view1');
         }
         break;
+<<<<<<< HEAD
 
         //thanh toán
 //thanh toán
+=======
+        //thanh toán
+
+>>>>>>> 55c2543b5fca091de7351f2eb740903302901d88
     case 'thanhtoan':
         
         //nếu kiểm tra cái post ['thanh toan] và được click 

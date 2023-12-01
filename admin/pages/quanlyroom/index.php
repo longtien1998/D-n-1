@@ -21,6 +21,7 @@
                     <th scope="col">Loại Phòng</th>
                     <th scope="col">Giá Phòng</th>
                     <th scope="col">Trạng Thái</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -38,10 +39,11 @@
                                 <td>' . $row['loaiPhong'] . '</td>
                                 <td>' . $row['giaPhong'] . '</td>
                                 <td>' . $row['tThai'] . '</td>
+                                <td><a href="/admin/index.php?controller=quanlyroom&action=update'.$row['maPhong'].'">Update</a></td>
                                 <td style="width: 100px;">
-                                    <form action="" method="post">
-                                        <input type="hidden" name="maphong"  value="' . $row['maPhong'] . ' ">
-                                        <input type="submit" name="delete" id="deleteroom" value="Xóa" >
+                                    <form onSubmit="return xoa()" action="" method="post">
+                                        <input type="hidden" name="maphong"  value="' . $row['maPhong'] . '">
+                                        <input type="submit" name="delete" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
@@ -52,17 +54,24 @@
         </table>
     </div>
 </div>
+<?php
+if (isset($_POST['delete']) && isset($_POST['maphong'])) {
+    if (!empty($_POST['maphong'])) {
+        room2_delete($_POST['maphong']);
+        echo "<script>
+        window.location.href = 'http://localhost:3000/admin/index.php?controller=quanlyroom';
+        </script>
+        ";
+    }
+}
+?>
 <script>
-    let xoa3 = document.getElementById('deleteroom');
-    xoa3.addEventListener('click', function() {
-        let option3 = confirm("Bạn có muốn xóa phòng không?");
-        if (option3) {
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $getmaphong = $_POST['maphong'];
-                room2_delete($getmaphong);
-            }
-            ?>
+    function xoa() {
+        let opt = confirm();
+        if (opt) {
+            return true;
+        } else {
+            return false;
         }
-    });
+    }
 </script>
