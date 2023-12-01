@@ -1,6 +1,6 @@
 <?php
 
-include "../config/connect.php";
+// include "../config/connect.php";
     $sql = "SELECT * FROM baiViet ORDER BY idBaiViet DESC";
     $result = executeResult($sql);
 ?>

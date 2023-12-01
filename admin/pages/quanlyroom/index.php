@@ -39,7 +39,7 @@
                                 <td>' . $row['loaiPhong'] . '</td>
                                 <td>' . $row['giaPhong'] . '</td>
                                 <td>' . $row['tThai'] . '</td>
-                                <td><a href="/admin/index.php?controller=quanlyroom&action=update'.$row['maPhong'].'">Update</a></td>
+                                <td><a href="/admin/index.php?controller=quanlyroom&action=updateroom&maphong='.$row['maPhong'].'">Update</a></td>
                                 <td style="width: 100px;">
                                     <form onSubmit="return xoa()" action="" method="post">
                                         <input type="hidden" name="maphong"  value="' . $row['maPhong'] . '">
@@ -67,7 +67,7 @@ if (isset($_POST['delete']) && isset($_POST['maphong'])) {
 ?>
 <script>
     function xoa() {
-        let opt = confirm();
+        let opt = confirm("Bạn có muốn xóa phòng này không ?");
         if (opt) {
             return true;
         } else {

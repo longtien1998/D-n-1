@@ -71,13 +71,14 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
     if (isset($_POST['save']) && ($_POST['save'])){
         $fullname = $_POST["fullname"];
         $username = $_POST["username"];
+        $password = $_POST["password"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
         $diachi = $_POST["location"];
         $macode = $_POST["postal-code"];
 
         $conn = connect_db();
-        $query = "UPDATE useradmin SET fullname='$fullname',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
+        $query = "UPDATE useradmin SET fullname='$fullname',password='$password',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
 
         $result = mysqli_query($conn, $query);
         if ($result) {
@@ -135,6 +136,10 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                                         <input type="email" class="form-control" name="email" id="email" value="' . $row['email'] . '" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" value="' . $row['password'] . '" readonly>
+                                    </div>
+                                    <div class="form-group col-md-6">
                                         <label for="phone">Số điện thoại</label>
                                         <input type="tel" class="form-control" id="phone" name="phone" value="' . $row['phone'] . '" readonly>
                                     </div>
@@ -178,7 +183,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
 
         let sua = document.querySelector('#sua');
         let save = document.querySelector('#luu');
-        // let name= document.getElementsByName('username')[0];
+        let password= document.getElementsByName('password')[0];
         let fullname= document.getElementsByName('fullname')[0];
         let email= document.getElementsByName('email')[0];
         let phone= document.getElementsByName('phone')[0];
@@ -189,7 +194,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
         sua.onclick = function(){
             if(save.style.display ==="none") {
                 save.style.display = "";
-                // name.removeAttribute('readonly');
+                password.removeAttribute('readonly');
                 fullname.removeAttribute('readonly');
                 email.removeAttribute('readonly');
                 phone.removeAttribute('readonly');

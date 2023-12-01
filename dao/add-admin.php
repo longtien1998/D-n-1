@@ -2,9 +2,7 @@
     // xử lý yêu cầu đăng kí khi đẩy form
     $fullname = '';
     $username = '';
-    
     $email = '';
-    
     $message = "";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // LẤY THÔNG TIN TỪ FORM

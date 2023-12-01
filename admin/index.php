@@ -6,7 +6,7 @@ include "../dao/nhanvien.php";
 
 include "../dao/room.php";
 
-include "../dao/tintuc.php";
+// include "../dao/tintuc.php";
 
 
 include '../admin/layouts/header.php' ?>
@@ -41,12 +41,15 @@ switch ($_GET["controller"]) {
                 include './pages/users-nhanvien/index.php';
                 break;
         }
+        break;
     case 'quanlyroom':
         switch ($_GET["action"]) {
             case 'index':
                 include './pages/quanlyroom/index.php';
                 break;
-
+            case 'updateroom':
+                include './pages/quanlyroom/updateroom.php';
+                break;
             default:
                 include './pages/quanlyroom/index.php';
                 break;
