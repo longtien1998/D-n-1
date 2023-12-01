@@ -1,10 +1,7 @@
 
-<?php
 
-
-    $sql = "SELECT * FROM baiViet ORDER BY idBaiViet DESC";
     
-?>
+
 <div class="container">
     <h2 class="py-2 text-center h4">QUẢN LÝ BÀI VIẾT</h2>
     <table class="table table-hover table-bordered">
@@ -13,21 +10,28 @@
                 <th>Danh sách các bài viết</th>
                 <th style='width:200px'>Thông tin</th>
                 <th style='width:60px'>
-                    <a class="btn btn-warning px-3 py-1" href="./tin_them.php">Thêm</a>
+                    <a class="btn btn-warning px-3 py-1" href="/admin/index.php?controller=gioithieu&action=tin_them">Thêm</a>
                 </th>
             </tr>
         </thead>
         <tbody>
             <?php
-            foreach ($_SESSION['tintuc'] as $item) {
+            $conn = connect_db();
+            $query = "SELECT * FROM baiViet ";
+            // Thực thi truy vấn
+            $result = mysqli_query($conn, $query);
+            if(mysqli_num_rows($result) >0){
+                
+            }
+            foreach ($result as $item) {
                 echo
                 "<tr>
                     <td> 
-                        <img src='$item[urlHinh]' width='200' height='150' align='left' class='mr-3'>
-                        <h4>$item[tieuDe]</h4>
-                        <div>$item[noiDung]</div>
+                        <img src='".$item['urlHinh']."' width='200' height='150' align='left' class='mr-3'>
+                        <h4>".$item[tieuDe]."</h4>
+                        <div>".$item[noiDung]."</div>
                         <span class='text-success'>
-                            Ngày đăng: $item[ngay]
+                            Ngày đăng:". $item[ngay]."
                         </span>
                     </td>
                     <td>

@@ -29,3 +29,4 @@ function connect_pdo()
     echo "Error: " . $e->getMessage();
   }
 }
+?>

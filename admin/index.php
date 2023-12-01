@@ -3,14 +3,7 @@ include "../config/connect.php";
 include "../dao/pdo.php";
 include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
-<<<<<<< HEAD
-// include "../dao/tintuc.php";
-=======
-
-include "../dao/room.php";
-
-include "../dao/tintuc.php";
->>>>>>> 55c2543b5fca091de7351f2eb740903302901d88
+include "../thuvien/tintuc.php";
 
 
 include '../admin/layouts/header.php' ?>
@@ -45,23 +38,24 @@ switch ($_GET["controller"]) {
                 include './pages/users-nhanvien/index.php';
                 break;
         }
-<<<<<<< HEAD
         break;
+        case 'gioithieu':
+            switch ($_GET["action"]) {
+                case 'tintuc':
+                    include './pages/gioithieu/tintuc.php';
+                    break;
+                case 'tin_them':
+                    include './pages/gioithieu/tin_them.php';
+                    break;
+    
+                default:
+                    include './pages/gioithieu/tintuc.php';
+                    break;
+            }
+            break;
    
     case 'quanlyroom':
         include './pages/quanlyroom/index.php';
-=======
-    case 'quanlyroom':
-        switch ($_GET["action"]) {
-            case 'index':
-                include './pages/quanlyroom/index.php';
-                break;
-
-            default:
-                include './pages/quanlyroom/index.php';
-                break;
-        }
->>>>>>> 55c2543b5fca091de7351f2eb740903302901d88
 
         break;
 

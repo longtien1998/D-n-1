@@ -1,12 +1,12 @@
 <?php
-session_start();
-include "../config/connect.php";
+
+// include "../config/connect.php";
 $page = "tintuc";
 ?>
 <?php
 $msg="";
 $sql="SELECT * FROM loaitin ORDER BY ThuTu";
-$listLT = executeResult($sql);
+// $listLT = executeResult($sql);
 
 if(isset($_POST['submit'])){
    $TieuDe = $_POST['TieuDe']??"";
@@ -30,19 +30,7 @@ if(isset($_POST['submit'])){
    else{ $msg="<span class='p-3'>Vui lòng nhập đầy đủ thông tin</span>";}
 }
 ?>
-<html>
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="./main.css">
-   
-   <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/super-build/ckeditor.js"></script>
-   <title>Đăng Bài viết</title>
+
    <style>
       .error-msg {
          width: 100%;
@@ -55,7 +43,7 @@ if(isset($_POST['submit'])){
       }
    </style>
 </head>
-<body>
+
    <!-- Nav tabs -->
    <div class="container">
    <?php   ('location: index.php?action=gioithieu');?>
@@ -113,9 +101,9 @@ if(isset($_POST['submit'])){
       </div>
    </div>
    </div>
-</body>
 
-</html>
+
+
 
 
 <script>

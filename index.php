@@ -1,7 +1,7 @@
 <?php
 //kiểm tra giỏ hàng xem có có tồn tại hay kh, nếu kh thì tạo giỏ hàng rỗng trc
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
-if (!isset($_SESSION['tintuc'])) $_SESSION['tintuc'] = [];
+// if (!isset($_SESSION['tintuc'])) $_SESSION['tintuc'] = [];
 include './layouts/header.php';
 include './dao/xulydonhang.php';
 
@@ -76,14 +76,11 @@ switch ($_GET["action"]) {
             header('location: index.php?action=view1');
         }
         break;
-<<<<<<< HEAD
 
         //thanh toán
 //thanh toán
-=======
         //thanh toán
 
->>>>>>> 55c2543b5fca091de7351f2eb740903302901d88
     case 'thanhtoan':
         
         //nếu kiểm tra cái post ['thanh toan] và được click 
