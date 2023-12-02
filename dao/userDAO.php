@@ -10,7 +10,11 @@ function getUserById($id) {
     $data = getDataWidthParams($sql, ["id"=>$id]);
     return $data;
 }
-
+function admin_select_by_id($id) //truy vấn và trả về thông tin của 1 kh dựa trên maNhanVien
+{
+    $sql = "SELECT * FROM useradmin WHERE id=?";
+    return pdo_query_one($sql, $id);
+}
 function getUserByName($username) {
     $sql = "SELECT * FROM useradmin WHERE username=:username";
     $data = getDataWidthParams($sql, ["username"=>$username]);
@@ -31,10 +35,7 @@ function user_delete($id)
 {
     $sql = "DELETE FROM useradmin WHERE id=?";
     
-        $data = pdo_execute($sql, $id);
-        if($data>0){
-            var_dump($data);
-        }
+    pdo_execute($sql, $id);
     
 }
 function adduseradmin($fullname, $username, $phone, $email, $password)

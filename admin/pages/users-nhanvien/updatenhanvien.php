@@ -1,57 +1,62 @@
 <div class="container-fluid pt-5">
     <div class="text-center mb-4">
-        <h2 class="section-title px-5"><span class="px-2">Tạo tài khoản Nhân Viên</span></h2>
+        <h2 class="section-title px-5"><span class="px-2">Thay đổi tài khoản Nhân Viên</span></h2>
     </div>
     <div class="text-center mb-4">
 
         <!-- <h2 class="section-title px-5"><span class="px-2">Register</span></h2> -->
     </div>
-    <?php include "../dao/add-nhanvien.php" ?>
+
+    <?php include "../dao/updatenhanvien.php" ;
+
+    $row=nhanvien_select_by_id($manhanvien);
+    ?>
+
     <div class="main_container">
         <form action="" method="POST" class="form-login" id="form-1" style="width: 752px; text-align:start">
             <div class="form-header">
-                <h3 class="form-heading">ĐĂNG KÝ</h3>
+                <h3 class="form-heading">Update</h3>
             </div>
 
             <?php echo $message; ?>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="manhanvien">Mã Nhân Viên</label>
-                    <input type="text" class="form-control" id="manhanvien" name="manhanvien" value="NV00<?php echo $demnhanvien ;?>" placeholder="NV001" readonly>
+                    <input type="text" class="form-control" id="manhanvien" name="manhanvien" value="<?php echo $row['maNhanVien'] ;?>" placeholder="NV001" readonly>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="username">Tên đăng nhập</label>
-                    <input type="text" class="form-control" name="username" id="username" value="<?php echo $username ;?>" >
+                    <input type="text" class="form-control" name="username" id="username" value="<?php echo $row['tenDangNhap'] ;?>" >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" value="<?php echo $password ;?>"  >
+                    <input type="password" class="form-control" id="password" name="password" value="<?php echo $row['password'] ;?>"  >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="full-name">Họ Và Tên</label>
-                    <input type="text" class="form-control" name="fullname" id="full-name" value="<?php echo $fullname ;?>"  placeholder="Tôn Long Tiến">
+                    <input type="text" class="form-control" name="fullname" id="full-name" value="<?php echo $row['tenNhanVien'];?>"  placeholder="Tôn Long Tiến">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" value="<?php echo $email ;?>"  placeholder="longtien1998@gmail.com">
+                    <input type="email" class="form-control" name="email" id="email" value="<?php echo $row['email'] ;?>"  placeholder="longtien1998@gmail.com">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="phone">Số điện thoại</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone ;?>"  >
+                    <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $row['phone'] ;?>"  >
                 </div>
-                <!-- <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
                     <label for="location">Địa chỉ</label>
-                    <input type="text" class="form-control" id="location" name="location" value="<?php echo $diachi ;?>">
-                </div> -->
-                <!-- <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="location" name="location" value="<?php echo $row['diachi'] ;?>">
+                </div>
+                <div class="form-group col-md-6">
                     <label for="postal-code">Mã code</label>
-                    <input type="text" class="form-control" id="postal-code" name="postal-code" value="<?php echo $macode ;?>">
-                </div> -->
+                    <input type="text" class="form-control" id="postal-code" name="postal-code" value="<?php echo $row['macode'] ;?>">
+                </div>
                 <div class="form-group col-md-6">
                     <label for="congviec">Công Việc</label>
-                    <!-- <input type="text" class="form-control" id="congviec" name="congviec" value="<?php echo $congviec ;?>"  > -->
+                    <!-- <input type="text" class="form-control" id="congviec" name="congviec" value="<?php echo $row['congViec'] ;?>"  > -->
                     <select name="congviec" class="form-control" id="congviec" required >
-                        <option value="">Chọn công việc</option>
+                        <option value="<?php echo $row['congViec'] ;?>"><?php echo $row['congViec'] ;?></option>
                         <option value="Lễ Tân">Lễ Tân</option>
                         <option value="Quản lý">Quản lý</option>
                         <option value="Dọn Phòng">Dọn Phòng</option>
@@ -59,9 +64,9 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="calamviec">Ca làm Việc</label>
-                    <!-- <input type="text" class="form-control" id="calamviec" name="calamviec" value="<?php echo $calamviec ;?>" > -->
+                    <!-- <input type="text" class="form-control" id="calamviec" name="calamviec" value="<?php echo $row['caLamViec'] ;?>" > -->
                     <select name="calamviec" class="form-control" id="calamviec" required >
-                        <option value="">Chọn ca làm việc</option>
+                        <option value="<?php echo $row['caLamViec'] ;?>"><?php echo $row['caLamViec'] ;?></option>
                         <option value="Ca full: 6h - 14h30">Ca full: 6h - 14h30</option>
                         <option value="Ca full: 14h - 22h30">Ca full: 14h - 22h30</option>
                         <option value="Ca full: 22h - 6h30">Ca full: 22h - 6h30</option>
@@ -75,7 +80,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="ngayLamViec">Ngày làm việc</label>
-                    <input type="date" class="form-control" id="ngayLamViec" name="ngayLamViec" value="<?php echo $ngayLamViec ;?>"  >
+                    <input type="date" class="form-control" id="ngayLamViec" name="ngayLamViec" value="<?php echo $row['maNhanVien'] ;?>"  >
                 </div>
 
             </div>
@@ -138,7 +143,7 @@
                         <span class="form-message"></span>
                         <i class="fa-solid fa-eye-slash form-eye-slash"></i>
                     </div> -->
-            <button class="form-submit" type="submit" name="dangky">Đăng ký</button>
+            <button class="form-submit" type="submit" name="dangky">Lưu</button>
         </form>
         <div class="icon">
             <img src="/image/logo.png" alt="">

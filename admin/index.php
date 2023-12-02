@@ -6,7 +6,7 @@ include "../dao/nhanvien.php";
 
 include "../dao/room.php";
 
-include "../dao/tintuc.php";
+// include "../dao/tintuc.php";
 
 
 include '../admin/layouts/header.php' ?>
@@ -22,7 +22,9 @@ switch ($_GET["controller"]) {
             case 'new-admin':
                 include './pages/users-admin/new.php';
                 break;
-
+            case 'updateAdmin':
+                include './pages/users-admin/updateAdmin.php';
+                break;
             default:
                 include './pages/users-admin/index.php';
                 break;
@@ -36,17 +38,22 @@ switch ($_GET["controller"]) {
             case 'new-nhanvien':
                 include './pages/users-nhanvien/add-nhanvien.php';
                 break;
-
+            case 'updatenhanvien':
+                include './pages/users-nhanvien/updatenhanvien.php';
+                break;
             default:
                 include './pages/users-nhanvien/index.php';
                 break;
         }
+        break;
     case 'quanlyroom':
         switch ($_GET["action"]) {
             case 'index':
                 include './pages/quanlyroom/index.php';
                 break;
-
+            case 'updateroom':
+                include './pages/quanlyroom/updateroom.php';
+                break;
             default:
                 include './pages/quanlyroom/index.php';
                 break;
