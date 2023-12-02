@@ -7,4 +7,12 @@ function themsp($tenPhong, $img, $giaPhong)
     $conn->exec($sql);
 }
 
+function getonesp($id) {
+    $conn = connect_pdo();
+    $stmt = $conn->prepare("SELECT * FROM room WHERE id =" .$id);
+    $stmt->execute();
+    $kq = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $kq;
+}
+
 ?>
