@@ -3,6 +3,9 @@ include "../config/connect.php";
 include "../dao/pdo.php";
 include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
+include "../dao/khachhang.php";
+include "../dao/xulydonhang.php";
+
 
 include "../dao/room.php";
 
@@ -12,7 +15,7 @@ include "../dao/room.php";
 include '../admin/layouts/header.php' ?>
 <?php
 if (!isset($_GET["action"])) $_GET["action"] = "index";
-if (!isset($_GET["controller"])) $_GET["controller"] = "dashboard";
+
 switch ($_GET["controller"]) {
     case 'user-admin':
         switch ($_GET["action"]) {

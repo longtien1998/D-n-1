@@ -10,21 +10,26 @@ function user_update($maKhachHang, $tenKhachHang, $matKhau, $Email, $hoTen, $SĐ
     $sql = "UPDATE user SET tenKhachHang=?,matKhau=?,Email=?,hoTen=?,SĐT=?,vai_tro=? WHERE maKhachHang=?";
     pdo_execute($sql, $tenKhachHang, $matKhau, $Email, $hoTen, $SĐT == 1, $maKhachHang);
 }
-function user_delete($maKhachHang)
-{
-    $sql = "DELETE FROM user WHERE maKhachHang=?";
-    if (is_array($maKhachHang)) {
-        foreach ($maKhachHang as $ma) {
-            pdo_execute($sql, $ma);
-        }
-    } else {
-        pdo_execute($sql, $maKhachHang);
-    }
-}
+// function user_delete($maKhachHang)
+// {
+//     $sql = "DELETE FROM user WHERE maKhachHang=?";
+//     if (is_array($maKhachHang)) {
+//         foreach ($maKhachHang as $ma) {
+//             pdo_execute($sql, $ma);
+//         }
+//     } else {
+//         pdo_execute($sql, $maKhachHang);
+//     }
+// }
 function user_select_all()//truy vấn và trả về all kh từ csdl
 {
     $sql = "SELECT * FROM user";
     return pdo_query($sql);
+}
+function user_count_all()//truy vấn và trả về all kh từ csdl
+{
+    $sql = "SELECT * FROM user";
+    return executeCount($sql);
 }
 function user_select_by_id($maKhachHang) //truy vấn và trả về thông tin của 1 kh dựa trên maKhachHang
 {

@@ -36,7 +36,7 @@
                 $result = getData($sql);
                 rsort($result);
                 foreach ($result as $row) {
-                    if($i==="20") break;
+
                     if ($row['pttt'] === '1') $pttt = "Chưa thanh toán";
                     else $pttt = "Đã thanh toán";
                     echo ' <tr>
@@ -52,8 +52,8 @@
                                 <td class="pttt">' . $pttt . '</td>
                                 <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=quanlyBooking&action=xemchitiet&madonhang=' . $row['madh'] . '">xem</a></td>  
                             </tr>';
+                    if ($i === "20") break;
                     $i++;
-
                 }
                 ?>
             </tbody>

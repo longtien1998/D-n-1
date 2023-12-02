@@ -14745,7 +14745,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar__toggle:before {
   content: "\f009";
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .bx {
@@ -14922,6 +14922,7 @@ be a descendant of the grid when it is being dragged.
   overflow: auto;
   z-index: 10;
   background: rgb(0, 28, 64);
+  transition: 0.5s;
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
   /* border-bottom-right-radius: 50px; */
 }

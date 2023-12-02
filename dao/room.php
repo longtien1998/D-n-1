@@ -26,7 +26,11 @@ function room2_delete($getmaphong)
     $sql = "DELETE FROM room WHERE maPhong=?";
     pdo_execute($sql, $getmaphong);
 }
-
+function room_count_all()//truy vấn và trả về sl kh từ csdl
+{
+    $sql = "SELECT * FROM room";
+    return executeCount($sql);
+}
 //Mặc định sắp xếp ngược/ truyền ASC vào thì xuôi
 
 function room_select_all($order = 'DESC')

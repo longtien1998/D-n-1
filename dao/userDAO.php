@@ -4,7 +4,11 @@ function getAllUser() {
     $data = getData($sql);
     return $data;
 }
-
+function admin_count_all()//truy vấn và trả về all kh từ csdl
+{
+    $sql = "SELECT * FROM useradmin";
+    return executeCount($sql);
+}
 function getUserById($id) {
     $sql = "SELECT * FROM user WHERE id=:id";
     $data = getDataWidthParams($sql, ["id"=>$id]);
