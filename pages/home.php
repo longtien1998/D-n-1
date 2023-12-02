@@ -28,23 +28,23 @@
   <div class="sahow border border-warning px-1 py-4 w-75 m-auto bg-light">
     <form action="" class="row justify-content-around">
       <div class="form-group">
-        <label for="" class="col-form-label">Ngày đến:</label>
+        <label for="" class="col-form-label">Ngày Đến:</label>
         <input id="" name="" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group">
-        <label for="" class="col-form-label">Ngày đi:</label>
+        <label for="" class="col-form-label">Ngày Đi:</label>
         <input id="" name="" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group">
-        <label for="" class="col-form-label">Người lớn:</label>
-        <input id="" name="" type="number" class="form-control" placeholder="0" required />
+        <label for="" class="col-form-label">Người Lớn:</label>
+        <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group">
-        <label for="" class="col-form-label">Trẻ em:</label>
-        <input id="" name="" type="number" class="form-control" placeholder="0" required />
+        <label for="" class="col-form-label">Trẻ Em:</label>
+        <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
         <span class="form-message"></span>
       </div>
       <div class="align-self-center">
@@ -80,7 +80,6 @@
 <section class="box2 container-fluid col">
   <div class="py-5 m-5">
     <div class="text-center ">
-      <p class="text-black-50 m-4">Rất nhiều phòng...</p>
       <h1 class="m-4">Phòng & Căn hộ</h1>
       <p class=" p-5 text-black-50">
         Khách sạn Hiện đại có 20 phòng cổ điển có máy lạnh và nội thất trang
@@ -309,7 +308,6 @@
 <section class="box4 container-fluid p-1">
   <div class="pt-5 mt-5">
     <div class="text-center ">
-      <p class="text-black-50 m-4">Phần thưởng nhỏ nhoi...</p>
       <h1 class="m-4">Dịch vụ</h1>
       <p class=" p-5 text-black-50">
         Bên cạnh các dịch vụ chính, chúng tôi luôn có rất nhiều tiện ích bổ sung để cung cấp. Bắt đầu từ bãi đậu xe và WiFi miễn phí, <br>
@@ -347,26 +345,26 @@
     <div class="col-3 p-4">
       <div class="imguser">
         <img src="" alt="">
-        <h2 class="py-3">Long Tien!</h2>
+        <h2 class="py-3">Alex Nguyen!</h2>
       </div>
       <div>
         <p class="text-black-50">Khi ở Đà Nẵng vì công việc kinh doanh của mình, tôi luôn ở lại nơi này.
           Tỷ lệ giá/chất lượng ở đây rất vượt trội,
           cho phép tôi tiết kiệm nhiều tiền hơn cho các chi tiêu khác…
           Xếp hạng của tôi là 5 trên 5!</p>
-        <h3 class="p-3">-Tôn Long Tiến-</h3>
+        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
       </div>
     </div>
     <div class="col-3 p-4">
       <div class="imguser">
         <img src="" alt="">
-        <h2 class="py-3">Alex Nguyen!</h2>
+        <h2 class="py-3">Long Tien!</h2>
       </div>
       <div>
         <p class="text-black-50">Việc lựa chọn một khách sạn luôn là một thách thức,
           đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này.
           Đó là lý do tại sao tôi rất vui vì dự đoán của tôi về khách sạn này chắc chắn là một điều may mắn.</p>
-        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
+        <h3 class="p-3">-Tôn Long Tiến-</h3>
       </div>
     </div>
     <div class="col-3 p-4">
@@ -418,7 +416,7 @@
     <div class="guithongtin1 col-6">
       <form action="" class="row">
         <div class="col-9">
-          <input type="text" name="" id="" class="form-control guithongtin3">
+          <input type="text" name="" id="" placeholder="Nhập email của bạn..." class="form-control guithongtin3">
         </div>
         <div class="col-2">
           <button class="custom-buy3 buy-3 nutmua "><span><a style="text-decoration: none; " href=""><span class="dat">Đăng ký ngay</span></a></span></button>
