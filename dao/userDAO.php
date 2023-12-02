@@ -21,8 +21,8 @@ function getUserByName($username) {
     return $data;
 }
 function getUseradimByName($username) {
-    $sql = "SELECT * FROM useradmin WHERE username=:username";
-    $data =  pdo_query_one($sql, ["username"=>$username]);
+    $sql = "SELECT * FROM useradmin WHERE username=?";
+    $data =  pdo_query_one($sql,$username);
     return $data;
 }
 

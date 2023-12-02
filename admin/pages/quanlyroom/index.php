@@ -3,7 +3,7 @@
         <h2 class="section-title px-5"><span class="px-2">Danh Sách Phòng</span></h2>
     </div>
     <div class="container-fluid">
-        <h3 class="bg-info p-3 text-center"><a href="/admin/index.php?controller=user-nhanvien&action=new-room">Thêm Phòng +</a></h3>
+        <h3 class="bg-info p-3 text-center"><a href="/admin/index.php?controller=quanlyroom&action=add-room">Thêm Phòng +</a></h3>
     </div>
     <?php
     // if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,7 +15,7 @@
         <table class="table table-bordered table-striped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col" style="width: 100px;">STT</th>
+                    <th scope="col" style="width: 70px;">STT</th>
                     <th scope="col">Mã Phòng</th>
                     <th scope="col">Tên Phòng</th>
                     <th scope="col">Loại Phòng</th>
@@ -39,11 +39,11 @@
                                 <td>' . $row['loaiPhong'] . '</td>
                                 <td>' . $row['giaPhong'] . '</td>
                                 <td>' . $row['tThai'] . '</td>
-                                <td><a href="/admin/index.php?controller=quanlyroom&action=updateroom&maphong='.$row['maPhong'].'">Update</a></td>
+                                <td><a class="sua" href="/admin/index.php?controller=quanlyroom&action=updateroom&maphong='.$row['maPhong'].'">Sửa</a></td>
                                 <td style="width: 100px;">
                                     <form onSubmit="return xoa()" action="" method="post">
                                         <input type="hidden" name="maphong"  value="' . $row['maPhong'] . '">
-                                        <input type="submit" name="delete" value="Xóa" >
+                                        <input type="submit" name="delete" value="Xóa" class="xoa border-0" >
                                     </form>
                                 </td>   
                             </tr>';

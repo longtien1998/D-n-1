@@ -13,7 +13,7 @@ $messageuser = '';
 
 if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
-    $target_dir = "./uploads/";
+    $target_dir = "uploads/";
     // đường dẫn đến thư mục file
     $target_file = $target_dir . basename($_FILES['filetoUpload']["name"]);
 
@@ -98,7 +98,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                     <div class="bg-white p-4 rounded-lg shadow-lg border-success">
                         <div class="text-center">
                             <div class="profile-picture">
-                                <img class="rounded-full border border-gray-100 shadow-sm" src="'. $row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
+                                <img class="rounded-full border border-gray-100 shadow-sm" src="./'. $row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
                             </div>
                             <button  type="button" class="upload btn btn-orange mx-2" ><i class="fa-solid fa-pen-to-square"></i></button> 
                             <div class="file row py-4">

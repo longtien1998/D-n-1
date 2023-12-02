@@ -15,7 +15,7 @@
         <table class="table table-bordered table-striped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col" style="width: 100px;">STT</th>
+                    <th scope="col" style="width: 70px;">STT</th>
                     <th scope="col">Mã Nhân Viên</th>
                     <th scope="col">Tên Nhân Viên</th>
                     <th scope="col">Password</th>

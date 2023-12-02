@@ -23,4 +23,7 @@
     color: aliceblue;
     text-decoration: none;
 }
+.hidden{
+    display: none;
+}
 
