@@ -34,4 +34,11 @@ function getoderinfo($iddh){
     $kq = $stmt->fetchAll();
     return $kq;
 }
+
+function donhang_count_all()//truy vấn và trả về sl kh từ csdl
+{
+    $sql = "SELECT * FROM donhang";
+    return executeCount($sql);
+}
 ?>
+

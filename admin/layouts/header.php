@@ -20,6 +20,22 @@ if (isset($_SESSION['user'])) {
   $hinh = "uploads/user.png";
   $hidden = '';
 }
+
+$a1 = "";
+$a2 = "";
+$a3 = "";
+$a4 = "";
+$a5 = "";
+$a6 = "";
+$a7 = "";
+if (!isset($_GET["controller"])) $_GET["controller"] = "dashboard";
+if ($_GET["controller"] === 'dashboard') $a1 = "active";
+else if ($_GET["controller"] === 'user-admin')  $a2 = 'active';
+else if ($_GET["controller"] === 'user-nhanvien')  $a3 = 'active';
+else if ($_GET["controller"] === 'quanlyroom')  $a4 = 'active';
+else if ($_GET["controller"] === 'quanlyBooking')  $a5 = 'active';
+else if ($_GET["controller"] === 'service')  $a6 = 'active';
+else if ($_GET["controller"] === 'contact')  $a7 = 'active';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +46,7 @@ if (isset($_SESSION['user'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Main CSS-->
-  <link rel="stylesheet" type="text/css" href="/public/bootstrap.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/public/bootstrap.css"> -->
   <link rel="stylesheet" type="text/css" href="/admin/content-admin/css/main.css">
   <link rel="stylesheet" type="text/css" href="/admin/content-admin/css/style.css">
   <link rel="stylesheet" href="/content/css/login_re.css">
@@ -40,16 +56,18 @@ if (isset($_SESSION['user'])) {
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <!-- Font-icon css-->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-
+  <!-- thư viện biểu đồ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body onload="time()" class="app sidebar-mini rtl">
   <!-- Navbar-->
   <header class="app-header">
-    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+    <!-- Sidebar toggle button-->
+    <div class="app-sidebar__toggle" href="" data-toggle="sidebar" aria-label="Hide Sidebar"></div>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
 
@@ -74,11 +92,11 @@ if (isset($_SESSION['user'])) {
     <hr>
     <ul class="app-menu">
 
-      <li <?php echo $hidden; ?>><a class="app-menu__item active" href="/admin/index.php"><i class='app-menu__icon bx bx-tachometer'></i><span class="app-menu__label">Bảng điều khiển</span></a></li>
-      <li <?php echo $hidden; ?>><a class="app-menu__item " href="/admin/index.php?controller=user-admin"><i class='app-menu__icon bx bx-id-card'></i> <span class="app-menu__label">Quản lý Admin</span></a></li>
-      <li <?php echo $hidden; ?>><a class="app-menu__item" href="/admin/index.php?controller=user-nhanvien"><i class='app-menu__icon bx bx-user-voice'></i><span class="app-menu__label">Quản lý Nhân viên</span></a></li>
-      <li <?php echo $hidden; ?>><a class="app-menu__item" href="/admin/index.php?controller=quanlyroom"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý phòng</span></a></li>
-      <li><a class="app-menu__item" href="/admin/index.php?controller=quanlyBooking"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Quản lý booking</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a1;?>" href="/admin/index.php"><i class='app-menu__icon bx bx-tachometer'></i><span class="app-menu__label">Bảng điều khiển</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a2;?>" href="/admin/index.php?controller=user-admin"><i class='app-menu__icon bx bx-id-card'></i> <span class="app-menu__label">Quản lý Admin</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a3;?>" href="/admin/index.php?controller=user-nhanvien"><i class='app-menu__icon bx bx-user-voice'></i><span class="app-menu__label">Quản lý Nhân viên</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a4;?>" href="/admin/index.php?controller=quanlyroom"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý phòng</span></a></li>
+      <li><a class="app-menu__item <?php echo $a5;?>" href="/admin/index.php?controller=quanlyBooking"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Quản lý booking</span></a></li>
       <!-- <li><a class="app-menu__item" href="table-data-banned.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý nội bộ
           </span></a></li>
@@ -89,11 +107,14 @@ if (isset($_SESSION['user'])) {
       </li>
       <li><a class="app-menu__item" href="page-calendar.html"><i class='app-menu__icon bx bx-calendar-check'></i><span
             class="app-menu__label">Lịch công tác </span></a></li> -->
-      <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label ">Cài
+      <li><a class="app-menu__item" href=""><i class='app-menu__icon bx bx-cog'></i><span class="app-menu__label ">Cài
             đặt hệ thống</span></a></li>
       <li><a class="app-menu__item" href="/index.php"><i class="app-menu__icon bx bx-log-in-circle"></i><span class="app-menu__label">Xem trang Chính</span></a></li>
     </ul>
+
   </aside>
+  <div class="close-menu">
+  </div>
   <main class="app-content">
     <div class="row">
       <div class="col-md-12">
