@@ -1,8 +1,26 @@
 <?php
-    
-    session_start();
-?>
 
+session_start();
+?>
+<?php
+if (isset($_SESSION['user'])) {
+  $data =  getUseradimByName($_SESSION['user']);
+  if (!empty($data)) {
+    $name = $data['fullname'];
+    $hinh = $data['urlimage'];
+    $hidden = '';
+  } else {
+    $datanv = getUsernhanvienByName($_SESSION['user']);
+    $name = $datanv['tenNhanVien'];
+    $hinh = $datanv['urlimage'];
+    $hidden = 'class="hidden"';
+  }
+} else {
+  $name = "Admin";
+  $hinh = "uploads/user.png";
+  $hidden = '';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,8 +49,7 @@
 <body onload="time()" class="app sidebar-mini rtl">
   <!-- Navbar-->
   <header class="app-header">
-    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
-      aria-label="Hide Sidebar"></a>
+    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
 
@@ -44,29 +61,24 @@
     </ul>
   </header>
   <!-- Sidebar menu-->
+
   <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
   <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="/admin/content-admin/image/giaodien.jpg" width="100px" height="100px"
-        alt="User Image">
+    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="../<?php echo $hinh; ?>" alt="User Image">
       <div>
-        <p class="app-sidebar__user-name"><b>Tôn Long Tiến</b></p>
+
+        <p class="app-sidebar__user-name"><b><?php echo $name; ?></b></p>
         <p class="app-sidebar__user-designation">Chào mừng bạn trở lại</p>
       </div>
     </div>
     <hr>
     <ul class="app-menu">
-      
-      <li><a class="app-menu__item active" href="/admin/index.php"><i class='app-menu__icon bx bx-tachometer'></i><span
-            class="app-menu__label">Bảng điều khiển</span></a></li>
-      <li><a class="app-menu__item " href="/admin/index.php?controller=user-admin"><i class='app-menu__icon bx bx-id-card'></i> <span
-            class="app-menu__label">Quản lý Admin</span></a></li>
-      <li><a class="app-menu__item" href="/admin/index.php?controller=user-nhanvien"><i class='app-menu__icon bx bx-user-voice'></i><span
-            class="app-menu__label">Quản lý Nhân viên</span></a></li>
-      <li><a class="app-menu__item" href="/admin/index.php?controller=quanlyroom"><i
-            class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý phòng</span></a>
-      </li>
-      <li><a class="app-menu__item" href="table-data-oder.html"><i class='app-menu__icon bx bx-task'></i><span
-            class="app-menu__label">Quản lý booking</span></a></li>
+
+      <li <?php echo $hidden; ?>><a class="app-menu__item active" href="/admin/index.php"><i class='app-menu__icon bx bx-tachometer'></i><span class="app-menu__label">Bảng điều khiển</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item " href="/admin/index.php?controller=user-admin"><i class='app-menu__icon bx bx-id-card'></i> <span class="app-menu__label">Quản lý Admin</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item" href="/admin/index.php?controller=user-nhanvien"><i class='app-menu__icon bx bx-user-voice'></i><span class="app-menu__label">Quản lý Nhân viên</span></a></li>
+      <li <?php echo $hidden; ?>><a class="app-menu__item" href="/admin/index.php?controller=quanlyroom"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý phòng</span></a></li>
+      <li><a class="app-menu__item" href="/admin/index.php?controller=quanlyBooking"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Quản lý booking</span></a></li>
       <!-- <li><a class="app-menu__item" href="table-data-banned.html"><i class='app-menu__icon bx bx-run'></i><span
             class="app-menu__label">Quản lý nội bộ
           </span></a></li>

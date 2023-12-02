@@ -27,8 +27,8 @@ function nhanvien_select_all() //truy vấn và trả về all kh từ csdl
 }
 function getUsernhanvienByName($username)
 {
-    $sql = "SELECT * FROM nhanvien WHERE tenDangNhap=:username";
-    $data = getDataWidthParams($sql, ["username" => $username]);
+    $sql = "SELECT * FROM nhanvien WHERE tenDangNhap=?";
+    $data = pdo_query_one($sql,$username);
     return $data;
 }
 function nhanvien_select_by_id($maNhanVien) //truy vấn và trả về thông tin của 1 kh dựa trên maNhanVien

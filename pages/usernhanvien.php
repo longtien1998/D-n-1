@@ -1,5 +1,5 @@
 <?php
-$resultuser = getUsernhanvienByName($_SESSION["user"]);
+$row = getUsernhanvienByName($_SESSION["user"]);
 $user = $_SESSION["user"];
 $messagetong = '';
 $message1 = '';
@@ -13,7 +13,7 @@ $messageuser = '';
 
 if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
-    $target_dir = "./uploads/";
+    $target_dir = "uploads/";
     // đường dẫn đến thư mục file
     $target_file = $target_dir . basename($_FILES['filetoUpload']["name"]);
 
@@ -93,12 +93,11 @@ if (isset($_POST['save']) && ($_POST['save'])) {
 <div class="container my-5">
     <div class="row justify-content-center align-items-center min-vh-100 ">
         <div class="col-lg-8 ">
-            <?php foreach ($resultuser as $row) {
-                echo ' 
+                 
                     <div class="bg-white p-4 rounded-lg shadow-lg border-success">
                         <div class="text-center">
                             <div class="profile-picture">
-                                <img class="rounded-full border border-gray-100 shadow-sm" src="' . $row['urlimage'] . '" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
+                                <img class="rounded-full border border-gray-100 shadow-sm" src="./<?php echo $row['urlimage'];?>" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
                             </div>
                             <button  type="button" class="upload btn btn-orange mx-2" ><i class="fa-solid fa-pen-to-square"></i></button> 
                             <div class="file row py-4">
@@ -116,8 +115,8 @@ if (isset($_POST['save']) && ($_POST['save'])) {
                                 </div>
                                 
                             </div>
-                            <div>' . $messagetong . '</div>
-                            <h1 class="text-black-700 font-semibold mt-4">' . $row['tenNhanVien'] . '</h1>
+                            <div><?php echo $messagetong; ?></div>
+                            <h1 class="text-black-700 font-semibold mt-4"><?php echo $row['tenNhanVien']; ?></h1>
                             
                         </div>
                         <div class="mt-4">
@@ -125,50 +124,50 @@ if (isset($_POST['save']) && ($_POST['save'])) {
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="manhanvien">Mã Nhân Viên</label>
-                                        <input type="text" class="form-control" id="manhanvien" name="manhanvien" value="' . $row['maNhanVien'] . '" readonly>
+                                        <input type="text" class="form-control" id="manhanvien" name="manhanvien" value="<?php echo $row['maNhanVien']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="username">Tên đăng nhập</label>
-                                        <input type="text" class="form-control" name="username" id="username" value="' . $row['tenDangNhap'] . '" readonly>
+                                        <input type="text" class="form-control" name="username" id="username" value="<?php echo $row['tenDangNhap']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="full-name">Họ Và Tên</label>
-                                        <input type="text" class="form-control" name="fullname" id="full-name" value="' . $row['tenNhanVien'] . '" readonly>
+                                        <input type="text" class="form-control" name="fullname" id="full-name" value="<?php echo $row['tenNhanVien']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" name="email" id="email" value="' . $row['email'] . '" readonly>
+                                        <input type="email" class="form-control" name="email" id="email" value="<?php echo $row['email']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="phone">Số điện thoại</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" value="' . $row['phone'] . '" readonly>
+                                        <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $row['phone']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="location">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="location" name="location" value="' . $row['diachi'] . '" readonly>
+                                        <input type="text" class="form-control" id="location" name="location" value="<?php echo $row['diachi']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="postal-code">Mã code</label>
-                                        <input type="text" class="form-control" id="postal-code" name="postal-code" value="' . $row['macode'] . '" readonly>
+                                        <input type="text" class="form-control" id="postal-code" name="postal-code" value="<?php echo $row['macode']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="congviec">Công Việc</label>
-                                        <input type="text" class="form-control" id="congviec" name="congviec" value="' . $row['congViec'] . '" readonly>
+                                        <input type="text" class="form-control" id="congviec" name="congviec" value="<?php echo $row['congViec']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="calamviec">Ca làm Việc</label>
-                                        <input type="text" class="form-control" id="calamviec" name="calamviec" value="' . $row['caLamViec'] . '" readonly>
+                                        <input type="text" class="form-control" id="calamviec" name="calamviec" value="<?php echo $row['caLamViec']; ?>" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="ngayLamViec">Ngày làm việc</label>
-                                        <input type="date" class="form-control" id="ngayLamViec" name="ngayLamViec" value="' . $row['ngaylamViec'] . '" readonly>
+                                        <input type="date" class="form-control" id="ngayLamViec" name="ngayLamViec" value="<?php echo $row['ngaylamViec']; ?>" readonly>
                                     </div>
                                     
                                 </div>
-                                <div>' . $messageuser . '</div>
+                                <div><?php echo $messageuser; ?></div>
                                 
                                 <div class="text-center mt-4">
-                                    <button type="button" class="btn btn-orange border-primary mx-2"><a href="/admin/index.php">Vào Quản Trị </a></button>
+                                    <button type="button" class="btn btn-orange border-primary mx-2"><a target="_blank" href="/admin/index.php?controller=quanlyBooking">Vào Quản Trị </a></button>
                                     <a type="button" class="btn btn-orange border-primary mx-2" class = "thoat" href="/index.php">Thoát</a>
                                     <input type="submit" class="btn btn-orange border-success mx-2 " name="save" id="luu" value="lưu">
                                     <button type="button" class="btn btn-orange border-success mx-2" id="sua">Sửa</button>
@@ -177,8 +176,6 @@ if (isset($_POST['save']) && ($_POST['save'])) {
                             </form>
                         </div>
                     </div>';
-            }
-            ?>
         </div>
     </div>
 </div>

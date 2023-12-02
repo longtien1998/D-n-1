@@ -52,10 +52,27 @@ switch ($_GET["controller"]) {
                 include './pages/quanlyroom/index.php';
                 break;
             case 'updateroom':
-                include './pages/quanlyroom/updateroom.php';
+                include './pages/quanlyroom/update-room.php';
+                break;
+            case 'add-room':
+                include './pages/quanlyroom/add-room.php';
                 break;
             default:
                 include './pages/quanlyroom/index.php';
+                break;
+        }
+
+        break;
+    case 'quanlyBooking':
+        switch ($_GET["action"]) {
+            case 'index':
+                include './pages/quanlyBooking/index.php';
+                break;
+            case 'xemchitiet':
+                include './pages/quanlyBooking/chitiet.php';
+                break;
+            default:
+                include './pages/quanlyBooking/index.php';
                 break;
         }
 
