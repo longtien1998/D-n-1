@@ -106,7 +106,7 @@ if (isset($_SESSION["user"])) {
             
             ?>
             <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4 <?php echo $a1; ?>">Trang chủ</a>
-            <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4 <?php echo $a2; ?>">Giới thiệu</a> -->
+            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4 <?php echo $a2; ?>">Giới thiệu</a>
             <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4 <?php echo $a3; ?>">Phòng</a>
             <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4 <?php echo $a4; ?>">Tìm phòng</a>
             <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
