@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-8">
+<div class="container">
+    <div class="col-12 ">
         <h1>ĐƠN HÀNG CỦA BẠN</h1>
         <?php
         if ((isset($_SESSION['giohang'])) && (count($_SESSION['giohang']) > 0)) {
@@ -26,7 +26,7 @@
                             <td>' . $item[3] . '</td>
                             <td>' . $item[4] . 'VND</td>
                             <td>' . $item[5] . '</td>
-                            <td>' . $tt . '</td>
+                            <td>' . $tt . 'VND</td>
                             <td> <a href="index.php?action=delcart&i=' . $i . '">Xóa</a></td>
                     </tr>';
                 $i++;
@@ -42,41 +42,41 @@
         }
         ?>
         <br>
-        <a href="index.php?action=phong">Tiếp tục mua hàng</a> |<a href="index.php?action=home">Thanh Toán</a>| <a href="index.php?action=delcart">Xóa giỏ hàng</a>
+        <a href="index.php?action=phong">Tiếp tục mua hàng</a> | <a href="index.php?action=delcart">Xóa giỏ hàng</a>
     </div>
 
-    <div class="col-4">
-        <h3>Thông Tin Đặt Hàng</h3>
-        <form action="/index.php?action=thanhtoan" method="post">
+    <div class="col-12 ">
+        <h2 class="text-center">Thông Tin Đặt Hàng</h2>
+        <form class="form-group" action="/index.php?action=thanhtoan" method="post">
             <input type="hidden" name="tongdonhang" value="<?= $tong ?>">
             <table class="dathang">
                 <tr>
                     <td>Họ và Tên: <br>
-                        <input type="text" name="hoten" placeholder="Nhập họ tên">
+                        <input class="form-control" id="exampleFormControlInput1" type="text" name="hoten" placeholder="Nhập họ tên">
                     </td>
                 </tr>
                 <tr>
                     <td>Số điện thoại: <br>
-                        <input type="text" name="tel" placeholder="Nhập số điện thoại">
+                        <input class="form-control" id="exampleFormControlInput1" type="text" name="tel" placeholder="Nhập số điện thoại">
                     </td>
                 </tr>
                 <tr>
                     <td>Email: <br>
-                        <input type="text" name="email" placeholder="Nhập email">
+                        <input class="form-control" id="exampleFormControlInput1" type="text" name="email" placeholder="Nhập email">
                     </td>
                 </tr>
                 <tr>
                     <td>Ngày Đến: <br>
-                        <input type="date" name="checkin" placeholder="Nhập ngày đến">
+                        <input class="form-control" id="exampleFormControlInput1" type="date" name="checkin" placeholder="Nhập ngày đến">
                     </td>
                 </tr>
                 <tr>
                     <td>Ngày Đi: <br>
-                        <input type="date" name="checkout" placeholder="Nhập ngày đi">
+                        <input class="form-control" id="exampleFormControlInput1" type="date" name="checkout" placeholder="Nhập ngày đi">
                     </td>
                 </tr>
                 <tr>
-                    <td><h3> Phương thức thanh toán </h3>
+                    <td><h2 class="text-center"> Phương thức thanh toán </h2>
                         <input type="radio" name="pttt" value="1"> Thanh toán trực tiếp tại khách sạn <br>
                         <input type="radio" name="pttt" value="2"> Thanh toán qua ví MoMo <br>
                         <input type="radio" name="pttt" value="3"> Thanh toán qua Zalo Pay <br>

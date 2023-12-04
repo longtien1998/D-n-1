@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD:admin/pages/gioithieu/tin_them.php
 
+=======
+session_start();
+>>>>>>> ebb27a5f233cf0f6b16caff9fda7d8b06f37edd4:dao/tin_them.php
 // include "../config/connect.php";
 $page = "tintuc";
 ?>

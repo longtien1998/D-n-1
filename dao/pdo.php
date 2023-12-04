@@ -28,6 +28,14 @@ function executeCUD($sql, $params)
     $count = $stmt->rowCount();
     return $count;
 }
+function executeCount($sql)
+{
+    $conn = connect_pdo();
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $count = $stmt->rowCount();
+    return $count;
+}
 function pdo_execute($sql)
 {
     $sql_args = array_slice(func_get_args(), 1);

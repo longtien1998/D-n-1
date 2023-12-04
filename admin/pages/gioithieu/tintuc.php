@@ -1,7 +1,14 @@
 
+<<<<<<< HEAD:admin/pages/gioithieu/tintuc.php
 
     
 
+=======
+// include "../config/connect.php";
+    $sql = "SELECT * FROM baiViet ORDER BY idBaiViet DESC";
+    $result = executeResult($sql);
+?>
+>>>>>>> ebb27a5f233cf0f6b16caff9fda7d8b06f37edd4:dao/tintuc.php
 <div class="container">
     <h2 class="py-2 text-center h4">QUẢN LÝ BÀI VIẾT</h2>
     <table class="table table-hover table-bordered">

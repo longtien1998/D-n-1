@@ -29,4 +29,8 @@ function connect_pdo()
     echo "Error: " . $e->getMessage();
   }
 }
+<<<<<<< HEAD
 ?>
+=======
+
+>>>>>>> ebb27a5f233cf0f6b16caff9fda7d8b06f37edd4

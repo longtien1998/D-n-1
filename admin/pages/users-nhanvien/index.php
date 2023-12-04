@@ -15,7 +15,7 @@
         <table class="table table-bordered table-striped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col" style="width: 100px;">STT</th>
+                    <th scope="col" style="width: 70px;">STT</th>
                     <th scope="col">Mã Nhân Viên</th>
                     <th scope="col">Tên Nhân Viên</th>
                     <th scope="col">Password</th>
@@ -24,6 +24,7 @@
                     <th scope="col">Ca Làm Việc</th>
                     <th scope="col">id_KhachSan</th>
                     <th scope="col">Tên Đăng Nhập</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -44,10 +45,11 @@
                                 <td>' . $row['caLamViec'] . '</td>
                                 <td>' . $row['Id_KhachSan'] . '</td>
                                 <td>' . $row['tenDangNhap'] . '</td>
+                                <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=user-nhanvien&action=updatenhanvien&manhanvien='.$row['maNhanVien'].'">sửa</a></td>
                                 <td style="width: 100px;">
-                                    <form action="" method="post">
-                                        <input type="hidden" name="manhanvien"  value="' . $row['maNhanVien'] . ' ">
-                                        <input type="submit" name="delete" id="deletenv" value="Xóa" >
+                                    <form onSubmit="return xoanv()" action="" method="post">
+                                        <input type="hidden" name="manhanvien"  value="' . $row['maNhanVien'] . '">
+                                        <input type="submit" name="deletenv" id="deletenv" class="xoa border-0" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
@@ -58,18 +60,24 @@
         </table>
     </div>
 </div>
+<?php
+if (isset($_POST['deletenv']) && isset($_POST['manhanvien'])) {
+    if (!empty($_POST['manhanvien'])) {
+        nhanvien_delete($_POST['manhanvien']);
+        echo "<script>
+        window.location.href = 'http://localhost:3000/admin/index.php?controller=user-nhanvien';
+        </script>
+        ";
+    }
+}
+?>
 <script>
-    let xoanv = document.getElementById('deletenv');
-    xoanv.addEventListener('click', function() {
-        let option2 = confirm("Bạn có muốn xóa Nhân viên không?");
-        if (option2) {
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $getmanhanvien = $_POST['manhanvien'];
-                nhanvien_delete($getmanhanvien);
-                // header("refresh:1;");
-            }
-            ?>
+    function xoanv() {
+        let optnv = confirm("Bạn có muốn xóa nhân viên này không ?");
+        if (optnv) {
+            return true;
+        } else {
+            return false;
         }
-    });
+    }
 </script>

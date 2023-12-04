@@ -13,7 +13,7 @@ $messageuser = '';
 
 if (isset($_POST['luu']) && ($_POST['luu'])) {
     // lấy tên sap từ form
-    $target_dir = "./uploads/";
+    $target_dir = "uploads/";
     // đường dẫn đến thư mục file
     $target_file = $target_dir . basename($_FILES['filetoUpload']["name"]);
 
@@ -71,13 +71,14 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
     if (isset($_POST['save']) && ($_POST['save'])){
         $fullname = $_POST["fullname"];
         $username = $_POST["username"];
+        $password = $_POST["password"];
         $email = $_POST["email"];
         $phone = $_POST["phone"];
         $diachi = $_POST["location"];
         $macode = $_POST["postal-code"];
 
         $conn = connect_db();
-        $query = "UPDATE useradmin SET fullname='$fullname',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
+        $query = "UPDATE useradmin SET fullname='$fullname',password='$password',username='$username',email='$email',phone='$phone',diachi='$diachi',macode='$macode' WHERE username ='$user'";
 
         $result = mysqli_query($conn, $query);
         if ($result) {
@@ -97,7 +98,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                     <div class="bg-white p-4 rounded-lg shadow-lg border-success">
                         <div class="text-center">
                             <div class="profile-picture">
-                                <img class="rounded-full border border-gray-100 shadow-sm" src="'. $row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
+                                <img class="rounded-full border border-gray-100 shadow-sm" src="./'. $row['urlimage'].'" alt="Profile picture of Sara Tancredi wearing sunglasses and a teal top" width="200" height="200">
                             </div>
                             <button  type="button" class="upload btn btn-orange mx-2" ><i class="fa-solid fa-pen-to-square"></i></button> 
                             <div class="file row py-4">
@@ -133,6 +134,10 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
                                     <div class="form-group col-md-6">
                                         <label for="email">Email</label>
                                         <input type="email" class="form-control" name="email" id="email" value="' . $row['email'] . '" readonly>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" value="' . $row['password'] . '" readonly>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="phone">Số điện thoại</label>
@@ -178,7 +183,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
 
         let sua = document.querySelector('#sua');
         let save = document.querySelector('#luu');
-        // let name= document.getElementsByName('username')[0];
+        let password= document.getElementsByName('password')[0];
         let fullname= document.getElementsByName('fullname')[0];
         let email= document.getElementsByName('email')[0];
         let phone= document.getElementsByName('phone')[0];
@@ -189,7 +194,7 @@ if (isset($_POST['luu']) && ($_POST['luu'])) {
         sua.onclick = function(){
             if(save.style.display ==="none") {
                 save.style.display = "";
-                // name.removeAttribute('readonly');
+                password.removeAttribute('readonly');
                 fullname.removeAttribute('readonly');
                 email.removeAttribute('readonly');
                 phone.removeAttribute('readonly');

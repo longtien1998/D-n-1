@@ -12,13 +12,14 @@
         <table class="table table-bordered table-striped table-hover">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col" style="width: 100px;">STT</th>
+                    <th scope="col" style="width: 70px;">STT</th>
                     <th scope="col">ID</th>
                     <th scope="col">Fullname</th>
                     <th scope="col">Username</th>
                     <th scope="col">Password</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
+                    <th scope="col">Update</th>
                     <th scope="col">Delete</th>
                 </tr>
             </thead>
@@ -39,10 +40,11 @@
                                 <td>' . $row['password'] . '</td>
                                 <td>' . $row['email'] . '</td>
                                 <td>' . $row['phone'] . '</td>
+                                <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=user-admin&action=updateAdmin&id='.$row['id'].'">sửa</a></td>
                                 <td style="width: 100px;">
-                                    <form action="" method="post">
+                                    <form onSubmit="return xoaad()" action="" method="post">
                                         <input type="hidden" name="id"  value="'.$row['id'].' ">
-                                        <input type="submit" name="delete" id="deleteadmin" value="Xóa" >
+                                        <input type="submit" name="deleteadmin"  class="xoa border-0" value="Xóa" >
                                     </form>
                                 </td>   
                             </tr>';
@@ -55,19 +57,24 @@
         </table>
     </div>
 </div>
+<?php
+if (isset($_POST['deleteadmin']) && isset($_POST['id'])) {
+    if (!empty($_POST['id'])) {
+        user_delete($_POST['id']);
+        echo "<script>
+        window.location.href = 'http://localhost:3000/admin/index.php?controller=user-admin';
+        </script>
+        ";
+    }
+}
+?>
 <script>
-    let xoaadmin = document.getElementById('deleteadmin');
-    xoaadmin.addEventListener('click', function() {
-        let option1 = confirm("Bạn có muốn xóa admin không?");
-        if (option1) {
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $getid = $_POST['id'];
-                user_delete($getid);
-                // header("refresh:1;");
-            }
-            ?>
+    function xoaad() {
+        let optad = confirm("Bạn có muốn xóa Admin này không ?");
+        if (optad) {
+            return true;
+        } else {
+            return false;
         }
-    
-    });
+    }
 </script>
