@@ -46,7 +46,7 @@ if (isset($_SESSION["user"])) {
 
     <link rel="stylesheet" href="../public/bootstrap.min.css">
     <!-- <script src="../public/bootstrap.js"></script> -->
-    
+
     <link rel="stylesheet" href="../content/css/main.css">
     <link rel="stylesheet" href="../content/css/room.css">
     <link rel="stylesheet" href="../content/css/login_re.css">
@@ -57,8 +57,8 @@ if (isset($_SESSION["user"])) {
 <body>
     <!-- <div class="container-fluid"> -->
 
-    <div class="row border-bottom p-2 mr-0">
-        <div class="row col-lg-9">
+    <div class="row justify-content-around p-2 mr-0 content-top">
+        <div class="row col-lg-8">
             <div class="mx-3">
                 <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
@@ -72,9 +72,14 @@ if (isset($_SESSION["user"])) {
                 </a>
             </div>
         </div>
-        <div class="col-lg-3">
-            <div class="mx-3 ml-4">
+        <div class="row col-lg-4">
+            <div class="col-8">
                 <?php echo $user; ?>
+            </div>
+            <div class="col-4">
+                <a href="index.php?action=addcart" class="row text-decoration-none"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                    <span class="thongbao d-flex justify-content-center align-items-center"><?php echo $_SESSION['soluong']; ?></span>
+                </a>
             </div>
         </div>
 
@@ -87,7 +92,7 @@ if (isset($_SESSION["user"])) {
             </a>
         </div>
         <div class="navbar align-content-center">
-            <?php  
+            <?php
             // $_GET["action"]="home";
             $a1 = "";
             $a2 = "";
@@ -96,14 +101,14 @@ if (isset($_SESSION["user"])) {
             $a5 = "";
             $a6 = "";
             $a7 = "";
-            if($_GET["action"]==='home') $a1 = "active";
-            else if($_GET["action"]==='gioithieu')  $a2 = 'active';
-            else if($_GET["action"]==='phong')  $a3 = 'active';
-            else if($_GET["action"]==='timphong')  $a4 = 'active';
-            else if($_GET["action"]==='nhahang')  $a5 = 'active';
-            else if($_GET["action"]==='service')  $a6 = 'active';
-            else if($_GET["action"]==='contact')  $a7 = 'active';
-            
+            if ($_GET["action"] === 'home') $a1 = "active";
+            else if ($_GET["action"] === 'gioithieu')  $a2 = 'active';
+            else if ($_GET["action"] === 'phong')  $a3 = 'active';
+            else if ($_GET["action"] === 'timphong')  $a4 = 'active';
+            else if ($_GET["action"] === 'nhahang')  $a5 = 'active';
+            else if ($_GET["action"] === 'service')  $a6 = 'active';
+            else if ($_GET["action"] === 'contact')  $a7 = 'active';
+
             ?>
             <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4 <?php echo $a1; ?>">Trang chủ</a>
             <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4 <?php echo $a2; ?>">Giới thiệu</a> -->
@@ -112,7 +117,7 @@ if (isset($_SESSION["user"])) {
             <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
             <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4 <?php echo $a6; ?>">Dịch Vụ</a>
             <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4 <?php echo $a7; ?>">Liên lạc</a>
-            
+
         </div>
         <div class=" align-self-center  ">
             <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=timphong"><span class="dat">ĐẶT NGAY</span></a></span></button>

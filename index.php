@@ -25,6 +25,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'addcart':
+        $_SESSION['soluong']='';
         //kiểm tra $post [addtocart] và nếu được click
         //lấy dữ liệu từ form để lưu vào giỏ
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
@@ -38,6 +39,7 @@ switch ($_GET["action"]) {
                 $sl = $_POST['sl'];
             } else {
                 $sl = 1;
+                $_SESSION['soluong'] = $sl;
             }
             $fg = 0;
 
@@ -49,11 +51,12 @@ switch ($_GET["action"]) {
                     $slnew = $sl + $item[5];
                     $_SESSION['giohang'][$i][5] = $slnew;
                     $fg = 1;
+                    $_SESSION['soluong'] = $slnew;
                     break;
                 }
                 $i++;
             }
-
+            
             //còn kh thì add mới lại sp vào giỏ hàng
             //khởi tạo mảng con trc khi đưa vào giỏ hàng
             if ($fg == 0) {
@@ -77,7 +80,7 @@ switch ($_GET["action"]) {
         if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
             header('location: index.php?action=addcart');
         } else {
-            header('location: index.php?action=view1');
+            header('location: index.php?action=addcart');
         }
         break;
         //thanh toán
