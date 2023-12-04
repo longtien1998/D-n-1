@@ -48,7 +48,7 @@
     <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="/admin/content-admin/image/giaodien.jpg" width="100px" height="100px"
         alt="User Image">
       <div>
-        <p class="app-sidebar__user-name"><b>Tôn Long Tiến</b></p>
+        <p class="app-sidebar__user-name"><b>Tôn Long Tiến</b></b></p>
         <p class="app-sidebar__user-designation">Chào mừng bạn trở lại</p>
       </div>
     </div>

@@ -346,7 +346,7 @@
   <div class="row justify-content-around text-center m-0">
     <div class="col-3 p-4">
       <div class="imguser">
-        <img src="" alt="">
+        <img src="admin/content-admin/image/giaodien.jpg" alt="">
         <h2 class="py-3">longtien!</h2>
       </div>
       <div>
@@ -359,7 +359,7 @@
     </div>
     <div class="col-3 p-4">
       <div class="imguser">
-        <img src="" alt="">
+        <img src="admin/content-admin/image/DSC_5037.jpg" alt="">
         <h2 class="py-3">Akitonhat!</h2>
       </div>
       <div>
