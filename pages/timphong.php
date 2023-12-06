@@ -67,7 +67,8 @@
         </div>
         <div class="noidung-2">
             <p>Hãy tận hưởng những căn hộ sang trọng của chúng tôi với toàn bộ sự tinh tế và sự thoải mái mà nội
-                thất của nó mang lại... Nó đi kèm với những tiện ích cần thiết như một TV màn hình phẳng 45", WiFi
+                thất của nó mang lại... <br> 
+                Nó đi kèm với những tiện ích cần thiết như một TV màn hình phẳng 45", WiFi
                 và 1 phòng tắm, cùng với một phòng khách
             </p>
         </div>
@@ -90,7 +91,7 @@
             </ul>
         </div>
         <div class="hop5">
-            <button class="custom-buy6 buy-6"><span><a style="text-decoration: none; " href="view1.html">ĐẶT NGAY</a></span></button>
+            <button class="custom-buy6 buy-6"><span><a style="text-decoration: none; " href="index.php?action=view1">ĐẶT NGAY</a></span></button>
         </div>
     </div>
 </section>
@@ -171,7 +172,7 @@
     </div>
 </section>
 <hr style="border: 1px solid gray;">
-<section class="showlist">
+<section class="showlist d-flex justify-content-center">
     <div class="s1">
         <span><a href="#">01</a></span>
         <span><a href="#">02</a></span>

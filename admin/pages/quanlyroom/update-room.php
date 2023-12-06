@@ -45,7 +45,7 @@
                 <input id="giaphong" name="giaphong" type="number" class="form-control1" value="<?php echo $row['giaPhong']; ?>" required>
                 <i class="fa-solid fa-user form-user"></i>
             </div>
-            <button class="form-submit" type="submit" name="dangky">Đăng ký</button>
+            <button class="form-submit" type="submit" name="dangky">Lưu</button>
         </form>
         <div class="icon">
             <img src="/image/logo.png" alt="">

@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"];
     // $img = './uploads/user.png';
 
-    // kiểm tra người dùng đã tồn tại hay chưa
+    
     $conn = connect_db();
     $check_query = "UPDATE useradmin SET fullname='$fullname',username='$username',password='$password',email='$email',phone='$phone' WHERE id = '$id'";
 

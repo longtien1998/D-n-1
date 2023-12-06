@@ -1,6 +1,7 @@
 <?php
 //kiểm tra giỏ hàng xem có có tồn tại hay kh, nếu kh thì tạo giỏ hàng rỗng trc
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
+
 include './layouts/header.php';
 include './dao/xulydonhang.php';
 

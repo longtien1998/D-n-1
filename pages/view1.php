@@ -1,4 +1,3 @@
-
 <?php
 
 $conn = connect_db();
@@ -18,8 +17,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
     <div class="tien4">
       <p>
-        <span class="vnd7">VND</span>
-        <span class="so7">' . htmlspecialchars($row['giaPhong']) . '</span>
+        
+        <span class="so7">' .currency_format(htmlspecialchars($row['giaPhong'])). '</span>
         /1 đêm
       </p>
     </div>
@@ -44,7 +43,8 @@ while ($row = mysqli_fetch_assoc($result)) {
   <hr>
   <div class="de2">
     <h2>Chi tiết phòng</h2>
-    <li>Người lớn: 3</li>
+    <p>Mã phòng: '.htmlspecialchars($row['maPhong']).'</p>
+    <li>Người lớn: 2</li>
     <li>Tiện nghi: <span style="color: goldenrod;">Tủ quần áo với móc treo, Két cá nhân số, TV màn hình
         phẳng HD, Điện thoại.</span></li>
     <li>Kích cỡ: 25m<span class="num">2</span></li>
@@ -59,7 +59,7 @@ while ($row = mysqli_fetch_assoc($result)) {
           <div class="hop15">
               <input type="submit" name="addtocart" value="Đặt Phòng" class="custom-buy15 buy-15">
           </div>
-                <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
+                <input type="hidden" name="id" value="' . htmlspecialchars($row['id']). '">
                 <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
                 <input type="hidden" name="hinhPhong" value="' . htmlspecialchars($row['img']) . '">
                 <input type="hidden" name="loaiPhong" value="' . htmlspecialchars($row['loaiPhong']) . '">

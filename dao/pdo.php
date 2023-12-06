@@ -99,3 +99,13 @@ function pdo_query_value($sql)
         unset($conn);
     }
 }
+// =========================== chuyển đổi number thành tiền tệ=====================
+if (!function_exists('currency_format')) {
+
+    function currency_format($number, $suffix = ' vnđ') {
+        if (!empty($number)) {
+            return number_format($number, 0, ',', '.') . "<sup>{$suffix}</sup>";
+        }
+    }
+
+}
