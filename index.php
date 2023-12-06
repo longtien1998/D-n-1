@@ -26,42 +26,42 @@ switch ($_GET["action"]) {
         break;
 
     case 'addcart':
-        $_SESSION['soluong']='';
+
         //kiểm tra $post [addtocart] và nếu được click
         //lấy dữ liệu từ form để lưu vào giỏ
         if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
             //lấy dữ liệu từ form để lưu vào giỏ
             $id = $_POST['id'];
             $tenPhong = $_POST['tenPhong'];
-            $hinhPhong = $_POST['img'];
+            $maPhong = $_POST['maPhong'];
             $loaiPhong = $_POST['loaiPhong'];
             $giaPhong = $_POST['giaPhong'];
             if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
                 $sl = $_POST['sl'];
             } else {
                 $sl = 1;
-                $_SESSION['soluong'] = $sl;
             }
             $fg = 0;
-
+            // $_SESSION['giohang'] = array();
             //kiểm tra sp có tồn tại trong giỏ hàng hay kh
             // nếu có chỉ cập nhật lại sl
             $i = 0;
             foreach ($_SESSION['giohang'] as $item) {
-                if ($item[1] === $tenPhong) {
+                if ($item[2] === $maPhong) {
                     $slnew = $sl + $item[5];
                     $_SESSION['giohang'][$i][5] = $slnew;
                     $fg = 1;
-                    $_SESSION['soluong'] = $slnew;
                     break;
                 }
                 $i++;
             }
-            
+            // echo $slnew;
+
             //còn kh thì add mới lại sp vào giỏ hàng
             //khởi tạo mảng con trc khi đưa vào giỏ hàng
             if ($fg == 0) {
-                $item = array($id, $tenPhong, $img, $loaiPhong, $giaPhong, $sl);
+                $item = array($id, $tenPhong, $maPhong, $loaiPhong, $giaPhong, $sl);
+                // $_SESSION['giohang'] = $item;
                 $_SESSION['giohang'][] = $item;
             }
             header('location: index.php?action=addcart');
@@ -98,7 +98,7 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh = "KH" . rand(10000, 99999);
+            $madh = "DH" . rand(10000, 99999);
 
             // tạo đơn hàng
             //và trả về 1 id đơn hàng

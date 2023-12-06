@@ -395,9 +395,10 @@ iframe {
   
   width: 25px;
   height: 25px ;
-  background-color: #e6b86f;
+  color: #e6b86f;
   border-radius: 50%;
   font-size: larger;
+  border: 1px solid #e6b86f;
   
 
 }

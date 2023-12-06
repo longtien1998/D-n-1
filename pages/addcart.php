@@ -1,13 +1,13 @@
 <div class="container">
     <div class="col-12 ">
-        <h1>ĐƠN HÀNG CỦA BẠN</h1>
+        <h1 class="py-5">ĐƠN HÀNG CỦA BẠN</h1>
         <?php
         if ((isset($_SESSION['giohang'])) && (count($_SESSION['giohang']) > 0)) {
             echo '<table class="table table-bordered table-striped table-hover text-center" >
                     <tr class="thead-dark">
                         <th>STT</th>
                         <th>Tên Phòng</th>
-                        <th>Hình</th>
+                        <th>Mã Phòng</th>
                         <th>Loại Phòng</th>
                         <th>Giá Phòng</th>
                         <th>Số Lượng</th>
@@ -17,16 +17,17 @@
             $i = 0;
             $tong = 0;
             foreach ($_SESSION['giohang'] as $item) {
-                $tt = $item[4] * $item[5];
+                // echo $item[4];
+                $tt = $item[4]*$item[5];
                 $tong += $tt;
                 echo '  <tr>
                             <td>' . ($i + 1) . '</td>
                             <td>' . $item[1] . '</td>
                             <td>' . $item[2] . '</td>
                             <td>' . $item[3] . '</td>
-                            <td>' . $item[4] . 'VND</td>
+                            <td>' . currency_format($item[4]). '</td>
                             <td>' . $item[5]     . '</td>
-                            <td>' . $tt . 'VND</td>
+                            <td>' . currency_format($tt). '</td>
                             <td> <a href="index.php?action=delcart&i=' . $i . '">Xóa</a></td>
                     </tr>';
                 $i++;
@@ -34,7 +35,7 @@
             echo '<tr class="thead-dark">
                     <td colspan="6">Tổng đơn hàng của bạn: </td>
                     
-                    <td colspan="2">' . $tong . 'VND</td>
+                    <td colspan="2">' .currency_format($tong) . '</td>
                 </tr>';
 
             echo '</table>';
