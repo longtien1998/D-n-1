@@ -31,6 +31,12 @@ function room_count_all()//truy vấn và trả về sl kh từ csdl
     $sql = "SELECT * FROM room";
     return executeCount($sql);
 }
+
+function room_select_by_loaiphong($getmaphong)
+{
+    $sql = "SELECT * FROM room WHERE maPhong='$getmaphong'";
+    getDataWidthParams($sql,$getmaphong);
+}
 //Mặc định sắp xếp ngược/ truyền ASC vào thì xuôi
 
 function room_select_all($order = 'DESC')

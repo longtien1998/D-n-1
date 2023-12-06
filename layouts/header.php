@@ -5,7 +5,18 @@ include './dao/pdo.php';
 include './thuvien/user.php';
 include './dao/userDAO.php';
 include './dao/nhanvien.php';
-$_SESSION['soluong']="0";
+include './dao/room.php';
+
+?>
+<?php 
+
+$sum = 0;
+if(isset($_SESSION['giohang']) && isset($_SESSION['giohang']) > 0){
+    foreach ($_SESSION['giohang'] as $item) {
+        $sum += $item[5];
+    }
+}
+
 ?>
 
 <?php
@@ -78,7 +89,7 @@ if (isset($_SESSION["user"])) {
             </div>
             <div class="col-4">
                 <a href="index.php?action=addcart" class="row text-decoration-none"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-                    <span class="thongbao d-flex justify-content-center align-items-center"><?php echo $_SESSION['soluong']; ?></span>
+                    <span class="thongbao d-flex justify-content-center align-items-center p-3"><?php echo $sum; ?></span>
                 </a>
             </div>
         </div>
