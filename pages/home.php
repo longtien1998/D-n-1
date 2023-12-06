@@ -297,7 +297,7 @@
         </div>
       </div>
       <div class="col-5 text-center py-5">
-        <img src="../content/images/wine.jpg" alt="" width="700" height="500" class="border-1" />
+        <img src="../content/images/ruou.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
   </div>

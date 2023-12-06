@@ -1,6 +1,6 @@
 <div class="tong6">
         <div class="trangchu6">
-            <h5><a href="#">Trang Chủ |</a></h5>
+            <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
             <span>Contact</span>
         </div>
     </div>

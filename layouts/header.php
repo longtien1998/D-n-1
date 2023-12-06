@@ -110,13 +110,15 @@ if (isset($_SESSION["user"])) {
             else if ($_GET["action"] === 'contact')  $a7 = 'active';
 
             ?>
-            <a href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4 <?php echo $a1; ?>">Trang chủ</a>
-            <!-- <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4 <?php echo $a2; ?>">Giới thiệu</a> -->
-            <a href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4 <?php echo $a3; ?>">Phòng</a>
-            <a href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4 <?php echo $a4; ?>">Tìm phòng</a>
-            <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
-            <a href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4 <?php echo $a6; ?>">Dịch Vụ</a>
-            <a href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4 <?php echo $a7; ?>">Liên lạc</a>
+
+            <a style="text-decoration: none;" href="/index.php?action=home" class="text-black-50 text-uppercase lead m-4 <?php echo $a1; ?>">Trang chủ</a>
+            <a style="text-decoration: none;" href="/index.php?action=gioithieu" class="text-black-50 text-uppercase lead m-4 <?php echo $a2; ?>">Về Chúng Tôi</a>
+            <a style="text-decoration: none;" href="/index.php?action=phong" class="text-black-50 text-uppercase lead m-4 <?php echo $a3; ?>">Phòng</a>
+            <a style="text-decoration: none;" href="/index.php?action=timphong" class="text-black-50 text-uppercase lead m-4 <?php echo $a4; ?>">Tìm phòng</a>
+            <a style="text-decoration: none;" href="/index.php?action=nhahang" class="text-black-50  text-uppercase lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
+            <a style="text-decoration: none;" href="/index.php?action=service" class="text-black-50 text-uppercase lead m-4 <?php echo $a6; ?>">Dịch Vụ</a>
+            <a style="text-decoration: none;" href="/index.php?action=contact" class="text-black-50 text-uppercase lead m-4 <?php echo $a7; ?>">Liên lạc</a>
+            
 
         </div>
         <div class=" align-self-center  ">
