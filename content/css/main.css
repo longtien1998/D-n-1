@@ -399,8 +399,13 @@ iframe {
   border-radius: 50%;
   font-size: larger;
   
+
 }
 .content-top{
   border-top:2px solid #d08e24;
   margin-top: 3px;
+}
+.hover-color:hover{
+  color: #d08e24 !important;
+  font-size: 22px;
 }
