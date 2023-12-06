@@ -386,3 +386,21 @@ iframe {
 .guithongtin3 {
   height: 100%;
 }
+.fa-cart-shopping{
+  font-size: 23px;
+  padding-top: 6px;
+  
+}
+.thongbao{
+  
+  width: 25px;
+  height: 25px ;
+  background-color: #e6b86f;
+  border-radius: 50%;
+  font-size: larger;
+  
+}
+.content-top{
+  border-top:2px solid #d08e24;
+  margin-top: 3px;
+}

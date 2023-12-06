@@ -3,7 +3,7 @@
         <h1>ĐƠN HÀNG CỦA BẠN</h1>
         <?php
         if ((isset($_SESSION['giohang'])) && (count($_SESSION['giohang']) > 0)) {
-            echo '  <table class="table text-center" >
+            echo '<table class="table table-bordered table-striped table-hover text-center" >
                     <tr class="thead-dark">
                         <th>STT</th>
                         <th>Tên Phòng</th>
@@ -25,17 +25,16 @@
                             <td>' . $item[2] . '</td>
                             <td>' . $item[3] . '</td>
                             <td>' . $item[4] . 'VND</td>
-                            <td>' . $item[5] . '</td>
+                            <td>' . $item[5]     . '</td>
                             <td>' . $tt . 'VND</td>
                             <td> <a href="index.php?action=delcart&i=' . $i . '">Xóa</a></td>
                     </tr>';
                 $i++;
-            
             }
             echo '<tr class="thead-dark">
-                    <td colspan="5">Tổng đơn hàng của bạn</td>
-                    <td></td>
-                    <td>' . $tong . 'VND</td>
+                    <td colspan="6">Tổng đơn hàng của bạn: </td>
+                    
+                    <td colspan="2">' . $tong . 'VND</td>
                 </tr>';
 
             echo '</table>';
@@ -76,7 +75,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><h2 class="text-center"> Phương thức thanh toán </h2>
+                    <td>
+                        <h2 class="text-center"> Phương thức thanh toán </h2>
                         <input type="radio" name="pttt" value="1"> Thanh toán trực tiếp tại khách sạn <br>
                         <input type="radio" name="pttt" value="2"> Thanh toán qua ví MoMo <br>
                         <input type="radio" name="pttt" value="3"> Thanh toán qua Zalo Pay <br>
