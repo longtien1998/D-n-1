@@ -1,4 +1,9 @@
-
+<div class="tong6">
+    <div class="trangchu6">
+        <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
+        <span>Về Chúng Tôi</span>
+    </div>
+</div>
 
 <header class="jumbotron jumbotron-fluid text-center text-white bg-dark">
     <div class="container">
@@ -15,7 +20,7 @@
         <div class="row">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="../content/images/room1-small.jpeg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="../content/images/tu.png" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 pt-5 pb-lg-5">
@@ -29,8 +34,10 @@
                         Khách Sạn BonCha cũng vinh dự giới thiệu bếp trưởng đầu tiên của Việt Nam tại nhà hàng La Maison 1888,
                         được trao sao Michelin, Pierre Gagnaire. Những khu vực phục vụ ẩm thực và giải trí đặc biệt khiến Khu nghỉ dưỡng trở thành điểm đến chính cho các chuyến tham quan trong ngày,
                         hội họp hay nghỉ dưỡng với gia đình và bạn bè.</h5>
-
-                    <a href="" class="btn btn-primary mt-1">Đặt Ngay</a>
+                    <br>
+                    <div class=" align-self-center  ">
+                        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=timphong"><span class="dat">ĐẶT NGAY</span></a></span></button>
+                    </div>
                 </div>
             </div>
         </div>
