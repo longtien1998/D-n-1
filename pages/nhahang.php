@@ -1,6 +1,6 @@
     <div class="tong3">
         <div class="trangchu3">
-            <h5><a href="#">Trang Chủ |</a></h5>
+            <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
             <span>Nhà Hàng & Quầy Bar</span>
         </div>
     </div>
@@ -77,7 +77,7 @@
         <h2>Thực Đơn Đồ Uống</h2>
         <div class="thucdon3">
             <div class="hinh1">
-                <img src="../content/images/wine.jpg" width="100%" height="381px" alt="">
+                <img src="../content/images/ruou.jpg" width="100%" height="381px" alt="">
             </div>
             <div class="menu">
                 <div class="mon8">

@@ -1,7 +1,7 @@
 <div class="tong1">
     <div class="trangchu1">
-        <h5><a href="#">Trang Chủ |</a></h5>
-        <h5><a href="room.html">Phòng |</a></h5>
+        <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
+        <!-- <h5><a href="room.html">Phòng |</a></h5> -->
         <span>Tìm Phòng</span>
     </div>
 </div>
