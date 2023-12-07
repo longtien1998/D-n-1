@@ -25,6 +25,7 @@
                     <th scope="col">Ngày trả phòng</th>
                     <th scope="col">Tổng thanh toán</th>
                     <th scope="col">Trạng thái thanh toán</th>
+                    <th scope="col">Trạng thái đơn hàng</th>
                     <th scope="col">Xem chi tiết</th>
                 </tr>
             </thead>
@@ -39,6 +40,22 @@
 
                     if ($row['pttt'] === '1') $pttt = "Chưa thanh toán";
                     else $pttt = "Đã thanh toán";
+                    
+                    switch ($row['trangThaiDonHang']) {
+                        case 1:
+                            $mess1 = '<td id="ttdh" class="bg-warning text-light p3-2 ">Chưa xác nhận</td>';
+                            break;
+                        case 2:
+                            $mess1 = '<td id="ttdh" class="bg-success text-light p3-2 ">Đã xác nhận</td>';
+                            break;
+                        case 3:
+                            $mess1 = '<td id="ttdh" class="bg-danger text-light p3-2 ">Hủy</td>';
+                            break;
+
+                        default:
+                            $mess1 = '<td id="ttdh" class="bg-warning text-light p3-2 ">Chưa xác nhận</td>';
+                            break;
+                    }
                     echo ' <tr>
                                 <td>' . $i . '</td>
                                 <td>' . $row['id'] . '</td>
@@ -48,8 +65,9 @@
                                 <td>' . $row['email'] . '</td>
                                 <td>' . $row['checkin'] . '</td>
                                 <td>' . $row['checkout'] . '</td>
-                                <td>' . $row['tongdonhang'] . ' vnd</td>
+                                <td>' . currency_format($row['tongdonhang'])  . '</td>
                                 <td class="pttt">' . $pttt . '</td>
+                                ' . $mess1. '
                                 <td style="width: 100px;"><a class="sua" href="/admin/index.php?controller=quanlyBooking&action=xemchitiet&madonhang=' . $row['madh'] . '">xem</a></td>  
                             </tr>';
                     if ($i === "20") break;

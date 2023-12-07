@@ -36,6 +36,7 @@ function executeCount($sql)
     $count = $stmt->rowCount();
     return $count;
 }
+
 function pdo_execute($sql)
 {
     $sql_args = array_slice(func_get_args(), 1);
