@@ -37,7 +37,7 @@
                                 <td>' . $row['maPhong'] . '</td>
                                 <td>' . $row['tenPhong'] . '</td>
                                 <td>' . $row['loaiPhong'] . '</td>
-                                <td>' . $row['giaPhong'] . '</td>
+                                <td>' . currency_format($row['giaPhong']) . '</td>
                                 <td>' . $row['tThai'] . '</td>
                                 <td><a class="sua" href="/admin/index.php?controller=quanlyroom&action=updateroom&maphong='.$row['maPhong'].'">Sửa</a></td>
                                 <td style="width: 100px;">

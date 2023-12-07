@@ -98,7 +98,7 @@ switch ($_GET["action"]) {
             $checkin = $_POST['checkin'];
             $checkout = $_POST['checkout'];
             $pttt = $_POST['pttt'];
-            $madh = "DH" . rand(10000, 99999);
+            $madh = "DH" . rand(1000000, 9999999);
 
             // tạo đơn hàng
             //và trả về 1 id đơn hàng
@@ -106,7 +106,7 @@ switch ($_GET["action"]) {
             $_SESSION['iddh'] = $iddh;
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
                 foreach ($_SESSION['giohang'] as $item) {
-                    addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4], $item[5]);
+                    addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4]*$item[5], $item[5]);
                 }
                 unset($_SESSION['giohang']);
             }

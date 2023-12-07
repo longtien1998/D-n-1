@@ -6977,8 +6977,8 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #bfefc4 !important;
-  color: #02790c !important;
+  background-color: var(--success) !important;
+  color: var(--light) !important;
 }
 
 a.bg-success:hover,
@@ -7001,8 +7001,8 @@ button.bg-info:focus {
 }
 
 .bg-warning {
-  background-color: #f2f98a !important;
-  color: #8b9400 !important;
+  background-color: var(--warning) !important;
+  color: var(--dark) !important;
 }
 
 a.bg-warning:hover,
@@ -7013,7 +7013,7 @@ button.bg-warning:focus {
 }
 
 .bg-danger {
-  background-color: #f9c9cd !important;
+  background-color: var(--danger) !important;
   color: #a90312 !important;
 }
 

@@ -9,10 +9,10 @@ function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, 
 }
 
 
-function addtocart($iddh,$idpro,$tenPhong,$img,$soluong,$dongia){
+function addtocart($iddh,$idpro,$tenPhong,$maPhong,$loaiphong,$dongia,$soluong){
     $conn = connect_pdo();
-    $sql = "INSERT INTO cart (iddh,idpro,tenPhong,img,soluong,dongia)
-    VALUE ('" . $iddh . "','" . $idpro . "','" . $tenPhong . "','" . $img . "','" . $soluong . "','" . $dongia . "')";
+    $sql = "INSERT INTO cart (iddh,idroom,tenPhong,maPhong,soluong,dongia,loaiPhong)
+    VALUE ('" . $iddh . "','" . $idpro . "','" . $tenPhong . "','" . $maPhong . "','" . $soluong . "','" . $dongia . "','" . $loaiphong . "')";
     $conn->exec($sql);
 }
 
@@ -28,7 +28,8 @@ function getshowcart($iddh){
 
 function getoderinfo($iddh){
     $conn = connect_pdo();
-    $stmt = $conn->prepare("SELECT * FROM donhang WHERE id=".$iddh);
+    $sql = "SELECT * FROM donhang WHERE id=$iddh";
+    $stmt = $conn->prepare($sql);
     $stmt -> execute();
     $result = $stmt -> setFetchMode(PDO::FETCH_ASSOC);
     $kq = $stmt->fetchAll();

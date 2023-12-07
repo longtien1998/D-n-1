@@ -5,6 +5,7 @@ include "../dao/userDAO.php";
 include "../dao/nhanvien.php";
 include "../dao/khachhang.php";
 include "../dao/xulydonhang.php";
+include "../dao/don-hang.php";
 
 
 include "../dao/room.php";
@@ -72,6 +73,17 @@ switch ($_GET["controller"]) {
                 include './pages/quanlyBooking/index.php';
                 break;
             case 'xemchitiet':
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $trangthaidonhang = $_POST['trangthaidonhang'];
+                    $madh = $_POST['ttdh'];
+                    $conn = connect_db();
+                    $check_query1 = "UPDATE donhang SET trangThaiDonHang='$trangthaidonhang' WHERE madh='$madh'";
+                    if (mysqli_query($conn, $check_query1)) {
+                        echo "<script>alert('Cập nhật thành công')</script>";
+                        // header("refresh:1 , /admin/index.php?controller=quanlyBooking&action=xemchitiet&madonhang=$madh");
+                    }
+                }
+
                 include './pages/quanlyBooking/chitiet.php';
                 break;
             default:
