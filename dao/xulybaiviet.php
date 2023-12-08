@@ -9,7 +9,7 @@
                 <td>Xoá:</td>
             </tr>
             <?php
-            require '../config/connect.php';
+            // require '../config/connect.php';
             // Up bài viết
             if (isset($_POST['btn_submit'])) {
                 $id = $_GET['id'];

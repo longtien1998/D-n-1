@@ -92,6 +92,23 @@ switch ($_GET["controller"]) {
         }
 
         break;
+    case 'quanLyBaiViet':
+        switch ($_GET["action"]) {
+            case 'xem-baiviet':
+                include './pages/quanLyBaiViet/xem-baiviet.php';
+                break;
+            case 'add-baiviet':
+                include './pages/quanLyBaiViet/add-baiviet.php';
+                break;
+            case 'edit-baiviet':
+                include './pages/quanLyBaiViet/edit-baiviet.php';
+                break;
+            default:
+                include './pages/quanLyBaiViet/xem-baiviet.php';
+                break;
+        }
+
+        break;
 
     default:
         include 'pages/dashboads.php';
