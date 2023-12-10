@@ -8,10 +8,10 @@ include './dao/nhanvien.php';
 include './dao/room.php';
 
 ?>
-<?php 
+<?php
 
 $sum = 0;
-if(isset($_SESSION['giohang']) && isset($_SESSION['giohang']) > 0){
+if (isset($_SESSION['giohang']) && isset($_SESSION['giohang']) > 0) {
     foreach ($_SESSION['giohang'] as $item) {
         $sum += $item[5];
     }
@@ -69,7 +69,7 @@ if (isset($_SESSION["user"])) {
     <!-- <div class="container-fluid"> -->
 
     <div class="row justify-content-around p-2 mr-0 content-top">
-        <div class="row col-lg-8">
+        <div class="row col-lg-8 d-none d-lg-flex">
             <div class="mx-3">
                 <a href="https://maps.app.goo.gl/fh5dNJN5qoVMQett6" target="_blank">
                     <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
@@ -84,25 +84,28 @@ if (isset($_SESSION["user"])) {
             </div>
         </div>
         <div class="row col-lg-4">
-            <div class="col-8">
+            <div class="col-9">
                 <?php echo $user; ?>
             </div>
-            <div class="col-4">
+            <div class="col-2">
                 <a href="index.php?action=addcart" class="row text-decoration-none"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                     <span class="thongbao d-flex justify-content-center align-items-center p-3"><?php echo $sum; ?></span>
                 </a>
             </div>
+            <div class="icon-show col-1  d-inline d-lg-none" data-toggle="sidebar">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
         </div>
 
     </div>
-    <header class="card-header row justify-content-around mr-0">
-        <div class=" logo mx-5 text-center">
+    <header class="card-header  row justify-content-around mr-0">
+        <div class=" logo mx-5 text-center col-lg-2">
             <a href="/index.php" style="text-decoration: none;">
                 <h1>BONCHA</h1>
                 <p>Best - Hotel</p>
             </a>
         </div>
-        <div class="navbar align-content-center">
+        <div class="navbar align-content-center col-lg-8 p-0">
             <?php
             // $_GET["action"]="home";
             $a1 = "";
@@ -129,10 +132,10 @@ if (isset($_SESSION["user"])) {
             <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
             <a href="/index.php?action=service" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a6; ?>">Dịch Vụ</a>
             <a href="/index.php?action=contact" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a7; ?>">Liên lạc</a>
-            
+
 
         </div>
-        <div class=" align-self-center  ">
-            <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=timphong"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <div class=" align-self-center text-center col-lg-2">
+            <button class="custom-buy3 buy-3 nutmua "><span><a style="text-decoration: none; " href="/index.php?action=timphong"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
     </header>

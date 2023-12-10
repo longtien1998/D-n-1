@@ -21,35 +21,48 @@ document.querySelector('.lendau').addEventListener("click", function () {
     })
 });
 
-let showmonchinh = document.querySelector('#monchinh');
-let showmontrangmieng = document.querySelector('#montrangmieng');
-let showdouong = document.querySelector('#douong');
-let monchinh = document.querySelector('.monchinh');
-let montrangmieng = document.querySelector('.montrangmieng');
-let douong = document.querySelector('.douong');
 
-showmonchinh.addEventListener('click',function(){
-    showmontrangmieng.classList.remove('showmenu');
-    showdouong.classList.remove('showmenu');
-    showmonchinh.classList.add('showmenu');
-    montrangmieng.style.display="none";
-    douong.style.display="none";
-    monchinh.style.display="flex";
+
+// (function () {
+// 	"use strict";
+
+// 	var treeviewMenu = $('.app-menu');
+
+// 	// Toggle Sidebar
+// 	$('[data-toggle="sidebar"]').click(function(event) {
+// 		event.preventDefault();
+// 		$('.app').toggleClass('sidenav-toggled');
+// 	});
+
+// 	// Activate sidebar treeview toggle
+// 	$("[data-toggle='treeview']").click(function(event) {
+// 		event.preventDefault();
+// 		if(!$(this).parent().hasClass('is-expanded')) {
+// 			treeviewMenu.find("[data-toggle='treeview']").parent().removeClass('is-expanded');
+// 		}
+// 		$(this).parent().toggleClass('is-expanded');
+// 	});
+
+// 	// Set initial active toggle
+// 	$("[data-toggle='treeview.'].is-expanded").parent().toggleClass('is-expanded');
+
+// 	//Activate bootstrip tooltips
+// 	// $("[data-toggle='tooltip']").tooltip();
+
+	
+
+// })();
+
+// Đoạn mã JavaScript để xử lý sự kiện khi ấn vào icon 3 gạch
+document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.querySelector('.navbar');
+    var sidebarToggle = document.querySelector('[data-toggle="sidebar"]');
+    
+    sidebarToggle.addEventListener('click', function () {
+            navbar.classList.toggle('sidenav-toggled');
+        });
+   
+    
 });
-showmontrangmieng.addEventListener('click',function(){
-    showmonchinh.classList.remove('showmenu');
-    showdouong.classList.remove('showmenu');
-    showmontrangmieng.classList.add('showmenu');
-    douong.style.display="none";
-    monchinh.style.display="none";
-    montrangmieng.style.display="flex";
-});
-showdouong.addEventListener('click',function(){
-    showmonchinh.classList.remove('showmenu');
-    showmontrangmieng.classList.remove('showmenu');
-    showdouong.classList.add('showmenu');
-    monchinh.style.display="none";
-    montrangmieng.style.display="none";
-    douong.style.display="flex";
-});
+
 
