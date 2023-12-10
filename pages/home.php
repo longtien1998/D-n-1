@@ -179,7 +179,7 @@
             <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
           </div>
           <div class="col-3 p-2 text-center">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">790.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
@@ -188,7 +188,7 @@
             <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">870.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
@@ -197,7 +197,7 @@
             <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">990.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
@@ -206,7 +206,7 @@
             <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
           </div>
           <div class="col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">1.200.000 <span>VND</span></p>
           </div>
         </div>
       </div>
@@ -222,7 +222,7 @@
             <p class="text-black-50">LA MAISON'S FRUIT SORBET</p>
           </div>
           <div class="col-3 p-2 text-center">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">100.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
@@ -231,7 +231,7 @@
             <p class="text-black-50">HOMEMADE SPECIAL CAKE</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">120.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
@@ -240,18 +240,11 @@
             <p class="text-black-50">VANILLA CREME BRULEE</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">135.000 <span>VND</span></p>
           </div>
         </div>
-        <!-- <div class="row p-2 px-5">
-          <div class="col-9 p-2">
-            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
-            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
-          </div>
-          <div class="col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
-          </div>
-        </div> -->
+        
+      
       </div>
       <div class="col-lg-5 text-center py-5">
         <img src="../content/images/kem.jpg" alt="" width="700" height="500" class="border-1" />
@@ -261,38 +254,39 @@
       <div class="col-lg-7 p-lg-5">
         <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
-            <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
-            <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
+            <h3>1679 CORBIÈRES</h3>
+            <p class="text-black-50">80% Syrah, 20% Grenache | Corbières | 14% acl/ vol</p>
           </div>
           <div class="col-3 p-2 text-center">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">550.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
-            <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
-            <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
+            <h3>BONECHANCE BORDEAUX</h3>
+            <p class="text-black-50">Merlot | Pays d'Oc | 14% acl/ vol</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">865.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
           <div class=" col-9 p-2">
-            <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
-            <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
+            <h3>INTRIGO PIANTAFERRO</h3>
+            <p class="text-black-50">Nero D'avola | Sicilia | 13% acl/ vol</p>
           </div>
           <div class=" col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">900.000 <span>VND</span></p>
           </div>
         </div>
         <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
-            <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
-            <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
+            <h3>VALDIVIESO WINEMAKER'S RESERVA</h3>
+            <p class="text-black-50">79% Cabernet Sauvignon, 21% Cabernet Franc |
+              D.O Valle Del Maipo | 14,5% acl/ vol</p>
           </div>
           <div class="col-3 text-center p-2">
-            <p class="gia">135000 <span>VND</span></p>
+            <p class="gia">1.440.000 <span>VND</span></p>
           </div>
         </div>
       </div>
