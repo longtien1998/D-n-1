@@ -1,7 +1,7 @@
 <div class="container py-5">
     <div class="p-4">
         <h1 class="py-3">ID ĐƠN HÀNG : <?php echo $_SESSION['iddh']; ?></h1>
-        <h3>Mã Đơn Hàng: <?= $madh; ?></h3>
+        <h3>Mã Đơn Hàng: <?php echo $_SESSION['madh']; ?></h3>
     </div>
 
     <div class="">
@@ -11,12 +11,16 @@
             $getshowcart = getshowcart($_SESSION['iddh']);
             echo '<table class="table table-bordered table-striped table-hover text-center" >
                     <tr class="thead-dark">
-                        <th>STT</th>
-                        <th>Tên Phòng</th>
-                        <th>Mã Phòng</th>
-                        <th>Loại Phòng</th>
-                        <th>Số Lượng</th>
-                        <th>Đơn Giá </th>
+                    <th>STT</th>
+                    <th>1Tên Phòng</th>
+                    <th>2Loại Phòng</th>
+                    <th>3Người Lớn</th>
+                    <th>4Ngày Đến</th>
+                    <th>5Ngày Đi</th>
+                    <th>6Số Ngày</th>
+                    <th>7Giá Phòng</th>
+                    <th>8Số Lượng</th>
+                    <th>9Thành Tiền</th>
                     </tr>';
 
             if (count($getshowcart) > 0) {
@@ -25,9 +29,13 @@
                     echo '<tr>
                     <td>' . $i . '</td>
                     <td>' . $row['tenPhong'] . '</td>
-                    <td>' . $row['maPhong'] . '</td>
                     <td>' . $row['loaiPhong'] . '</td>
-                    <td>' . $row['soluong']     . '</td>
+                    <td>' . $row['nguoiLon'] . '</td>
+                    <td>' . $row['ngayDen'] . '</td>
+                    <td>' . $row['ngayDi'] . '</td>
+                    <td>' . $row['soNgay'] . '</td>
+                    <td>' . $row['soluong'] . '</td>
+                    <td>' . $row['dongia']     . '</td>
                     <td>' . currency_format($row['dongia']) . '</td>
                 </tr>';
                     $i++;
@@ -50,12 +58,8 @@
                             <td><?= $value['email']; ?></td>
                         </tr>
                         <tr>
-                            <td>Ngày Đến:</td>
-                            <td><?= $value['checkin']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Ngày Đi:</td>
-                            <td><?= $value['checkout']; ?></td>
+                            <td>Ngày đặt phòng: </td>
+                            <td><?= $value['ngayGioDat']; ?></td>
                         </tr>
                         <tr>
                             <td>Phương thức thanh toán</td>

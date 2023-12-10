@@ -21,8 +21,7 @@
                     <th scope="col">Tên khách hàng</th>
                     <th scope="col">Số điện thoại</th>
                     <th scope="col">email</th>
-                    <th scope="col">Ngày nhận phòng</th>
-                    <th scope="col">Ngày trả phòng</th>
+                    <th scope="col">Ngày Giờ đặt</th>
                     <th scope="col">Tổng thanh toán</th>
                     <th scope="col">Trạng thái thanh toán</th>
                     <th scope="col">Trạng thái đơn hàng</th>
@@ -63,8 +62,7 @@
                                 <td>' . $row['hoten'] . '</td>
                                 <td>' . $row['tel'] . '</td>
                                 <td>' . $row['email'] . '</td>
-                                <td>' . $row['checkin'] . '</td>
-                                <td>' . $row['checkout'] . '</td>
+                                <td>' . $row['ngayGioDat'] . '</td>
                                 <td>' . currency_format($row['tongdonhang'])  . '</td>
                                 <td class="pttt">' . $pttt . '</td>
                                 ' . $mess1. '

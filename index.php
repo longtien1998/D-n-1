@@ -1,7 +1,10 @@
 <?php
 //kiểm tra giỏ hàng xem có có tồn tại hay kh, nếu kh thì tạo giỏ hàng rỗng trc
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
-
+$_SESSION['ngayDen'] = '';
+$_SESSION['ngayDi'] = '';
+$_SESSION['nguoiLon'] = '';
+$_SESSION['ngayDen'] = '';
 include './layouts/header.php';
 include './dao/xulydonhang.php';
 
@@ -12,6 +15,21 @@ include './dao/xulydonhang.php';
 switch ($_GET["action"]) {
     case 'home':
 
+        if (isset($_POST['timngay']) && ($_POST['timngay'])) {
+            $ngayDen = $_POST['ngayDen'];
+            $ngayDi = $_POST['ngayDi'];
+            $nguoiLon = $_POST['nguoiLon'];
+            $loaiPhong = $_POST['loaiPhong'];
+
+            $_SESSION['ngayDen'] = $ngayDen;
+            $_SESSION['ngayDi'] = $ngayDi;
+            $_SESSION['nguoiLon'] = $nguoiLon;
+
+            if ($loaiPhong === "phongDon") {
+
+                header("Location: /index.php?action=view1");
+            }
+        }
         include './pages/home.php';
         break;
 
@@ -33,38 +51,44 @@ switch ($_GET["action"]) {
             //lấy dữ liệu từ form để lưu vào giỏ
             $id = $_POST['id'];
             $tenPhong = $_POST['tenPhong'];
-            $maPhong = $_POST['maPhong'];
+            $ngayDen = $_POST['ngayDen'];
+            $ngayDi = $_POST['ngayDi'];
             $loaiPhong = $_POST['loaiPhong'];
             $giaPhong = $_POST['giaPhong'];
-            if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
-                $sl = $_POST['sl'];
-            } else {
-                $sl = 1;
-            }
+            $nguoiLon = $_POST['nguoiLon'];
+            // if (isset($_POST['sl']) && ($_POST['sl'] > 0)) {
+            $sl = $_POST['sl'];
+            // } else {
+            //     $sl = 1;
+            // }
             $fg = 0;
+
+            $diff = abs(strtotime($ngayDi) - strtotime($ngayDen));
+            $days = floor($diff  / (60 * 60 * 24));
+
             // $_SESSION['giohang'] = array();
             //kiểm tra sp có tồn tại trong giỏ hàng hay kh
             // nếu có chỉ cập nhật lại sl
-            $i = 0;
-            foreach ($_SESSION['giohang'] as $item) {
-                if ($item[2] === $maPhong) {
-                    $slnew = $sl + $item[5];
-                    $_SESSION['giohang'][$i][5] = $slnew;
-                    $fg = 1;
-                    break;
-                }
-                $i++;
-            }
+            // $i = 0;
+            // foreach ($_SESSION['giohang'] as $item) {
+            //     if ($item[2] === $maPhong) {
+            //         $slnew = $sl + $item[5];
+            //         $_SESSION['giohang'][$i][5] = $slnew;
+            //         $fg = 1;
+            //         break;
+            //     }
+            //     $i++;
+            // }
             // echo $slnew;
 
             //còn kh thì add mới lại sp vào giỏ hàng
             //khởi tạo mảng con trc khi đưa vào giỏ hàng
             if ($fg == 0) {
-                $item = array($id, $tenPhong, $maPhong, $loaiPhong, $giaPhong, $sl);
+                $item = array($id, $tenPhong, $loaiPhong, $nguoiLon, $ngayDen, $ngayDi, $days, $giaPhong, $sl);
                 // $_SESSION['giohang'] = $item;
                 $_SESSION['giohang'][] = $item;
             }
-            header('location: index.php?action=addcart');
+            header("location: /index.php?action=addcart");
         }
 
         //view giỏ hàng
@@ -76,8 +100,7 @@ switch ($_GET["action"]) {
 
         if (isset($_GET['i']) && ($_GET['i'] >= 0)) {
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) array_splice($_SESSION['giohang'], $_GET['i'], 1);
-            } else {
-          
+        } else {
             if (isset($_SESSION['giohang'])) unset($_SESSION['giohang']);
         }
         if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
@@ -89,30 +112,6 @@ switch ($_GET["action"]) {
         //thanh toán
 
     case 'thanhtoan':
-
-        //nếu kiểm tra cái post ['thanh toan] và được click 
-        if ((isset($_POST['thanhtoan'])) && ($_POST['thanhtoan'])) {
-            //thì lấy dữ liệu
-            $tongdonhang = $_POST['tongdonhang'];
-            $hoten = $_POST['hoten'];
-            $tel = $_POST['tel'];
-            $email = $_POST['email'];
-            $checkin = $_POST['checkin'];
-            $checkout = $_POST['checkout'];
-            $pttt = $_POST['pttt'];
-            $madh = "DH" . rand(1000000, 9999999);
-
-            // tạo đơn hàng
-            //và trả về 1 id đơn hàng
-            $iddh = taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout);
-            $_SESSION['iddh'] = $iddh;
-            if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0)) {
-                foreach ($_SESSION['giohang'] as $item) {
-                    addtocart($iddh, $item[0], $item[1], $item[2], $item[3], $item[4]*$item[5], $item[5]);
-                }
-                unset($_SESSION['giohang']);
-            }
-        }
         include './pages/donhang.php';
         break;
 

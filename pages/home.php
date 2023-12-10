@@ -26,30 +26,36 @@
 </div>
 <section class="order-1 container-fluid p-0">
   <div class="sahow border col-lg-8 border-warning  py-4  m-auto bg-light">
-    <form action="" class="row justify-content-around">
+    <form action="" class="row justify-content-around" method="POST">
       <div class="form-group col-lg">
         <label for="" class="col-form-label">Ngày Đến:</label>
-        <input id="" name="" type="date" class="form-control" required />
+        <input id="" name="ngayDen" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group col-lg">
         <label for="" class="col-form-label">Ngày Đi:</label>
-        <input id="" name="" type="date" class="form-control" required />
+        <input id="" name="ngayDi" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group col-lg">
         <label for="" class="col-form-label">Người Lớn:</label>
-        <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
+        <input id="" name="nguoiLon" type="number" min="1" max="10" class="form-control" value="1" required />
         <span class="form-message"></span>
       </div>
       <div class="form-group col-lg">
-        <label for="" class="col-form-label">Trẻ Em:</label>
-        <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
+        <label for="" class="col-form-label">Loại Phòng</label>
+        <select id="" name="loaiPhong" type="text" class="form-control" placeholder="0" required>
+          <option value="">Chọn loại phòng</option>
+          <option value="phongDon">Phòng đơn</option>
+          <option value="phongDoi">Phòng đôi</option>
+          <option value="phongGiaDinh">Phòng gia đình</option>
+          <option value="phongVip">Phòng VIP</option>
+        </select>
         <span class="form-message"></span>
       </div>
       <div class="align-self-center text-center col-lg">
         <!-- <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required /> -->
-        <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
+        <input type="submit" name="timngay" value="TÌM NGAY" class="custom-buy15 buy-15">
         <span class="form-message"></span>
       </div>
     </form>
@@ -93,7 +99,7 @@
           <img src="../content/images/suite1.jpg" alt="" width="100%" class="border-2" />
         </div>
         <div class="text-center">
-          <h1 class="m-4">Căn hộ</h1>
+          <h1 class="m-4">Phòng VIP</h1>
           <p>
             <span class="namephong">699.000 </span><sup>VND</sup>/mỗi đêm
           </p>
@@ -243,8 +249,8 @@
             <p class="gia">135.000 <span>VND</span></p>
           </div>
         </div>
-        
-      
+
+
       </div>
       <div class="col-lg-5 text-center py-5">
         <img src="../content/images/kem.jpg" alt="" width="700" height="500" class="border-1" />
@@ -338,7 +344,7 @@
   <div class="row justify-content-around text-center m-0">
     <div class="col-lg-3 p-lg-4 my-5">
       <div class="imguser">
-        <img src="" alt="">
+        <img src="../content/images/nguyen.jpg" width="100%" alt="">
         <h2 class="py-3">Alex Nguyen!</h2>
       </div>
       <div>
@@ -351,7 +357,7 @@
     </div>
     <div class="col-lg-3 p-lg-4  my-5">
       <div class="imguser">
-        <img src="" alt="">
+        <img src="../content/images/tien.jpg" width="100%" alt="">
         <h2 class="py-3">Long Tien!</h2>
       </div>
       <div>
@@ -363,7 +369,7 @@
     </div>
     <div class="col-lg-3 p-lg-4  my-5">
       <div class="imguser">
-        <img src="" alt="">
+        <img src="../content/images/nhat.jpg" width="100%">
         <h2 class="py-3">Akito Nhat!</h2>
       </div>
       <div>

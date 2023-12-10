@@ -10,10 +10,12 @@ include './dao/room.php';
 ?>
 <?php
 
+
+
 $sum = 0;
 if (isset($_SESSION['giohang']) && isset($_SESSION['giohang']) > 0) {
     foreach ($_SESSION['giohang'] as $item) {
-        $sum += $item[5];
+        $sum += $item[8];
     }
 }
 

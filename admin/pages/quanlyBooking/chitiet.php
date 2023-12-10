@@ -44,23 +44,31 @@ switch ($data['trangThaiDonHang']) {
 
     if (isset($iddh)) {
         $rows = getshowcart($iddh);
-        echo    '<table class="table table-bordered table-striped table-hover text-center" >
+        echo    '<table class="table table-bordered table-striped table-hover table-text-center" >
                     <tr class="thead-dark">
-                        <th>STT</th>
-                        <th>Tên Phòng</th>
-                        <th>Mã Phòng</th>
-                        <th>Loại Phòng</th>
-                        <th>Số Lượng</th>
-                        <th>Đơn Giá </th>
-                    </tr>';
+                    <th>STT</th>
+                    <th>1Tên Phòng</th>
+                    <th>2Loại Phòng</th>
+                    <th>3Người Lớn</th>
+                    <th>4Ngày Đến</th>
+                    <th>5Ngày Đi</th>
+                    <th>6Số Ngày</th>
+                    <th>Ngày Đặt Phòng</th>
+                    <th>8Số Lượng</th>
+                    <th>9Thành Tiền</th>
+                </tr>';
         $i = 1;
         foreach ($rows as $row) {
             echo    '<tr>
                         <td>' . $i . '</td>
                         <td>' . $row['tenPhong'] . '</td>
-                        <td>' . $row['maPhong'] . '</td>
                         <td>' . $row['loaiPhong'] . '</td>
-                        <td>' . $row['soluong']     . '</td>
+                        <td>' . $row['nguoiLon'] . '</td>
+                        <td>' . $row['ngayDen'] . '</td>
+                        <td>' . $row['ngayDi'] . '</td>
+                        <td>' . $row['soNgay'] . '</td>
+                        <td>' . $row['ngayDat'] . '</td>
+                        <td>' . $row['soluong'] . '</td>
                         <td>' . currency_format($row['dongia']) . '</td>
                     </tr>';
             $i++;
@@ -84,12 +92,9 @@ switch ($data['trangThaiDonHang']) {
             </tr>
             <tr>
                 <td>Ngày Đến:</td>
-                <td><?= $data['checkin']; ?></td>
+                <td><?= $data['ngayGioDat']; ?></td>
             </tr>
-            <tr>
-                <td>Ngày Đi:</td>
-                <td><?= $data['checkout']; ?></td>
-            </tr>
+            
             <tr>
                 <td>Phương thức thanh toán</td>
 

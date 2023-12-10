@@ -1,4 +1,3 @@
-
 <div class="mess text-center text-danger bg-white border-radius p-2 ">
   <h2 class="py-2 px-2">Thêm giỏ hàng thất bại</h2>
 </div>
@@ -41,7 +40,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         </div>
         <div class="de2 border-top">
           <h2>Chi tiết phòng</h2>
-          <p>Mã phòng: ' . htmlspecialchars($row['maPhong']) . '</p>
+          
           <li>Người lớn: 2</li>
           <li>Tiện nghi: <span style="color: goldenrod;">Tủ quần áo với móc treo, Két cá nhân số, TV màn hình
               phẳng HD, Điện thoại.</span></li>
@@ -49,22 +48,37 @@ while ($row = mysqli_fetch_assoc($result)) {
           <li>Loại giường: 1 giường</li>
           <li>Loại: ' . htmlspecialchars($row['loaiPhong']) . '</li> 
         </div>
-        <form class="book1" action="/index.php?action=addcart" method="post">
+        <form class="book1 d-flex justify-content-center w-25" action="/index.php?action=addcart" method="post" >
               <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
-              <input type="hidden" name="maPhong" value="' . htmlspecialchars($row['maPhong']) . '">
               <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
               <input type="hidden" name="loaiPhong" value="' . htmlspecialchars($row['loaiPhong']) . '">
               <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
+              <input id="" name="nguoiLon" type="hidden" min="1" max="10" class="form-control1" value="'.$_SESSION['nguoiLon'].'" />
               <div class="hop15">
-                <input type="number" name="sl" id="sl" value="1" class="my-3 w-25">
-                <br>
+                
+                <div class="form-group col-lg">
+                  <label for="" class="col-form-label">Số lượng: </label>
+                  <input  type="number" name="sl" id="sl" class="form-control1" value="1" required />
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group col-lg">
+                  <label for="" class="col-form-label">Ngày Đến:</label>
+                  <input id="" name="ngayDen" type="date" class="form-control1" value="'.$_SESSION['ngayDen'].'" required />
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group col-lg">
+                  <label for="" class="col-form-label">Ngày Đi:</label>
+                  <input id="" name="ngayDi" type="date" class="form-control1" value="'.$_SESSION['ngayDi'].'" required />
+                  <span class="form-message"></span>
+                </div>
+                
                 <input type="submit" name="addtocart" value="Đặt Phòng" class="custom-buy15 buy-15">
             </div>
         </form>
       </section> 
       <hr class="my-5 ">
       ';
-      break;
+  break;
 }
 
 ?>
