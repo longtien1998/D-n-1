@@ -99,13 +99,13 @@ if (isset($_SESSION["user"])) {
 
     </div>
     <header class="card-header  row justify-content-around mr-0">
-        <div class=" logo mx-5 text-center col-lg-2">
+        <div class=" logo mx-5 text-center ">
             <a href="/index.php" style="text-decoration: none;">
                 <h1>BONCHA</h1>
                 <p>Best - Hotel</p>
             </a>
         </div>
-        <div class="navbar align-content-center col-lg-8 p-0">
+        <div class="navbar justify-content-center p-0">
             <?php
             // $_GET["action"]="home";
             $a1 = "";
@@ -125,17 +125,17 @@ if (isset($_SESSION["user"])) {
 
             ?>
 
-            <a href="/index.php?action=home" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a1; ?>">Trang chủ</a>
-            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a2; ?>">Về Chúng Tôi</a>
-            <a href="/index.php?action=phong" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a3; ?>">Phòng</a>
-            <a href="/index.php?action=timphong" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a4; ?>">Tìm phòng</a>
-            <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a5; ?>">Nhà hàng & Bar</a>
-            <a href="/index.php?action=service" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a6; ?>">Dịch Vụ</a>
-            <a href="/index.php?action=contact" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-4 <?php echo $a7; ?>">Liên lạc</a>
+            <a href="/index.php?action=home" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a1; ?>">Trang chủ</a>
+            <a href="/index.php?action=gioithieu" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a2; ?>">Về Chúng Tôi</a>
+            <a href="/index.php?action=phong" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a3; ?>">Phòng</a>
+            <a href="/index.php?action=timphong" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a4; ?>">Tìm phòng</a>
+            <a href="/index.php?action=nhahang" class="text-black-50  text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a5; ?>">Nhà hàng & Bar</a>
+            <a href="/index.php?action=service" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a6; ?>">Dịch Vụ</a>
+            <a href="/index.php?action=contact" class="text-black-50 text-uppercase text-decoration-none hover-color lead m-2 <?php echo $a7; ?>">Liên lạc</a>
 
 
         </div>
-        <div class=" align-self-center text-center col-lg-2">
+        <div class=" align-self-center text-center py-4">
             <button class="custom-buy3 buy-3 nutmua "><span><a style="text-decoration: none; " href="/index.php?action=timphong"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
     </header>

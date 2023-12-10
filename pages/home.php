@@ -106,7 +106,7 @@
           </ul>
         </div>
         <div class="text-center mt-5">
-          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
       </div>
       <div class="col-lg-4 mb-5">
@@ -127,7 +127,7 @@
           </ul>
         </div>
         <div class="text-center mt-5">
-          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view2"><span class="dat">ĐẶT NGAY</span></a></span></button>
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
       </div>
       <div class="col-lg-4 mb-5">
@@ -327,7 +327,7 @@
       <p class="px-3">
         <span class="namephong"> 2.149.000</span><sup>VND</sup>/mỗi đêm
       </p>
-      <div class="px-3">
+      <div class="px-3 py-4">
         <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
     </div>

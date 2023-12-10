@@ -10,9 +10,9 @@ if (isset($_SESSION['user'])) {
     $hinh = $data['urlimage'];
     $hidden = '';
   } else {
-    $datanv = getUsernhanvienByName($_SESSION['user']);
-    $name = $datanv['tenNhanVien'];
-    $hinh = $datanv['urlimage'];
+    $data = getUsernhanvienByName($_SESSION['user']);
+    $name = $data['tenNhanVien'];
+    $hinh = $data['urlimage'];
     $hidden = 'class="hidden"';
   }
 } else {

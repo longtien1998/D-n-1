@@ -4,7 +4,7 @@
     $query = "SELECT * FROM  room WHERE loaiPhong = 'Double' ";
     $result = mysqli_query($conn, $query);
 while ($row = mysqli_fetch_assoc($result)) {
-  echo '<section>
+  echo '<section class="col-lg-12">
     <div class="room1-description1">
         <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
         <div class="tien5">
@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     </div>
 
 </section>
-<section class="tiennghi1">
+<section class="tiennghi1 col-lg-12">
     <div class="de4">
         <h2>Tiện Nghi</h2>
         <p>Đây là phòng đôi tuyệt vời, được nâng cấp với 2 giường cỡ king,
@@ -58,6 +58,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         </div>
     </form> 
 </section>  <hr class="my-5 ">';
+break;
 }
 
 ?>

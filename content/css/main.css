@@ -452,23 +452,18 @@ iframe {
 }
 .hover-color:hover{
   color: #d08e24 !important;
-  font-size: 22px;
+  
 }
 .icon-show{
   font-size: 25px;
 }
-/* CSS cho thanh navbar */
 .card-header {
-  background-color: #ffffff; /* Màu nền của thanh navbar */
+  background-color: #ffffff; 
 }
 
-/* CSS cho logo */
-.logo {
-  /* Tùy chỉnh chiều rộng của logo để nó không chiếm toàn bộ chiều rộng của thanh navbar */
-  max-width: 150px;
-}
 
-/* CSS cho các liên kết trong thanh navbar */
+
+
 .navbar a {
   color: #000000; /* Màu chữ cho các liên kết */
   text-decoration: none; /* Loại bỏ đường gạch chân mặc định */
@@ -476,16 +471,9 @@ iframe {
   display: inline-block; /* Hiển thị liên kết theo hàng ngang */
 }
 
-/* CSS cho nút đặt phòng */
-/* .nutmua {
-  background-color: #3498db; 
-  color: #ffffff; 
-  border: none; 
-  padding: 10px 20px; 
-  cursor: pointer;
-} */
 
-/* CSS cho các liên kết responsive trên màn hình nhỏ */
+
+
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column; 
@@ -513,3 +501,12 @@ iframe {
   }
 }
 
+@media (max-width: 1526px){
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  .card-header{
+    display: block;
+  }
+}

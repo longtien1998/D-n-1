@@ -20,13 +20,13 @@
         </div>
         <div class="col-xl mt-2">
             <div class="text-center w-100 border-1 border-radius bg-info p-1">
-                <h2 class="p-3">Số lượng phòng</h2>
+                <h2 class="p-3">Phòng</h2>
                 <p class="count p-3">SL: <?php echo room_count_all(); ?></p>
             </div>
         </div>
         <div class="col-xl mt-2">
             <div class="text-center w-100 border-1 border-radius bg-info p-1">
-                <h2 class="p-3">Số lượng đơn hàng</h2>
+                <h2 class="p-3">Đơn hàng</h2>
                 <p class="count p-3">SL: <?php echo donhang_count_all(); ?></p>
             </div>
         </div>

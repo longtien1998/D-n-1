@@ -1,11 +1,11 @@
-<div class="tong5">
+<div class="tong5 col-lg-12">
     <div class="trangchu5">
         <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
         <span>Dịch Vụ</span>
     </div>
 </div>
 
-<section class="se7">
+<section class="se7 col-lg-12 p-1 pb-5">
     <div class="a-8">
         <h3>Dịch Vụ</h3>
         <div class="a-9">
@@ -24,13 +24,11 @@
         </div>
     </div>
 </section>
-<section class="ser8">
-    <div class="sr1">
-        <div class="slidesr">
-    <img src="../content/images/xedon.jpg" width="100%" height="381px" alt="">
-        </div>
+<section class="ser8 row col-lg-12 p-1 py-5">
+    <div class="sr1 align-self-center col-lg-6">
+            <img src="../content/images/xedon.jpg" width="100%"  alt="">
     </div>
-    <div class="noidungsr1">
+    <div class="noidungsr1  col-lg-6">
         <h2>Xe đưa đón sân bay & <br> Bãi đậu xe</h2>
         <div class="noidung-9">
 
@@ -59,9 +57,8 @@
     </div>
 </section>
 
-<section class="ser9">
-
-    <div class="noidungsr2">
+<section class="ser9 row col-lg-12 p-1 py-5">
+    <div class="noidungsr2 col-lg-6">
         <h2>Dịch vụ cho thuê xe tự lái</h2>
 
         <br>
@@ -81,20 +78,16 @@
         </div>
 
     </div>
-    <div class="sr2">
-        <div class="slidesr1">
-    <img src="../content/images/thuexe.jpg" width="100%" height="381px" alt="">
-        </div>
+    <div class="sr2 col-lg-6">
+        <img src="../content/images/thuexe.jpg" width="100%"  alt="">
     </div>
 
 </section>
-<section class="ser10">
-    <div class="sr3">
-        <div class="slidesr2">
-    <img src="../content/images/spa.jpg" width="100%" height="381px" alt="">
-        </div>
+<section class="ser10 row col-lg-12 p-1 py-5">
+    <div class="sr3 col-lg-6">
+        <img src="../content/images/spa.jpg" width="100%"   alt="">
     </div>
-    <div class="noidungsr3">
+    <div class="noidungsr3 col-lg-6">
         <h2>Dịch vụ Spa & làm đẹp</h2>
         <br>
         <div class="noidung-12">
@@ -108,12 +101,11 @@
         <div class="hop13">
             <button class="custom-buy13 buy-13"><span>ĐẶT NGAY</span></button>
         </div>
-
     </div>
 </section>
-<section class="ser11">
+<section class="ser11 row col-lg-12 p-1 py-5">
 
-    <div class="noidungsr4">
+    <div class="noidungsr4 col-lg-6">
         <h2>Dịch vụ tổ chức sự kiện</h2>
 
         <br>
@@ -134,10 +126,10 @@
         </div>
 
     </div>
-    <div class="sr4">
-        <div class="slidesr4">
-    <img src="../content/images/sukien.jpg" width="100%" height="381px" alt="">
-        </div>
+    <div class="sr4 col-lg-6">
+        
+            <img src="../content/images/sukien.jpg" width="100%"  alt="">
+        
     </div>
 
 </section>
