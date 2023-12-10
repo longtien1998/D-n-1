@@ -2828,10 +2828,14 @@ img.room-active {
     border: none; 
     border-radius: 5px;
     cursor: pointer; 
+    border: 1px solid rgb(167, 99, 31);
+    transition: 0.3s;
 }
 
 .custom-buy15:hover {
-    background: rgb(167, 99, 31);
+    background: rgb(255, 255, 255);
+    color: rgb(167, 99, 31);
+    border: 1px solid rgb(167, 99, 31);
 }
 
 

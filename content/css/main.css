@@ -510,3 +510,43 @@ iframe {
     display: block;
   }
 }
+.tieptuc,
+.xoaall,
+.xoa{
+  border: 1px solid #d08e24;
+  color: white;
+  text-decoration: none;
+}
+.tieptuc:hover{
+  color: white;
+  background-color: rgb(33, 99, 62);
+  text-decoration: none;
+}
+.tieptuc{
+  background-color: seagreen;
+}
+.xoaall{
+  background-color: crimson;
+}
+.xoaall:hover{
+  color: white;
+  background-color:  rgb(102, 11, 30);
+  text-decoration: none;
+}
+.check-active{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: inline;
+  font-size: 25px;
+}
+.xoa{
+  background-color: crimson;
+  border-radius: 10px;
+}
+.xoa:hover{
+  color: white;
+  background-color:  rgb(102, 11, 30);
+  text-decoration: none;
+}

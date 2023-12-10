@@ -1,18 +1,18 @@
 <?php
-function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email, $checkin, $checkout){
+function taodonhang($madh, $tongdonhang, $pttt, $hoten, $tel, $email,$currentDateTime){
     $conn = connect_pdo();
-    $sql = "INSERT INTO donhang (madh,tongdonhang,pttt,hoten,tel,email,checkin,checkout)
-            VALUE ('" . $madh . "','" . $tongdonhang . "','" . $pttt . "','" . $hoten . "','" . $tel . "','" . $email . "','" . $checkin . "','" . $checkout . "')";
+    $sql = "INSERT INTO donhang (madh,tongdonhang,pttt,hoten,tel,email,ngayGioDat)
+            VALUE ('" . $madh . "','" . $tongdonhang . "','" . $pttt . "','" . $hoten . "','" . $tel . "','" . $email . "','" . $currentDateTime . "')";
     $conn->exec($sql);
     $last_id = $conn->lastInsertId();
     return $last_id;
 }
 
 
-function addtocart($iddh,$idpro,$tenPhong,$maPhong,$loaiphong,$dongia,$soluong){
+function addtocart($iddh,$idroom,$tenPhong,$loaiPhong,$nguoiLon,$ngayDen,$ngayDi,$soNgay,$soluong,$dongia,$currentDateTime){
     $conn = connect_pdo();
-    $sql = "INSERT INTO cart (iddh,idroom,tenPhong,maPhong,soluong,dongia,loaiPhong)
-    VALUE ('" . $iddh . "','" . $idpro . "','" . $tenPhong . "','" . $maPhong . "','" . $soluong . "','" . $dongia . "','" . $loaiphong . "')";
+    $sql = "INSERT INTO cart (iddh,idroom,tenPhong,loaiPhong,nguoiLon,ngayDen,ngayDi,soNgay,soluong,dongia,ngayDat)
+    VALUE ('" . $iddh . "','" . $idroom . "','" . $tenPhong . "','" . $loaiPhong . "','" . $nguoiLon . "','" . $ngayDen . "','" . $ngayDi . "','" . $soNgay . "','" . $soluong . "','" . $dongia . "','" . $currentDateTime . "')";
     $conn->exec($sql);
 }
 
