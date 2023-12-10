@@ -72,7 +72,7 @@ switch ($_GET["action"]) {
         break;
 
     case 'delcart':
-        if (isset($_GET['i']) && ($_GET['i'] > 0)) {
+        if (isset($_GET['sl']) && ($_GET['sl'] > 0)) {
             if (isset($_SESSION['giohang']) && (count($_SESSION['giohang']) > 0))
                 array_slice($_SESSION['giohang'], $_GET['i'], 1);
         } else {
