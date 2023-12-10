@@ -11,63 +11,51 @@
             <h2>Tìm Phòng</h2>
         </div>
     </div>
-    <div class="timkiem1">
-        <div class="timkiem2">
-            <div class="b">
-                <div class="i">
-                    <span>Ngày Đến</span>
-                </div>
-                <div class="ngayden">
-                    <input type="date">
-                </div>
+</section>
+<section class="order-1 container-fluid p-0">
+    <div class="sahow border col-lg-8 border-warning  py-4  m-auto bg-light">
+        <form action="" class="row justify-content-around">
+            <div class="form-group col-lg">
+                <label for="" class="col-form-label">Ngày Đến:</label>
+                <input id="" name="" type="date" class="form-control" required />
+                <span class="form-message"></span>
             </div>
-
-            <div class="b1">
-                <div class="o">
-                    <span>Ngày Đi</span>
-                </div>
-                <div class="ngaydi">
-                    <input type="date">
-                </div>
+            <div class="form-group col-lg">
+                <label for="" class="col-form-label">Ngày Đi:</label>
+                <input id="" name="" type="date" class="form-control" required />
+                <span class="form-message"></span>
             </div>
-
-            <div class="b2">
-                <div class="s">
-                    <span>Người lớn</span>
-                </div>
-                <div class="ss">
-                    <input type="text">
-                </div>
+            <div class="form-group col-lg">
+                <label for="" class="col-form-label">Người Lớn:</label>
+                <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
+                <span class="form-message"></span>
             </div>
-
-            <div class="b3">
-                <div class="c">
-                    <span>Trẻ em</span>
-                </div>
-                <div class="cc">
-                    <input type="text">
-                </div>
+            <div class="form-group col-lg">
+                <label for="" class="col-form-label">Trẻ Em:</label>
+                <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
+                <span class="form-message"></span>
             </div>
-
-            <div class="hop4">
-                <button class="custom-buy5 buy-5"><span>Kiểm tra</span></button>
+            <div class="align-self-center text-center col-lg">
+                <!-- <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required /> -->
+                <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
+                <span class="form-message"></span>
             </div>
-        </div>
+        </form>
     </div>
 </section>
-<section class="stc1">
-    <div class="don1">
+<section class="stc1 row col-lg-12 py-5 m-0 pt-lg-5">
+    <div class="don1 col-lg-6 p-1">
         <!-- <div class="slide"> -->
-            <img src="../content/images/room1-big.jpeg" width="100%" height="100%" alt="">
+        <img src="../content/images/room1-big.jpeg" width="100%" height="100%" alt="">
         <!-- </div> -->
     </div>
-    <div class="noidungg">
+    <div class="noidungg col-lg-6 p-1 pl-lg-5 ">
         <div class="noidung-1">
             <h4>Phòng Đơn</h4>
         </div>
         <div class="noidung-2">
             <p>Hãy tận hưởng những căn hộ sang trọng của chúng tôi với toàn bộ sự tinh tế và sự thoải mái mà nội
-                thất của nó mang lại... <br> 
+                thất của nó mang lại... <br>
                 Nó đi kèm với những tiện ích cần thiết như một TV màn hình phẳng 45", WiFi
                 và 1 phòng tắm, cùng với một phòng khách
             </p>
@@ -96,13 +84,13 @@
     </div>
 </section>
 <hr style="border: 1px solid gray;">
-<section class="stc2">
-    <div class="doi2">
+<section class="stc2 row col-lg-12 py-5 m-0">
+    <div class="doi2 col-lg-6 p-1">
         <!-- <div class="slide1"> -->
-            <img src="../content/images/phongdoi1-big.png" height="100%" width="100%" alt="">
+        <img src="../content/images/phongdoi1-big.png" height="100%" width="100%" alt="">
         <!-- </div> -->
     </div>
-    <div class="noidung-3">
+    <div class="noidung-3 col-lg-6 p-1 pl-lg-5">
         <div class="noidung-4">
             <h4>Phòng Đôi</h4>
         </div>
@@ -128,18 +116,18 @@
             </ul>
         </div>
         <div class="hop6">
-            <button class="custom-buy7 buy-7"><span><a style="text-decoration: none; " href="view2.html">ĐẶT NGAY</a></span></button>
+            <button class="custom-buy7 buy-7"><span><a style="text-decoration: none; " href="index.php?action=view2">ĐẶT NGAY</a></span></button>
         </div>
     </div>
 </section>
 <hr style="border: 1px solid gray;">
-<section class="stc3">
-    <div class="giadinh1">
+<section class="stc3 row col-lg-12 py-5 m-0">
+    <div class="giadinh1 col-lg-6 p-1">
         <!-- <div class="slide1"> -->
-            <img src="../content/images/phonggiadinh1-big.jpg" width="100%" height="100%" alt="">
+        <img src="../content/images/phonggiadinh1-big.jpg" width="100%" height="100%" alt="">
         <!-- </div> -->
     </div>
-    <div class="noidung-6">
+    <div class="noidung-6 col-lg-6 p-1 pl-lg-5">
         <div class="noidung-7">
             <h4>Phòng Gia Đình</h4>
         </div>
@@ -167,7 +155,7 @@
             </ul>
         </div>
         <div class="hop7">
-            <button class="custom-buy8 buy-8"><span><a style="text-decoration: none; " href="view3.html">ĐẶT NGAY</a></span></button>
+            <button class="custom-buy8 buy-8"><span><a style="text-decoration: none; " href="index.php?action=view3">ĐẶT NGAY</a></span></button>
         </div>
     </div>
 </section>

@@ -14,12 +14,12 @@
         <div class="contact_bodyleft w-25">
             <div class="diachi">
                 <h2>Địa Chỉ Khách Sạn</h2>
-                <span>410 Nguyễn Lương Bằng, Liên Chiểu, Đà Nẵng</span>
+                <span>260 Võ Nguyên Giáp, Phường Mỹ An, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam</span>
             </div>
             <div class="dat">
                 <h2>Đặt Phòng</h2>
                 <span>https://www.boncha.com.vn/ <br>
-                    Gọi miễn phí: 0888885679</span>
+                    Gọi miễn phí: 1800 8888</span>
             </div>
             <div class="letan">
                 <h2>Lễ Tân</h2>
