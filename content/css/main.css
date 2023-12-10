@@ -155,6 +155,36 @@ img {
   font-size: 100px;
   color: rgb(255, 255, 72);
 }
+@media (max-width: 768px){
+  .fa-star {
+    font-size: 70px;
+  }
+  .name{
+    font-size: 60px !important;
+  }
+  .order-1{
+    margin-top: 0px;
+  position: relative;
+  z-index: 2;
+
+  }
+  .comment{
+    font-size: 18px !important;
+  }
+  .slider {
+    height: 600px ;
+  }
+  img{
+     width: 100% !important;
+     height: 290px;
+  }
+  .tich{
+    font-size: 18px;
+  }
+  .sahow {
+    box-shadow: 0px 0px 0px black !important;
+  }
+}
 
 .fa-star:hover {
   text-shadow: 0px 0px 3px black, 0 0 150px rgb(219, 219, 63), 0 0 150px rgb(208, 162, 36);
@@ -178,7 +208,7 @@ img {
 
   margin-top: -80px;
   position: relative;
-  z-index: 1;
+  z-index: 9;
 }
 
 .sahow {
@@ -192,6 +222,8 @@ img {
 .box1 {
   background-color: #f3f3f3;
   margin-top: -66px;
+  position: relative;
+  z-index: 2;
 }
 
 .border-1 {
@@ -281,6 +313,7 @@ img {
 .showmenu {
   border-bottom: 3px solid #d08e24;
   color: #d08e24 !important;
+  /* transition: 0.5s; */
 
 }
 
@@ -301,6 +334,16 @@ img {
 
 .lendau>i {
   font-size: 25px;
+}
+@media (max-width: 768px) {
+  .lendau{
+    bottom: 50px;
+    right: 25px;
+    border: 1px solid #d08e24;
+  }
+  .lendau>i {
+    font-size: 10px;
+  }
 }
 
 .monchinh {
@@ -346,8 +389,8 @@ img {
 
 .box5 img {
   background-color: #e6b86f;
-  width: 180px;
-  height: 180px;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 50%;
 
 }
@@ -373,7 +416,8 @@ iframe {
 }
 
 .guithongtin {
-  height: 180px;
+  /* height: 180px; */
+  padding: 20px 0px;
 }
 
 .guithongtin1 {
@@ -404,9 +448,68 @@ iframe {
 }
 .content-top{
   border-top:2px solid #d08e24;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 .hover-color:hover{
   color: #d08e24 !important;
   font-size: 22px;
 }
+.icon-show{
+  font-size: 25px;
+}
+/* CSS cho thanh navbar */
+.card-header {
+  background-color: #ffffff; /* Màu nền của thanh navbar */
+}
+
+/* CSS cho logo */
+.logo {
+  /* Tùy chỉnh chiều rộng của logo để nó không chiếm toàn bộ chiều rộng của thanh navbar */
+  max-width: 150px;
+}
+
+/* CSS cho các liên kết trong thanh navbar */
+.navbar a {
+  color: #000000; /* Màu chữ cho các liên kết */
+  text-decoration: none; /* Loại bỏ đường gạch chân mặc định */
+  padding: 10px; /* Khoảng cách giữa các liên kết */
+  display: inline-block; /* Hiển thị liên kết theo hàng ngang */
+}
+
+/* CSS cho nút đặt phòng */
+/* .nutmua {
+  background-color: #3498db; 
+  color: #ffffff; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+} */
+
+/* CSS cho các liên kết responsive trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+      display: none;
+  }
+
+  .navbar a {
+      margin: 5px 0; /* Khoảng cách giữa các liên kết khi chúng xếp theo cột */
+  }
+}
+/* CSS cho class mới khi navbar được mở */
+.navbar.sidenav-toggled {
+  display: flex;
+}
+
+/* CSS để ẩn navbar ban đầu */
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+  }
+  iframe{
+    height: 400px;
+  }
+}
+

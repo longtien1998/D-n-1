@@ -8,22 +8,22 @@
 
                 <!-- Right -->
                 <div>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-google"></i>
                     </a>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="" class="m-4 text-reset">
+                    <a href="" class="m-lg-2 m-2 text-reset">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
