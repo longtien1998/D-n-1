@@ -1,13 +1,13 @@
-<div class="tong">
+<div class="tong col-lg-12">
   <div class="trangchu">
     <h5><a href="/index.php?action=home">Trang Chủ |</a></h5>
     <span>Phòng</span>
   </div>
 </div>
-<section class="se1">
-  <div class="a-1">
+<section class="se1 col-lg-12  pb-4">
+  <div class="a-1 p-1">
     <h3>Phòng Và Căn Hộ</h3>
-    <div class="a-2">
+    <div class="a-2 pb-3">
       <p>Tuy khách sạn của chúng tôi có các loại phòng tiêu chuẩn, nhưng không gì ở đây có thể được coi là
         "bình thường"! Mỗi phòng đơn</p>
       <p>phòng đôi hoặc phòng gia đình, phòng đôi hoặc phòng gia đình mà chúng tôi cung cấp đều được tối ưu
@@ -21,11 +21,11 @@
     </div>
   </div>
 </section>
-<section class="sec1">
-  <div class="don">
-    <img src="../content/images/room1-big.jpeg" height="100%" width="100%" alt="">
+<section class="sec1 row col-lg-12 py-5 m-0">
+  <div class="don col-lg-6 align-self-center">
+    <img src="../content/images/room1-big.jpeg"  width="100%" alt="">
   </div>
-  <div class="noidung">
+  <div class="noidung col-lg-6">
     <div class="noidung1">
       <h4>Phòng Đơn</h4>
     </div>
@@ -57,9 +57,8 @@
     </div>
   </div>
 </section>
-<section class="sec2">
-
-  <div class="noidung3">
+<section class="sec2 row col-lg-12 py-5 m-0">
+  <div class="noidung3 col-lg-6 py-3">
     <div class="noidung4">
       <h4>Phòng Đôi</h4>
     </div>
@@ -89,19 +88,19 @@
       <button class="custom-buy2 buy-2"><span><a style="text-decoration: none; " href="/index.php?action=view2">XEM NGAY</a></span></button>
     </div>
   </div>
-  <div class="doi">
-    <div class="slide2">
-      <img src="../content/images/phongdoi1-big.png" height="381px" width="100%" alt="">
-    </div>
+  <div class="doi col-lg-6 align-self-center">
+    
+      <img src="../content/images/phongdoi1-big.png"  width="100%" alt="">
+    
   </div>
 </section>
-<section class="sec3">
-  <div class="giadinh">
-    <div class="slide3">
-      <img src="../content/images/phonggiadinh1-big.jpg" height="381px" width="100%" alt="">
-    </div>
+<section class="sec3 row col-lg-12 py-5 m-0">
+  <div class="giadinh col-lg-6 align-self-center">
+    
+      <img src="../content/images/phonggiadinh1-big.jpg" width="100%" alt="">
+    
   </div>
-  <div class="noidung6">
+  <div class="noidung6 col-lg-6 py-3">
     <div class="noidung7">
       <h4>Phòng Gia Đình</h4>
     </div>
@@ -133,9 +132,9 @@
     </div>
   </div>
 </section>
-<section class="sec4">
+<section class="sec4 row col-lg-12 py-5 m-0">
 
-  <div class="noidung9">
+  <div class="noidung9 col-lg-6 py-3">
     <div class="noidung10">
       <h4>Phòng Vip</h4>
     </div>
@@ -167,10 +166,8 @@
       <button class="custom-buy-4 buy-4"><span><a style="text-decoration: none; " href="/index.php?action=view4">XEM NGAY</a></span></button>
     </div>
   </div>
-  <div class="sute">
-    <div class="slide4">
+  <div class="sute col-lg-6 align-self-center">
       <img src="../content/images/phongvip1-big.jpg" width="100%" height="100%">
-    </div>
   </div>
 </section>
 

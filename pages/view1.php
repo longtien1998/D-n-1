@@ -11,7 +11,7 @@ $result = mysqli_query($conn, $query);
 
 <?php
 while ($row = mysqli_fetch_assoc($result)) {
-  echo '<section class="p-2 mt-5">
+  echo '<section class="p-2 mt-5 col-lg-12">
         <div class="room-description">
           <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
           <div class="tien4">
@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_assoc($result)) {
           </div>
         </div>
       </section>
-      <section class="tiennghi">
+      <section class="tiennghi col-lg-12">
         <div class="de1 ">
           <h2>Tiện Nghi</h2>
           <p>Hãy tận hưởng những căn hộ sang trọng của chúng tôi với toàn bộ sự tinh tế và sự thoải mái mà nội
@@ -64,6 +64,7 @@ while ($row = mysqli_fetch_assoc($result)) {
       </section> 
       <hr class="my-5 ">
       ';
+      break;
 }
 
 ?>

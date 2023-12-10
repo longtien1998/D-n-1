@@ -1,53 +1,53 @@
-<div class="slider col-12">
+<div class="slider col-lg-12">
   <div class="d-flex flex-column align-items-center justify-content-center h-100 text-light">
     <div class="s">
       <ul class="row list-unstyled">
-        <li class="m-4">
+        <li class="m-lg-4">
           <i class="fa-solid fa-star"></i>
         </li>
-        <li class="m-4">
+        <li class="m-lg-4">
           <i class="fa-solid fa-star"></i>
         </li>
-        <li class="m-4">
+        <li class="m-lg-4">
           <i class="fa-solid fa-star"></i>
         </li>
-        <li class="m-4">
+        <li class="m-lg-4">
           <i class="fa-solid fa-star"></i>
         </li>
       </ul>
     </div>
-    <span class="text-uppercase lead m-3">Tận hưởng với chúng tôi</span>
-    <h1 class="name m-3 font-weight-bold ">Cảnh quan tuyệt đẹp</h1>
+    <span class="text-uppercase text-center lead m-3">Tận hưởng với chúng tôi</span>
+    <h1 class="name m-3 text-center font-weight-bold ">Cảnh quan tuyệt đẹp</h1>
     <p class="comment my-3">
       Mỗi phòng tại khách sạn của chúng tôi không chỉ mang lại sự thoải mái cao
       mà còn có tầm nhìn tuyệt vời ra khung cảnh biển.
     </p>
   </div>
 </div>
-<section class="order-1 container-fluid">
-  <div class="sahow border border-warning px-1 py-4 w-75 m-auto bg-light">
+<section class="order-1 container-fluid p-0">
+  <div class="sahow border col-lg-8 border-warning  py-4  m-auto bg-light">
     <form action="" class="row justify-content-around">
-      <div class="form-group">
+      <div class="form-group col-lg">
         <label for="" class="col-form-label">Ngày Đến:</label>
         <input id="" name="" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
-      <div class="form-group">
+      <div class="form-group col-lg">
         <label for="" class="col-form-label">Ngày Đi:</label>
         <input id="" name="" type="date" class="form-control" required />
         <span class="form-message"></span>
       </div>
-      <div class="form-group">
+      <div class="form-group col-lg">
         <label for="" class="col-form-label">Người Lớn:</label>
         <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
         <span class="form-message"></span>
       </div>
-      <div class="form-group">
+      <div class="form-group col-lg">
         <label for="" class="col-form-label">Trẻ Em:</label>
         <input id="" name="" type="number" min="1" max="10" class="form-control" placeholder="0" required />
         <span class="form-message"></span>
       </div>
-      <div class="align-self-center">
+      <div class="align-self-center text-center col-lg">
         <!-- <input id="" name="" type="submit" class="form-control text-dark border-warning bg-transparent text-uppercase" value="Kiểm tra" required /> -->
         <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view3"><span class="dat">ĐẶT NGAY</span></a></span></button>
         <span class="form-message"></span>
@@ -57,7 +57,7 @@
 </section>
 <section class="box1 container-fluid col pt-5">
   <div class="row p-3 py-5">
-    <div class="col-6 p-5 py-5">
+    <div class="col-lg-6 p-5 py-5">
       <P>Chào mừng tới</P>
       <H1 class="my-4">Boncha Best - Hotel!</H1>
       <p class="my-5">
@@ -72,13 +72,13 @@
       </p>
       <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=gioithieu"><span class="dat">Xem thêm...</span></a></span></button>
     </div>
-    <div class="col-6 text-center py-5">
+    <div class="col-lg-6 text-center py-lg-5">
       <img src="../content/images/view.jpg" alt="" width="700" height="500" class="border-1" />
     </div>
   </div>
 </section>
 <section class="box2 container-fluid col">
-  <div class="py-5 m-5">
+  <div class="py-lg-5 m-lg-5">
     <div class="text-center ">
       <h1 class="m-4">Phòng & Căn hộ</h1>
       <p class=" p-5 text-black-50">
@@ -88,7 +88,7 @@
       </p>
     </div>
     <div class="row justify-content-around">
-      <div class="col-4">
+      <div class="col-lg-4 mb-5">
         <div class="image">
           <img src="../content/images/suite1.jpg" alt="" width="100%" class="border-2" />
         </div>
@@ -106,10 +106,10 @@
           </ul>
         </div>
         <div class="text-center mt-5">
-          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 mb-5">
         <div class="image">
           <img src="../content/images/doubleroom_.jpg" alt="" width="100%" class="border-2" />
         </div>
@@ -127,10 +127,10 @@
           </ul>
         </div>
         <div class="text-center mt-5">
-          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view2"><span class="dat">ĐẶT NGAY</span></a></span></button>
+          <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view1"><span class="dat">ĐẶT NGAY</span></a></span></button>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 mb-5">
         <div class="image">
           <img src="../content/images/family-room-design.jpg" alt="" width="100%" class="border-2" />
         </div>
@@ -170,10 +170,10 @@
       <div id="douong" class="tich text-black-50 text-uppercase lead px-2 m-2">Đồ Uống</div>
     </div>
   </div>
-  <div class="row p-3 m-0">
-    <div class="monchinh row p-2">
-      <div class="col-7 p-5">
-        <div class="row p-2 px-5">
+  <div class="row col-lg-12 p-lg-3 m-0">
+    <div class="monchinh row p-lg-2">
+      <div class="col-lg-7 p-lg-5 ">
+        <div class="row p-lg2 px-lg-5">
           <div class="col-9 p-2">
             <h3>Salad Bò mix cùng Phô Mai Feta & Xốt Mù Tạt</h3>
             <p class="text-black-50">GRILLED BEEF SALAD with Feta Cheese & Mustard Dressing</p>
@@ -182,7 +182,7 @@
             <p class="gia">790.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>Súp Bí Đỏ dùng kèm Bánh Mì Giòn & Thịt Xông Khói Khô</h3>
             <p class="text-black-50">PUMPKIN SOUP with Croutons & Dried Bacon</p>
@@ -191,7 +191,7 @@
             <p class="gia">870.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class=" col-9 p-2">
             <h3>Ức Vịt Nướng dùng kèm Bánh Ngàn Lớp Nấm & Sốt Cam Tươi</h3>
             <p class="text-black-50">ROAST DUCK BEAST with Mushroom Mille Feuille & Orange Sauce</p>
@@ -200,7 +200,7 @@
             <p class="gia">990.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>Hải Sản Nướng dùng kèm Cà Tím & Sốt Cà Chua La Maison</h3>
             <p class="text-black-50">BBQ GRILLED SEAFOOD with Grilled Eggplant & La Maison's Tomato Salsa</p>
@@ -210,13 +210,13 @@
           </div>
         </div>
       </div>
-      <div class="col-5 text-center py-5">
+      <div class="col-lg-5 text-center py-5">
         <img src="../content/images/bocobe.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
     <div class="montrangmieng row p-2">
-      <div class="col-7 p-5">
-        <div class="row p-2 px-5">
+      <div class="col-lg-7 p-lg-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>Kem Lạnh La Maison dùng kèm Trái Cây Tươi</h3>
             <p class="text-black-50">LA MAISON'S FRUIT SORBET</p>
@@ -225,7 +225,7 @@
             <p class="gia">100.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>Bánh nhà làm đặc biệt trong ngày</h3>
             <p class="text-black-50">HOMEMADE SPECIAL CAKE</p>
@@ -234,7 +234,7 @@
             <p class="gia">120.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class=" col-9 p-2">
             <h3>Kem cháy kiểu Pháp vị Vani</h3>
             <p class="text-black-50">VANILLA CREME BRULEE</p>
@@ -246,13 +246,13 @@
         
       
       </div>
-      <div class="col-5 text-center py-5">
+      <div class="col-lg-5 text-center py-5">
         <img src="../content/images/kem.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
     <div class="douong row p-2">
-      <div class="col-7 p-5">
-        <div class="row p-2 px-5">
+      <div class="col-lg-7 p-lg-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>1679 CORBIÈRES</h3>
             <p class="text-black-50">80% Syrah, 20% Grenache | Corbières | 14% acl/ vol</p>
@@ -261,7 +261,7 @@
             <p class="gia">550.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>BONECHANCE BORDEAUX</h3>
             <p class="text-black-50">Merlot | Pays d'Oc | 14% acl/ vol</p>
@@ -270,7 +270,7 @@
             <p class="gia">865.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class=" col-9 p-2">
             <h3>INTRIGO PIANTAFERRO</h3>
             <p class="text-black-50">Nero D'avola | Sicilia | 13% acl/ vol</p>
@@ -279,7 +279,7 @@
             <p class="gia">900.000 <span>VND</span></p>
           </div>
         </div>
-        <div class="row p-2 px-5">
+        <div class="row p-lg-2 px-lg-5">
           <div class="col-9 p-2">
             <h3>VALDIVIESO WINEMAKER'S RESERVA</h3>
             <p class="text-black-50">79% Cabernet Sauvignon, 21% Cabernet Franc |
@@ -290,7 +290,7 @@
           </div>
         </div>
       </div>
-      <div class="col-5 text-center py-5">
+      <div class="col-lg-5 text-center py-5">
         <img src="../content/images/ruou.jpg" alt="" width="700" height="500" class="border-1" />
       </div>
     </div>
@@ -309,11 +309,11 @@
       </p>
     </div>
   </div>
-  <div class="row p-3 m-0">
-    <div class="col-7 text-center py-5">
+  <div class="row p-lg-3 m-0">
+    <div class="col-lg-7 text-center py-5">
       <img src="../content/images/plane.jpg" alt="" width="700" height="500" class="border-2" />
     </div>
-    <div class="col-5 p-5">
+    <div class="col-lg-5 p-lg-5">
       <h1 class="p-3">Đặt phòng VIP ngay NHẬN xe đưa đón sân bay MIỄN PHÍ</h1>
       <p class="p-3">Đúng vậy! Chúng tôi quyết tâm biến trải nghiệm của bạn tại khách sạn của chúng tôi trở nên thú vị,
         đến mức chúng tôi muốn cung cấp cho bạn dịch vụ đưa đón sân bay miễn phí nếu bạn đặt phòng với chúng tôi!</p>
@@ -321,7 +321,7 @@
       <p class="px-3">
         <span class="namephong"> 2.149.000</span><sup>VND</sup>/mỗi đêm
       </p>
-      <div class="px-3">
+      <div class="px-3 py-4">
         <button class="custom-buy3 buy-3 nutmua"><span><a style="text-decoration: none; " href="/index.php?action=view4"><span class="dat">ĐẶT NGAY</span></a></span></button>
       </div>
     </div>
@@ -336,7 +336,7 @@
     </div>
   </div>
   <div class="row justify-content-around text-center m-0">
-    <div class="col-3 p-4">
+    <div class="col-lg-3 p-lg-4 my-5">
       <div class="imguser">
         <img src="" alt="">
         <h2 class="py-3">Alex Nguyen!</h2>
@@ -349,7 +349,7 @@
         <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
       </div>
     </div>
-    <div class="col-3 p-4">
+    <div class="col-lg-3 p-lg-4  my-5">
       <div class="imguser">
         <img src="" alt="">
         <h2 class="py-3">Long Tien!</h2>
@@ -361,7 +361,7 @@
         <h3 class="p-3">-Tôn Long Tiến-</h3>
       </div>
     </div>
-    <div class="col-3 p-4">
+    <div class="col-lg-3 p-lg-4  my-5">
       <div class="imguser">
         <img src="" alt="">
         <h2 class="py-3">Akito Nhat!</h2>
@@ -374,45 +374,45 @@
   </div>
 </section>
 <section class="box6 container-fluid p-1">
-  <div class="row p-5 m-0">
-    <div class="col-4 p-4">
+  <div class="row p-lg-5 m-0">
+    <div class="col-lg-4 p-4">
       <div class="pt-5 mt-5">
         <div class="text-center ">
           <p class="text-black-50 m-4">Vị trí & Bản đồ khách sạn</p>
           <h1 class="m-4">Hướng dẫn lái xe</h1>
-          <p class=" p-5 text-black-50">
+          <p class=" p-lg-5 text-black-50">
             Đi theo đường Bạch Đằng rồi nhìn về phía tay trái.
           </p>
         </div>
       </div>
-      <div class=" row justify-content-center pt-5 text-center">
-        <div class="p-3 col-6">
+      <div class=" row justify-content-center pt-lg-5 text-center">
+        <div class="p-lg-3 col-lg-6">
           <h1>5.2 km</h1>
           <p>Cách xa tòa nhà trung tâm hành chính</p>
         </div>
-        <div class="p-3 col-6">
+        <div class="p-lg-3 col-lg-6">
           <h1>8.4 km</h1>
           <p>Cách xa sân bay</p>
         </div>
       </div>
     </div>
-    <div class="map col-8 d-flex justify-content-center ">
+    <div class="map col-lg-8 d-flex justify-content-center ">
       <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d239.63470957226258!2d108.24671958113845!3d16.0574261728479!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1701358971681!5m2!1svi!2s" width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
 <section class="box7 container-fluid p-1">
-  <div class="row m-0 guithongtin">
-    <div class="guithongtin1 col-6">
+  <div class="row m-0 guithongtin col-lg-12">
+    <div class="guithongtin1 col-lg-6">
       <h1>Đăng ký nhận bản tin...</h1>
       <p class="text-light-50">...và không bao giờ bỏ lỡ các ưu đãi và tin tức đặc biệt CỦA CHÚNG TÔI!</p>
     </div>
-    <div class="guithongtin1 col-6">
+    <div class="align-self-center col-lg-6">
       <form action="" class="row">
-        <div class="col-9">
+        <div class="col-lg-9">
           <input type="text" name="" id="" placeholder="Nhập email của bạn..." class="form-control guithongtin3">
         </div>
-        <div class="col-2">
+        <div class="col-lg-2 text-center">
           <button class="custom-buy3 buy-3 nutmua "><span><a style="text-decoration: none; " href=""><span class="dat">Đăng ký ngay</span></a></span></button>
 
         </div>
@@ -420,3 +420,36 @@
     </div>
   </div>
 </section>
+<script>
+  let showmonchinh = document.querySelector('#monchinh');
+  let showmontrangmieng = document.querySelector('#montrangmieng');
+  let showdouong = document.querySelector('#douong');
+  let monchinh = document.querySelector('.monchinh');
+  let montrangmieng = document.querySelector('.montrangmieng');
+  let douong = document.querySelector('.douong');
+
+  showmonchinh.addEventListener('click', function() {
+    showmontrangmieng.classList.remove('showmenu');
+    showdouong.classList.remove('showmenu');
+    showmonchinh.classList.add('showmenu');
+    montrangmieng.style.display = "none";
+    douong.style.display = "none";
+    monchinh.style.display = "flex";
+  });
+  showmontrangmieng.addEventListener('click', function() {
+    showmonchinh.classList.remove('showmenu');
+    showdouong.classList.remove('showmenu');
+    showmontrangmieng.classList.add('showmenu');
+    douong.style.display = "none";
+    monchinh.style.display = "none";
+    montrangmieng.style.display = "flex";
+  });
+  showdouong.addEventListener('click', function() {
+    showmonchinh.classList.remove('showmenu');
+    showmontrangmieng.classList.remove('showmenu');
+    showdouong.classList.add('showmenu');
+    monchinh.style.display = "none";
+    montrangmieng.style.display = "none";
+    douong.style.display = "flex";
+  });
+</script>

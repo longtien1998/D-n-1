@@ -10,9 +10,9 @@ if (isset($_SESSION['user'])) {
     $hinh = $data['urlimage'];
     $hidden = '';
   } else {
-    $datanv = getUsernhanvienByName($_SESSION['user']);
-    $name = $datanv['tenNhanVien'];
-    $hinh = $datanv['urlimage'];
+    $data = getUsernhanvienByName($_SESSION['user']);
+    $name = $data['tenNhanVien'];
+    $hinh = $data['urlimage'];
     $hidden = 'class="hidden"';
   }
 } else {
@@ -97,10 +97,8 @@ else if ($_GET["controller"] === 'contact')  $a7 = 'active';
       <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a3;?>" href="/admin/index.php?controller=user-nhanvien"><i class='app-menu__icon bx bx-user-voice'></i><span class="app-menu__label">Quản lý Nhân viên</span></a></li>
       <li <?php echo $hidden; ?>><a class="app-menu__item <?php echo $a4;?>" href="/admin/index.php?controller=quanlyroom"><i class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý phòng</span></a></li>
       <li><a class="app-menu__item <?php echo $a5;?>" href="/admin/index.php?controller=quanlyBooking"><i class='app-menu__icon bx bx-task'></i><span class="app-menu__label">Quản lý booking</span></a></li>
-      <!-- <li><a class="app-menu__item" href="table-data-banned.html"><i class='app-menu__icon bx bx-run'></i><span
-            class="app-menu__label">Quản lý nội bộ
-          </span></a></li>
-      <li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
+      <li><a class="app-menu__item" href="/admin/index.php?controller=quanLyBaiViet"><i class='app-menu__icon bx bx-run'></i><span class="app-menu__label">Quản lý bài viết</span></a></li>
+      <!--<li><a class="app-menu__item" href="table-data-money.html"><i class='app-menu__icon bx bx-dollar'></i><span
             class="app-menu__label">Bảng kê lương</span></a></li>
       <li><a class="app-menu__item" href="quan-ly-bao-cao.html"><i
             class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Báo cáo doanh thu</span></a>
