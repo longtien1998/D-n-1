@@ -12,15 +12,15 @@
             echo '<table class="table table-bordered table-striped table-hover text-center" >
                     <tr class="thead-dark">
                     <th>STT</th>
-                    <th>1Tên Phòng</th>
-                    <th>2Loại Phòng</th>
-                    <th>3Người Lớn</th>
-                    <th>4Ngày Đến</th>
-                    <th>5Ngày Đi</th>
-                    <th>6Số Ngày</th>
-                    <th>7Giá Phòng</th>
-                    <th>8Số Lượng</th>
-                    <th>9Thành Tiền</th>
+                    <th>Tên Phòng</th>
+                    <th>Loại Phòng</th>
+                    <th>Người Lớn</th>
+                    <th>Ngày Đến</th>
+                    <th>Ngày Đi</th>
+                    <th>Số Ngày</th>
+                    <th>Giá Phòng</th>
+                    <th>Số Lượng</th>
+                    <th>Thành Tiền</th>
                     </tr>';
 
             if (count($getshowcart) > 0) {

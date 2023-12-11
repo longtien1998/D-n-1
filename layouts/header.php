@@ -6,9 +6,17 @@ include './thuvien/user.php';
 include './dao/userDAO.php';
 include './dao/nhanvien.php';
 include './dao/room.php';
+include './dao/khachhang.php';
+include './dao/danh-gia.php';
+
 
 ?>
 <?php
+
+
+// Set the new timezone
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+$date = date('Y-m-d');
 
 
 
@@ -44,7 +52,12 @@ if (isset($_SESSION["user"])) {
         $result = usernhanvien($_SESSION["user"]);
         if (mysqli_num_rows($result) > 0) {
             $user = '<span>Xin Chào </span>Nhân Viên <a class="user" href="/index.php?action=usernv">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
-        } else $user = '<a href="/index.php?action=login">Đăng nhập</a>';
+        } else {
+            $result = userKH($_SESSION["user"]);
+            if (mysqli_num_rows($result) > 0) {
+            $user = '<span>Xin Chào </span> <a class="user" href="/index.php?action=userkh">' . $_SESSION["user"] . '</a> <a href="/index.php?action=logout">Đăng xuất</a>';
+            } else $user = '<a href="/index.php?action=login">Đăng nhập</a>';
+        } 
     }
 } else  $user = '<i class="fa-regular fa-circle-user fa-flip" style="color: #050505; font-size: 25px;"></i><a href="/index.php?action=login">Đăng nhập</a>';
 ?>

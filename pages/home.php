@@ -29,7 +29,7 @@
     <form action="" class="row justify-content-around" method="POST">
       <div class="form-group col-lg">
         <label for="" class="col-form-label">Ngày Đến:</label>
-        <input id="" name="ngayDen" type="date" class="form-control" required />
+        <input id="" name="ngayDen" type="date" class="form-control" required value="<?= $date; ?>" />
         <span class="form-message"></span>
       </div>
       <div class="form-group col-lg">
@@ -342,41 +342,28 @@
     </div>
   </div>
   <div class="row justify-content-around text-center m-0">
+    <?php
+    $i = 0;
+    $data = danhgia();
+    foreach ($data as $key) {
+      echo '
     <div class="col-lg-3 p-lg-4 my-5">
       <div class="imguser">
-        <img src="../content/images/nguyen.jpg" width="100%" alt="">
-        <h2 class="py-3">Alex Nguyen!</h2>
+        <img src="../content/images/face.png" width="100%" alt="">
+        <h2 class="py-3">' . $key['email'] . '!</h2>
       </div>
       <div>
-        <p class="text-black-50">Khi ở Đà Nẵng vì công việc kinh doanh của mình, tôi luôn ở lại nơi này.
-          Tỷ lệ giá/chất lượng ở đây rất vượt trội,
-          cho phép tôi tiết kiệm nhiều tiền hơn cho các chi tiêu khác…
-          Xếp hạng của tôi là 5 trên 5!</p>
-        <h3 class="p-3">-Nguyễn Đỗ Thanh Nguyên-</h3>
+        <p class="text-black-50">' . $key['binhLuan'] . '</p>
+        <h3 class="p-3">-' . $key['hoTen'] . '-</h3>
       </div>
     </div>
-    <div class="col-lg-3 p-lg-4  my-5">
-      <div class="imguser">
-        <img src="../content/images/tien.jpg" width="100%" alt="">
-        <h2 class="py-3">Long Tien!</h2>
-      </div>
-      <div>
-        <p class="text-black-50">Việc lựa chọn một khách sạn luôn là một thách thức,
-          đặc biệt nếu bạn đang có lịch trình bận rộn và lần đầu tiên đến thăm nơi này.
-          Đó là lý do tại sao tôi rất vui vì dự đoán của tôi về khách sạn này chắc chắn là một điều may mắn.</p>
-        <h3 class="p-3">-Tôn Long Tiến-</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 p-lg-4  my-5">
-      <div class="imguser">
-        <img src="../content/images/nhat.jpg" width="100%">
-        <h2 class="py-3">Akito Nhat!</h2>
-      </div>
-      <div>
-        <p class="text-black-50">Tôi đã đến thăm Đà Nẵng năm ngoái khi đi du lịch khắp vùng Trung Tây cùng gia đình. Phòng Gia đình rất tuyệt, nhà hàng (và quầy bar) của khách sạn nhìn chung đều đẹp và giá cả rất hợp lý…</p>
-        <h3 class="p-3">-Phạm Hữu Nhất-</h3>
-      </div>
-    </div>
+    
+    ';
+      $i++;
+      if ($i === 3) break;
+    }
+
+    ?>
   </div>
 </section>
 <section class="box6 container-fluid p-1">

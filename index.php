@@ -26,8 +26,16 @@ switch ($_GET["action"]) {
             $_SESSION['nguoiLon'] = $nguoiLon;
 
             if ($loaiPhong === "phongDon") {
-
                 header("Location: /index.php?action=view1");
+            }
+            if ($loaiPhong === "phongDoi") {
+                header("Location: /index.php?action=view2");
+            }
+            if ($loaiPhong === "phongGiaDinh") {
+                header("Location: /index.php?action=view3");
+            }
+            if ($loaiPhong === "phongVip") {
+                header("Location: /index.php?action=view4");
             }
         }
         include './pages/home.php';
@@ -117,6 +125,29 @@ switch ($_GET["action"]) {
 
 
     case 'timphong':
+        if (isset($_POST['timngay']) && ($_POST['timngay'])) {
+            $ngayDen = $_POST['ngayDen'];
+            $ngayDi = $_POST['ngayDi'];
+            $nguoiLon = $_POST['nguoiLon'];
+            $loaiPhong = $_POST['loaiPhong'];
+
+            $_SESSION['ngayDen'] = $ngayDen;
+            $_SESSION['ngayDi'] = $ngayDi;
+            $_SESSION['nguoiLon'] = $nguoiLon;
+
+            if ($loaiPhong === "phongDon") {
+                header("Location: /index.php?action=view1");
+            }
+            if ($loaiPhong === "phongDoi") {
+                header("Location: /index.php?action=view2");
+            }
+            if ($loaiPhong === "phongGiaDinh") {
+                header("Location: /index.php?action=view3");
+            }
+            if ($loaiPhong === "phongVip") {
+                header("Location: /index.php?action=view4");
+            }
+        }
 
         include './pages/timphong.php';
         break;
@@ -168,6 +199,9 @@ switch ($_GET["action"]) {
         break;
     case 'usernv':
         include './pages/usernhanvien.php';
+        break;
+    case 'userkh':
+        include './pages/userkhachhang.php';
         break;
     default:
         include './pages/home.php';

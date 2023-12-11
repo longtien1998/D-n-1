@@ -49,10 +49,28 @@ if (isset($_POST["dangnhap"])) {
                 $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Sai mật khẩu. Vui lòng thử lại</span></h2>';
             }
         } else {
+            $result1 =userKH($username);
+            if ( mysqli_num_rows($result1)> 0) {
 
-            // Người dùng không tồn tại
-            $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Người dùng không tồn tại!</span></h2>';
-            
+                // Lấy thông tin người dùng từ cơ sở dữ liệu
+                $row = mysqli_fetch_assoc($result1);
+                // Kiểm tra mật khẩu hợp lệ
+                if ($row['matKhau'] === $password) {
+                    // Đăng nhập thành công và set user name vào biến session
+                    $_SESSION["user"] = "$username";
+                    header("Location: ../index.php?action=index&controller=users");
+                } else {
+                    // sai mk
+                    $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Sai mật khẩu. Vui lòng thử lại</span></h2>';
+                }
+            } else {
+                
+
+                // Người dùng không tồn tại
+                $message = '<h2 class="section-title px-5"><span class="px-2" style="color: red;">Người dùng không tồn tại!</span></h2>';
+                
+            }
+
         }
     }
 }
