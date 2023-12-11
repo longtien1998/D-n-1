@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     <hr>
     <div class="de5">
         <h2>Chi tiết phòng</h2>
-        <p> ' . htmlspecialchars($row['maPhong']) . '</p>
+        
         <li>Người lớn: 4</li>
         <li>Tiện nghi: <span style="color: goldenrod;">Tủ quần áo với móc treo, Két cá nhân số, TV màn hình
                 phẳng HD, Điện thoại.</span></li>
@@ -47,14 +47,28 @@ while ($row = mysqli_fetch_assoc($result)) {
     </div>
     <form class="book1" action="/index.php?action=addcart" method="post">
         <input type="hidden" name="id" value="' . htmlspecialchars($row['id']) . '">
-        <input type="hidden" name="maPhong" value="' . htmlspecialchars($row['maPhong']) . '">
+        <input type="hidden" name="nguoiLon" value="'.$_SESSION['nguoiLon'].'">
         <input type="hidden" name="tenPhong" value="' . htmlspecialchars($row['tenPhong']) . '">
         <input type="hidden" name="loaiPhong" value="' . htmlspecialchars($row['loaiPhong']) . '">
         <input type="hidden" name="giaPhong" value="' . htmlspecialchars($row['giaPhong']) . '">
         <div class="hop15">
-            <input type="number" name="sl" id="sl" value="1" class="my-3 w-25">
-            <br>
-            <input type="submit" name="addtocart" value="Đặt Phòng" class="custom-buy15 buy-15">
+            <div class="form-group col-lg">
+            <label for="" class="col-form-label">Số lượng: </label>
+            <input  type="number" name="sl" id="sl" class="form-control1" value="1" required />
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group col-lg">
+            <label for="" class="col-form-label">Ngày Đến:</label>
+            <input id="" name="ngayDen" type="date" class="form-control1" value="'.$_SESSION['ngayDen'].'" required />
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group col-lg">
+            <label for="" class="col-form-label">Ngày Đi:</label>
+            <input id="" name="ngayDi" type="date" class="form-control1" value="'.$_SESSION['ngayDi'].'" required />
+            <span class="form-message"></span>
+        </div>
+        
+        <input type="submit" name="addtocart" value="Đặt Phòng" class="custom-buy15 buy-15">
         </div>
     </form> 
 </section>  <hr class="my-5 ">';

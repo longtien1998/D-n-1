@@ -15,7 +15,6 @@ while ($row = mysqli_fetch_assoc($result)) {
           <h1>' . htmlspecialchars($row['tenPhong']) . '</h1>
           <div class="tien4">
             <p>
-              
               <span class="so7">' . currency_format(htmlspecialchars($row['giaPhong'])) . '</span>
               /1 đêm
             </p>

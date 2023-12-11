@@ -6,6 +6,7 @@ include "../dao/nhanvien.php";
 include "../dao/khachhang.php";
 include "../dao/xulydonhang.php";
 include "../dao/don-hang.php";
+include "../dao/danh-gia.php";
 
 
 include "../dao/room.php";
@@ -105,6 +106,18 @@ switch ($_GET["controller"]) {
                 break;
             default:
                 include './pages/quanLyBaiViet/xem-baiviet.php';
+                break;
+        }
+
+        break;
+    case 'quanLyDanhGia':
+        switch ($_GET["action"]) {
+            case 'xem-danhgia':
+                include './pages/quanLyDanhGia/xem-danhgia.php';
+                break;
+            
+            default:
+                include './pages/quanLyDanhGia/xem-danhgia.php';
                 break;
         }
 

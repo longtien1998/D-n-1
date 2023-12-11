@@ -33,7 +33,7 @@ function user_count_all()//truy vấn và trả về all kh từ csdl
 }
 function user_select_by_id($maKhachHang) //truy vấn và trả về thông tin của 1 kh dựa trên maKhachHang
 {
-    $sql = "SELECT * FROM user WHERE maKhachHang=?";
+    $sql = "SELECT * FROM user WHERE tenKhachHang=?";
     return pdo_query_one($sql, $maKhachHang);
 }
 function user_exist($maKhachHang)//kt kh có tồn tại trong csdl hay k

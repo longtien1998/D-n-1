@@ -2593,7 +2593,9 @@ body {
 
 .danhgia {
     line-height: 2;
-    max-width: 200px;
+    /* max-width: 200px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .hop19 {
